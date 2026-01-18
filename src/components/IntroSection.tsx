@@ -5,7 +5,7 @@ export default function IntroSection() {
         <div className="max-w-2xl mx-auto text-center mb-20">
           <p className="text-accent font-medium mb-4">ABOUT US</p>
           <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-primary">
-            도곡 경희한의원을 소개합니다
+            도곡경희한의원을 소개합니다
           </h2>
           <p className="text-text-light leading-relaxed">
             현대인들은 과도한 스트레스와 불규칙한 생활로 인해
