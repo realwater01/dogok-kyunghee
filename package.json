@@ -2,6 +2,9 @@
   "name": "dogok-kyunghee",
   "version": "1.0.0",
   "description": "도곡 경희한의원 웹사이트",
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
