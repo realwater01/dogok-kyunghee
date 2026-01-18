@@ -65,7 +65,7 @@ export default function TreatmentSection() {
             진료 안내
           </h2>
           <p className="text-text-light max-w-xl mx-auto">
-            도곡 경희한의원에서는 다양한 자율신경계 관련 질환을
+            도곡경희한의원에서는 다양한 자율신경계 관련 질환을
             전문적으로 치료하고 있습니다.
           </p>
         </div>
