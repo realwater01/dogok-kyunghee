@@ -190,9 +190,9 @@ export default function AboutIntroPage() {
               1인 예약제 진료 시스템
             </h2>
             <p className="text-text-light max-w-2xl mx-auto">
-              환자 한 분 한 분에게 충분한 시간을 드리기 위해
-              예약제로 운영됩니다. 프라이빗한 공간에서 편안하게
-              상담받으실 수 있습니다.
+              환자 한 분 한 분에게 충분한 시간을 드리기 위해 예약제로 운영됩니다.
+              <br className="hidden md:block" />
+              프라이빗한 공간에서 편안하게 상담받으실 수 있습니다.
             </p>
           </div>
 
