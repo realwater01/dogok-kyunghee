@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function LocationPage() {
   return (
-    <div className="pt-[80px]">
+    <div>
       {/* Hero Section */}
       <section className="bg-brown-bg py-20">
         <div className="container mx-auto px-6">

@@ -1,5 +1,19 @@
 @import "tailwindcss";
 
+@theme {
+  --color-primary: #3D3D3D;
+  --color-secondary: #FAFAF8;
+  --color-accent: #A08060;
+  --color-accent-hover: #8B7355;
+  --color-cream: #F5F0E8;
+  --color-brown-bg: #E8DFD3;
+  --color-brown-light: #D4C4B0;
+  --color-brown: #C9B99A;
+  --color-brown-dark: #8B7355;
+  --color-text: #4A4A4A;
+  --color-text-light: #7A7A7A;
+}
+
 /* 경기천년제목 폰트 */
 @font-face {
   font-family: 'GyeonggiTitle';
@@ -34,62 +48,8 @@
 }
 
 :root {
-  /* 옅은 브라운 + 흰색 깔끔한 색상 */
-  --color-primary: #3D3D3D;
-  --color-secondary: #FAFAF8;
-  --color-accent: #A08060;
-  --color-accent-hover: #8B7355;
-  --color-brown-light: #D4C4B0;
-  --color-brown: #C9B99A;
-  --color-brown-bg: #E8DFD3;
-  --color-cream: #F5F0E8;
-  --color-white: #FFFFFF;
-  --color-text: #4A4A4A;
-  --color-text-light: #7A7A7A;
-
   --font-title: 'GyeonggiTitle', 'Pretendard', sans-serif;
   --font-body: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: var(--font-body);
-  background-color: var(--color-white);
-  color: var(--color-primary);
-  line-height: 1.7;
-  letter-spacing: -0.02em;
-}
-
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 6px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--color-secondary);
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--color-brown-light);
-  border-radius: 3px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--color-accent);
-}
-
-/* Animation classes */
-.fade-in {
-  animation: fadeIn 0.6s ease-in-out;
 }
 
 @keyframes fadeIn {
@@ -103,89 +63,154 @@ body {
   }
 }
 
-/* Button styles */
-.btn-primary {
-  background-color: var(--color-accent);
-  color: white;
-  padding: 14px 28px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: 500;
-  letter-spacing: 0;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
+@layer components {
+  /* Animation classes */
+  .fade-in {
+    animation: fadeIn 0.6s ease-in-out;
+  }
 
-.btn-primary:hover {
-  background-color: var(--color-accent-hover);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(160, 128, 96, 0.3);
-}
+  /* Button styles */
+  .btn-primary {
+    background-color: var(--color-accent);
+    color: white;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-.btn-outline {
-  background-color: transparent;
-  color: var(--color-accent);
-  padding: 14px 28px;
-  border: 1px solid var(--color-accent);
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
+  .btn-primary:hover {
+    background-color: var(--color-accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(160, 128, 96, 0.3);
+  }
 
-.btn-outline:hover {
-  background-color: var(--color-accent);
-  color: white;
-}
+  .btn-outline {
+    background-color: transparent;
+    color: var(--color-accent);
+    padding: 14px 28px;
+    border: 1px solid var(--color-accent);
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
 
-/* Section styles */
-.section {
-  padding: 100px 0;
-}
+  .btn-outline:hover {
+    background-color: var(--color-accent);
+    color: white;
+  }
 
-@media (max-width: 768px) {
+  /* Section styles */
   .section {
-    padding: 60px 0;
+    padding: 100px 0;
+  }
+
+  @media (max-width: 768px) {
+    .section {
+      padding: 60px 0;
+    }
+  }
+
+  /* Progress bar */
+  .progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 2px;
+    background: linear-gradient(to right, var(--color-brown-light), var(--color-accent));
+    z-index: 9999;
+    transition: width 0.1s ease;
+  }
+
+  /* Card hover effect */
+  .card-hover {
+    transition: all 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  }
+
+  /* 로고/브랜드명에 경기천년제목 폰트 적용 */
+  .font-title {
+    font-family: var(--font-title);
   }
 }
 
-/* Container */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 24px;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    line-height: 1.7;
+    letter-spacing: -0.02em;
+  }
+
+  /* Typography - 제목에 경기천년제목 폰트 적용 */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-title);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--color-secondary);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-brown-light);
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-accent);
+  }
 }
 
-/* Progress bar */
-.progress-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 2px;
-  background: linear-gradient(to right, var(--color-brown-light), var(--color-accent));
-  z-index: 9999;
-  transition: width 0.1s ease;
-}
+@layer components {
+  /* 드롭다운 메뉴 스타일 */
+  .dropdown-menu {
+    padding: 16px 20px;
+    border-color: var(--color-brown-light);
+  }
 
-/* Typography - 제목에 경기천년제목 폰트 적용 */
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-title);
-  font-weight: 500;
-  letter-spacing: -0.02em;
-  color: var(--color-primary);
-}
+  /* 원장 소개 섹션 스타일 */
+  .doctor-description p {
+    margin-bottom: 12px;
+  }
 
-/* Card hover effect */
-.card-hover {
-  transition: all 0.3s ease;
-}
+  .doctor-description p:last-child {
+    margin-bottom: 0;
+  }
 
-.card-hover:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-}
+  .doctor-credentials {
+    margin-top: 40px;
+  }
 
-/* 로고/브랜드명에 경기천년제목 폰트 적용 */
-.font-title {
-  font-family: var(--font-title);
+  .credential-item {
+    margin-bottom: 16px;
+  }
+
+  .credential-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .bullet-brown {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--color-brown);
+  }
 }

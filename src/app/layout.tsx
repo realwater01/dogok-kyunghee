@@ -28,6 +28,7 @@ export default function RootLayout({
       <body className="antialiased">
         <ScrollProgress />
         <Header />
+        <div className="h-[160px]" /> {/* Header spacer */}
         <main>{children}</main>
         <Footer />
         <GoToTop />

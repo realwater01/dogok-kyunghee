@@ -2,9 +2,9 @@ import Link from "next/link";
 
 export default function AboutIntroPage() {
   return (
-    <div className="pt-[80px]">
+    <>
       {/* Hero Section */}
-      <section className="bg-brown-bg py-20">
+      <section className="bg-brown-bg py-24">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl">
             <p className="text-accent font-medium mb-4">ABOUT US</p>
@@ -20,7 +20,7 @@ export default function AboutIntroPage() {
       </section>
 
       {/* Philosophy Section */}
-      <section className="section bg-white">
+      <section className="py-24 bg-white">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -58,7 +58,7 @@ export default function AboutIntroPage() {
       </section>
 
       {/* Treatment Principle Section */}
-      <section className="section bg-brown-bg">
+      <section className="py-24 bg-brown-bg">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1 aspect-[4/3] bg-gradient-to-br from-white to-brown-light rounded-2xl flex items-center justify-center">
@@ -100,7 +100,7 @@ export default function AboutIntroPage() {
       </section>
 
       {/* Herbal Medicine Section */}
-      <section className="section bg-white">
+      <section className="py-24 bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <p className="text-accent font-medium mb-4">약재</p>
@@ -129,15 +129,15 @@ export default function AboutIntroPage() {
       </section>
 
       {/* Doctor Section */}
-      <section className="section bg-brown-bg">
+      <section className="py-24 bg-brown-bg">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <p className="text-accent font-medium mb-4">원장 소개</p>
               <h2 className="text-3xl md:text-4xl font-medium mb-8">
-                연구와 임상으로<br />걸어온 길
+                연구와 임상으로 걸어온 길
               </h2>
-              <div className="space-y-6 text-text-light leading-relaxed">
+              <div className="text-text-light leading-relaxed doctor-description">
                 <p>
                   도곡경희한의원 원장은 20년 이상의 임상 경험과
                   지속적인 연구를 통해 자율신경계 질환 치료의
@@ -150,21 +150,21 @@ export default function AboutIntroPage() {
                 </p>
               </div>
 
-              <div className="mt-8 space-y-3">
-                <div className="flex items-center gap-3">
-                  <span className="w-2 h-2 bg-accent rounded-full"></span>
+              <div className="doctor-credentials">
+                <div className="flex items-center gap-3 credential-item">
+                  <span className="bullet-brown"></span>
                   <span className="text-primary">경희대학교 한의과대학 졸업</span>
                 </div>
-                <div className="flex items-center gap-3">
-                  <span className="w-2 h-2 bg-accent rounded-full"></span>
+                <div className="flex items-center gap-3 credential-item">
+                  <span className="bullet-brown"></span>
                   <span className="text-primary">경희대학교 한의학 석사</span>
                 </div>
-                <div className="flex items-center gap-3">
-                  <span className="w-2 h-2 bg-accent rounded-full"></span>
+                <div className="flex items-center gap-3 credential-item">
+                  <span className="bullet-brown"></span>
                   <span className="text-primary">대한한의사협회 정회원</span>
                 </div>
-                <div className="flex items-center gap-3">
-                  <span className="w-2 h-2 bg-accent rounded-full"></span>
+                <div className="flex items-center gap-3 credential-item">
+                  <span className="bullet-brown"></span>
                   <span className="text-primary">20년 이상 임상 경력</span>
                 </div>
               </div>
@@ -182,7 +182,7 @@ export default function AboutIntroPage() {
       </section>
 
       {/* Clinic Info Section */}
-      <section className="section bg-white">
+      <section className="py-24 bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <p className="text-accent font-medium mb-4">진료 안내</p>
@@ -197,14 +197,14 @@ export default function AboutIntroPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="p-8 bg-cream rounded-xl text-center">
-              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6">
+            <div className="p-8 bg-cream rounded-xl flex flex-col items-center">
+              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-6">
                 <svg className="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-medium mb-3">진료 시간</h3>
-              <div className="text-text-light text-sm space-y-1">
+              <h3 className="text-xl font-medium mb-3 text-center">진료 시간</h3>
+              <div className="text-text-light text-sm space-y-1 text-center">
                 <p>평일 10:00 - 19:00</p>
                 <p>토요일 10:00 - 16:00</p>
                 <p>점심 13:00 - 14:00</p>
@@ -212,28 +212,28 @@ export default function AboutIntroPage() {
               </div>
             </div>
 
-            <div className="p-8 bg-cream rounded-xl text-center">
-              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6">
+            <div className="p-8 bg-cream rounded-xl flex flex-col items-center">
+              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-6">
                 <svg className="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-medium mb-3">연락처</h3>
-              <div className="text-text-light text-sm space-y-1">
+              <h3 className="text-xl font-medium mb-3 text-center">연락처</h3>
+              <div className="text-text-light text-sm space-y-1 text-center">
                 <p className="text-lg text-primary font-medium">02-XXX-XXXX</p>
                 <p>상담 및 예약 문의</p>
               </div>
             </div>
 
-            <div className="p-8 bg-cream rounded-xl text-center">
-              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6">
+            <div className="p-8 bg-cream rounded-xl flex flex-col items-center">
+              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-6">
                 <svg className="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-medium mb-3">오시는 길</h3>
-              <div className="text-text-light text-sm space-y-1">
+              <h3 className="text-xl font-medium mb-3 text-center">오시는 길</h3>
+              <div className="text-text-light text-sm space-y-1 text-center">
                 <p>서울시 강남구 도곡동</p>
                 <p>지하철 3호선 도곡역</p>
                 <Link href="/about/location" className="inline-block mt-2 text-accent hover:underline">
@@ -246,7 +246,7 @@ export default function AboutIntroPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-brown-dark text-white">
+      <section className="py-24 bg-brown-dark text-white">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-medium mb-6">
             건강한 삶의 시작,<br />도곡경희한의원과 함께하세요
@@ -260,6 +260,6 @@ export default function AboutIntroPage() {
           </Link>
         </div>
       </section>
-    </div>
+    </>
   );
 }

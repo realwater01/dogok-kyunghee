@@ -15,9 +15,18 @@
 /build
 
 # misc
+*.pem
+
+# macOS
 .DS_Store
 ._*
-*.pem
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+.VolumeIcon.icns
+.fseventsd
+.TemporaryItems
 
 # debug
 npm-debug.log*

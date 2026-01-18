@@ -123,18 +123,18 @@ export default function Header() {
                 </Link>
                 {item.subMenu.length > 0 && (
                   <div
-                    className={`absolute top-full left-0 pt-0 transition-all duration-200 ${
+                    className={`absolute top-full left-0 transition-all duration-200 ${
                       activeSubmenu === index
                         ? "opacity-100 visible translate-y-0"
                         : "opacity-0 invisible -translate-y-2 pointer-events-none"
                     }`}
                   >
-                    <div className="bg-white rounded-b-2xl border border-brown-light min-w-[220px] px-10 py-8 space-y-4">
+                    <div className="bg-white rounded-2xl border min-w-[220px] dropdown-menu mt-2">
                       {item.subMenu.map((subItem, subIndex) => (
                         <Link
                           key={subIndex}
                           href={subItem.href}
-                          className="block text-[15px] text-gray-700 hover:text-accent transition-colors leading-relaxed"
+                          className="block text-[15px] text-gray-700 hover:text-accent transition-colors leading-relaxed mb-4 last:mb-0"
                         >
                           {subItem.title}
                         </Link>
