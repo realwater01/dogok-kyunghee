@@ -18,7 +18,7 @@ const menuItems = [
     href: "/student",
     subMenu: [
       { title: "집중력", href: "/treatment/student-focus" },
-      { title: "자율신경실조", href: "/student/autonomic" },
+      { title: "자율신경실조", href: "/treatment/student-autonomic" },
     ],
   },
   {
