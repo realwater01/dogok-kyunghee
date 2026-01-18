@@ -1,3 +1,3 @@
 TBU
 tbu
-test auto deployment
+test auto deployment with correct email
