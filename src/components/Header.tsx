@@ -25,7 +25,7 @@ const menuItems = [
     title: "어린이",
     href: "/children",
     subMenu: [
-      { title: "ADHD, TIC, 불안", href: "/children/adhd-tic" },
+      { title: "ADHD, TIC, 불안", href: "/treatment/children-adhd-tic" },
       { title: "면역", href: "/children/immunity" },
       { title: "성장", href: "/children/growth" },
     ],
