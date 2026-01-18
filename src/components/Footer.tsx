@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Logo & Info */}
           <div>
-            <h3 style={{ color: '#ffffff' }} className="text-xl font-semibold mb-4">도곡 경희한의원</h3>
+            <h3 style={{ color: '#ffffff' }} className="text-xl font-semibold mb-4">도곡경희한의원</h3>
             <p style={{ color: 'rgba(255,255,255,0.85)' }} className="text-sm leading-relaxed">
               자율신경 실조증 전문 치료<br />
               몸과 마음의 균형을 되찾아드립니다.
