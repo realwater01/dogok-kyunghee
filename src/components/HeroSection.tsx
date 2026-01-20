@@ -30,7 +30,7 @@ export default function HeroSection() {
 
       {/* 하단 영역 - 베이지 배경 (한약 설명 + 사진) */}
       <div className="bg-[#FAF8F5]">
-        <div className="container mx-auto px-6 pt-12">
+        <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-end">
             {/* 한약, 제대로 달이다 텍스트 */}
             <div className="order-2 lg:order-1 lg:pl-16">
@@ -78,8 +78,8 @@ export default function HeroSection() {
             </div>
 
             {/* Doctor Image */}
-            <div className="order-1 lg:order-2 relative lg:-mt-12 flex items-end">
-              <div className="max-w-[650px] ml-0 relative">
+            <div className="order-1 lg:order-2 relative flex items-end">
+              <div className="max-w-[750px] ml-0 relative">
                 <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#FAF8F5] to-transparent z-10"></div>
                 <Image
                   src="/대표사진.jpg"

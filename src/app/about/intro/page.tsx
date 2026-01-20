@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function AboutIntroPage() {
   return (
@@ -22,35 +23,53 @@ export default function AboutIntroPage() {
       {/* Philosophy Section */}
       <section className="py-24 bg-white">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-end">
             <div>
-              <p className="text-accent font-medium mb-4">진료 철학</p>
+              <p className="text-accent font-medium mb-4 text-xl">진료 철학</p>
               <h2 className="text-3xl md:text-4xl font-medium mb-8">
                 몸과 마음, 자연속에서 균형을 찾다
               </h2>
               <div className="space-y-6 text-text-light leading-relaxed">
                 <p className="first-letter:text-5xl first-letter:font-title first-letter:text-accent first-letter:float-left first-letter:mr-3 first-letter:mt-1">
-                  나라는 존재는 몸, 마음, 삶 세 가지 요소로 이루어져 있습니다.
-                  삶이 원인을 제공하고, 마음이 해석하며, 몸이 반응합니다.
+                  몸과 마음의 균형이 깨지면<br />
+                  몸의 이상반응이 시작됩니다.
                 </p>
                 <p>
-                  현대인들은 과도한 스트레스와 불규칙한 생활 패턴으로 인해
-                  자율신경계의 균형이 깨지기 쉽습니다. 이로 인해 다양한
-                  신체적, 정신적 증상이 나타나게 됩니다.
+                  자율신경계의 조절력이 떨어지면서<br />
+                  면역력은 균형을 잃고<br />
+                  외부 바이러스와 세균 감염에는 취약해지고<br />
+                  오히려 내 면역이 내 몸을 공격하여 염증을 만들어냅니다.
                 </p>
                 <p>
-                  도곡경희한의원은 단순히 증상만을 치료하는 것이 아니라,
-                  환자분의 삶 전체를 이해하고 근본적인 원인을 찾아
-                  치료하는 것을 목표로 합니다.
+                  호르몬 분비에도 이상이 생기며<br />
+                  소화문제, 비염, 집중력저하, 만성피로, 두통, 어지러움 등<br />
+                  몸에는 이상신호가 발생합니다.
+                </p>
+                <p>
+                  한약은 자율신경계의 조절력을 되찾고<br />
+                  흥분된 면역반응은 가라앉히며<br />
+                  저하된 면역력을 개선합니다.<br />
+                  염증을 줄이고 호르몬 분비를 정상화시킵니다.
+                </p>
+                <p>
+                  자연에서 나는 천연약재들을<br />
+                  몸과 마음의 균형을 찾듯이<br />
+                  조화롭게 배합하여 처방하면<br />
+                  내 몸은 건강하고 활력있는 선순환을 시작합니다.
                 </p>
               </div>
             </div>
-            <div className="aspect-[4/3] bg-gradient-to-br from-cream to-brown-light rounded-2xl flex items-center justify-center">
-              <div className="text-center text-brown-dark">
-                <svg className="w-16 h-16 mx-auto mb-4 opacity-40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                </svg>
-                <p className="text-sm opacity-60">한의원 이미지</p>
+            <div className="flex items-end justify-center">
+              <div className="rounded-2xl overflow-hidden" style={{ maxWidth: '420px' }}>
+                <Image
+                  src="/rule03.jpg"
+                  alt="도곡경희한의원"
+                  width={420}
+                  height={280}
+                  className="w-full h-auto"
+                  quality={100}
+                  unoptimized
+                />
               </div>
             </div>
           </div>
