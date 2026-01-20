@@ -60,8 +60,9 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h3 className="font-semibold mb-1 text-primary">전화 상담</h3>
-                  <p className="text-text">02-XXX-XXXX</p>
-                  <p className="text-sm text-text-light">평일 09:00 - 18:00</p>
+                  <p className="text-text">02-6949-1888</p>
+                  <p className="text-sm text-text-light">평일 09:00 - 16:30</p>
+                  <p className="text-sm text-text-light">토요일 09:00 - 13:00</p>
                 </div>
               </div>
 
@@ -90,10 +91,10 @@ export default function ContactSection() {
                 <div>
                   <h3 className="font-semibold mb-1 text-primary">오시는 길</h3>
                   <p className="text-text">
-                    서울특별시 강남구 도곡동 XXX-XX
+                    서울특별시 강남구 논현로 28길 24, 1층
                   </p>
                   <p className="text-sm text-text-light">
-                    지하철 3호선 도곡역 3번 출구
+                    지하철 3호선 매봉역 4번출구에서 도보 7분
                   </p>
                 </div>
               </div>
@@ -116,10 +117,13 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h3 className="font-semibold mb-1 text-primary">진료 시간</h3>
-                  <p className="text-text">평일: 09:00 - 18:00</p>
+                  <p className="text-text">평일: 09:00 - 16:30</p>
                   <p className="text-text">토요일: 09:00 - 13:00</p>
                   <p className="text-sm text-text-light">
-                    일요일/공휴일 휴진, 점심 13:00 - 14:00
+                    일요일/공휴일 휴진
+                  </p>
+                  <p className="text-sm text-text-light">
+                    평일, 토요일 모두 점심시간 없이 진료합니다
                   </p>
                 </div>
               </div>

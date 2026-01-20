@@ -10,11 +10,14 @@ export default function AboutIntroPage() {
           <div className="max-w-3xl">
             <p className="text-accent font-medium mb-4">ABOUT US</p>
             <h1 className="text-4xl md:text-5xl font-medium leading-tight mb-6">
-              도곡경희한의원을<br />소개합니다
+              도곡경희한의원을
+              <br />
+              소개합니다
             </h1>
+            <p className="text-accent font-bold mb-2">한약, 제대로 달이다</p>
             <p className="text-text-light text-lg leading-relaxed">
-              20년 이상의 임상 경험을 바탕으로<br />
-              환자 한 분 한 분의 건강을 책임집니다.
+              천연약재의 배합을 통한 최적의 자연치료로<br />
+              건강한 삶을 되찾아드립니다.
             </p>
           </div>
         </div>
