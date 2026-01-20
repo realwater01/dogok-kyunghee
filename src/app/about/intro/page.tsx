@@ -26,7 +26,7 @@ export default function AboutIntroPage() {
             <div>
               <p className="text-accent font-medium mb-4">진료 철학</p>
               <h2 className="text-3xl md:text-4xl font-medium mb-8">
-                몸, 마음, 삶의 균형
+                몸과 마음, 자연속에서 균형을 찾다
               </h2>
               <div className="space-y-6 text-text-light leading-relaxed">
                 <p className="first-letter:text-5xl first-letter:font-title first-letter:text-accent first-letter:float-left first-letter:mr-3 first-letter:mt-1">
