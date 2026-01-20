@@ -89,7 +89,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-[80px]">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <span className="text-xl font-medium text-brown-dark tracking-tight font-title">도곡경희한의원</span>
+            <span className="text-3xl font-bold text-brown-dark tracking-tight" style={{ fontFamily: 'var(--font-batang)' }}>도곡경희한의원</span>
           </Link>
 
           {/* Desktop Menu */}
@@ -194,7 +194,7 @@ export default function Header() {
       >
         <div className="p-6">
           <div className="flex justify-between items-center mb-10">
-            <span className="text-lg font-medium text-brown-dark font-title">도곡경희한의원</span>
+            <span className="text-2xl font-bold text-brown-dark" style={{ fontFamily: 'var(--font-batang)' }}>도곡경희한의원</span>
             <button
               onClick={() => setIsMobileMenuOpen(false)}
               aria-label="메뉴 닫기"

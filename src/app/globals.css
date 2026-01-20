@@ -14,23 +14,7 @@
   --color-text-light: #7A7A7A;
 }
 
-/* 경기천년제목 폰트 */
-@font-face {
-  font-family: 'GyeonggiTitle';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2410-3@1.0/Title_Light.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'GyeonggiTitle';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2410-3@1.0/Title_Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
+/* 경기천년제목 폰트 (Bold용) */
 @font-face {
   font-family: 'GyeonggiTitle';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2410-3@1.0/Title_Bold.woff') format('woff');
@@ -39,17 +23,27 @@
   font-display: swap;
 }
 
+/* 경기천년바탕 폰트 */
 @font-face {
-  font-family: 'GyeonggiTitle';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2410-3@1.0/TitleV.woff') format('woff');
-  font-weight: 800;
+  font-family: 'GyeonggiBatang';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2410-3@1.0/Batang_Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GyeonggiBatang';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2410-3@1.0/Batang_Bold.woff') format('woff');
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 :root {
-  --font-title: 'GyeonggiTitle', 'Pretendard', sans-serif;
-  --font-body: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-title: 'GyeonggiTitle', serif;
+  --font-body: 'GyeonggiBatang', serif;
+  --font-batang: 'GyeonggiBatang', serif;
 }
 
 @keyframes fadeIn {
@@ -148,14 +142,14 @@
   }
 
   body {
-    font-family: var(--font-body);
+    font-family: var(--font-batang);
     line-height: 1.7;
     letter-spacing: -0.02em;
   }
 
-  /* Typography - 제목에 경기천년제목 폰트 적용 */
+  /* Typography - 제목에 바탕체 적용 (bold만 경기천년체) */
   h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-title);
+    font-family: var(--font-batang);
     font-weight: 500;
     letter-spacing: -0.02em;
   }

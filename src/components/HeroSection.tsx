@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function HeroSection() {
   return (
@@ -7,25 +8,26 @@ export default function HeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Text Content */}
           <div className="order-2 lg:order-1">
-            <p className="text-accent font-medium mb-4 tracking-wide">자율신경 실조 치료 전문</p>
-            <h1 className="text-4xl md:text-5xl lg:text-[56px] font-semibold leading-[1.2] mb-8 text-primary">
-              몸과 마음의
+            <p className="text-accent font-normal mb-4 tracking-wide text-xl">한약, 제대로 달이다</p>
+            <h1 className="text-4xl md:text-5xl lg:text-[56px] font-normal leading-[1.2] mb-8 text-primary tracking-wider">
+              한약으로
               <br />
-              건강한 균형을
-              <br />
-              되찾아드립니다
+              몸과 마음을 치료합니다
             </h1>
-            <p className="text-lg text-text-light mb-10 leading-relaxed max-w-md">
-              20년간의 임상 경험을 바탕으로
-              자율신경 실조증, 불면증, 불안장애 등
-              현대인의 복잡한 건강 문제를 해결합니다.
+            <p className="text-lg text-text-light mb-10 max-w-md">
+              <span className="font-normal text-primary block mb-3">한약 치료 상위 1% 자부심</span>
+              <span className="text-sm font-normal leading-normal block">경희대학교 한의학과 학사 석사 박사</span>
+              <span className="text-sm font-normal leading-normal block">20년 경력의 한방내과 전문의</span>
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/reservation" className="btn-primary text-center">
-                온라인 상담 예약
+                카카오톡 상담 바로가기
               </Link>
               <Link href="/about" className="btn-outline text-center">
                 한의원 소개
+              </Link>
+              <Link href="/naver-reservation" className="btn-primary text-center">
+                네이버 예약 바로가기
               </Link>
             </div>
 
@@ -37,34 +39,28 @@ export default function HeroSection() {
               </div>
               <div>
                 <p className="text-4xl font-semibold text-accent">10,000+</p>
-                <p className="text-sm text-text-light mt-1">치료 사례</p>
+                <p className="text-sm text-text-light mt-1">한약 처방 건수</p>
               </div>
               <div>
-                <p className="text-4xl font-semibold text-accent">98%</p>
-                <p className="text-sm text-text-light mt-1">만족도</p>
+                <p className="text-4xl font-semibold text-accent">10+</p>
+                <p className="text-sm text-text-light mt-1">가성비 좋은 상비약</p>
               </div>
             </div>
           </div>
 
-          {/* Image Placeholder */}
+          {/* Doctor Image */}
           <div className="order-1 lg:order-2 relative">
-            <div className="aspect-[4/5] bg-gradient-to-br from-cream to-brown-light rounded-2xl flex items-center justify-center">
-              <div className="text-center text-brown-dark">
-                <svg
-                  className="w-20 h-20 mx-auto mb-4 opacity-40"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={1}
-                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                  />
-                </svg>
-                <p className="text-sm opacity-60">의료진 사진</p>
-              </div>
+            <div className="max-w-[650px] mx-auto">
+              <Image
+                src="/대표사진.jpg"
+                alt="도곡경희한의원 원장"
+                width={700}
+                height={560}
+                className="w-full h-auto rounded-2xl"
+                priority
+                quality={100}
+                unoptimized
+              />
             </div>
           </div>
         </div>
