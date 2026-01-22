@@ -55,10 +55,7 @@ export default function LocationPage() {
               <div>
                 <h2 className="text-2xl font-medium mb-4 text-primary">주소</h2>
                 <p className="text-lg text-text mb-2">
-                  서울특별시 강남구 도곡동 XXX-XX
-                </p>
-                <p className="text-text-light">
-                  경희빌딩 3층
+                  서울특별시 강남구 논현로 28길 24, 세양빌딩 1층
                 </p>
               </div>
 
@@ -75,31 +72,7 @@ export default function LocationPage() {
                       <h3 className="font-medium text-primary">지하철 3호선</h3>
                     </div>
                     <p className="text-text-light text-sm ml-11">
-                      도곡역 3번 출구에서 도보 5분
-                    </p>
-                  </div>
-
-                  <div className="p-4 bg-cream rounded-lg">
-                    <div className="flex items-center gap-3 mb-2">
-                      <span className="w-8 h-8 bg-green-600 text-white rounded flex items-center justify-center text-sm font-medium">
-                        분
-                      </span>
-                      <h3 className="font-medium text-primary">분당선</h3>
-                    </div>
-                    <p className="text-text-light text-sm ml-11">
-                      한티역 4번 출구에서 도보 10분
-                    </p>
-                  </div>
-
-                  <div className="p-4 bg-cream rounded-lg">
-                    <div className="flex items-center gap-3 mb-2">
-                      <svg className="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
-                      </svg>
-                      <h3 className="font-medium text-primary">버스</h3>
-                    </div>
-                    <p className="text-text-light text-sm ml-11">
-                      도곡동 정류장 하차 (간선: 401, 402 / 지선: 4412)
+                      매봉역 4번 출구에서 도보 7분
                     </p>
                   </div>
 
@@ -111,7 +84,7 @@ export default function LocationPage() {
                       <h3 className="font-medium text-primary">주차 안내</h3>
                     </div>
                     <p className="text-text-light text-sm ml-11">
-                      건물 내 주차 가능 (2시간 무료)
+                      건물 내 주차 가능
                     </p>
                   </div>
                 </div>
@@ -123,14 +96,18 @@ export default function LocationPage() {
                 <div className="space-y-2">
                   <p className="text-text">
                     <span className="text-text-light">전화:</span>{" "}
-                    <Link href="tel:02-XXX-XXXX" className="text-accent hover:underline">
-                      02-XXX-XXXX
+                    <Link href="tel:02-6949-1888" className="text-accent hover:underline">
+                      02-6949-1888
                     </Link>
                   </p>
                   <p className="text-text">
+                    <span className="text-text-light">팩스:</span>{" "}
+                    070-5208-0631
+                  </p>
+                  <p className="text-text">
                     <span className="text-text-light">이메일:</span>{" "}
-                    <Link href="mailto:info@dogok-kyunghee.com" className="text-accent hover:underline">
-                      info@dogok-kyunghee.com
+                    <Link href="mailto:jsryan@naver.com" className="text-accent hover:underline">
+                      jsryan@naver.com
                     </Link>
                   </p>
                 </div>
@@ -153,15 +130,11 @@ export default function LocationPage() {
                 <tbody>
                   <tr className="border-b border-cream">
                     <td className="px-6 py-4 text-text-light">평일</td>
-                    <td className="px-6 py-4 text-primary font-medium text-right">10:00 - 19:00</td>
+                    <td className="px-6 py-4 text-primary font-medium text-right">09:00 - 16:30</td>
                   </tr>
                   <tr className="border-b border-cream">
                     <td className="px-6 py-4 text-text-light">토요일</td>
-                    <td className="px-6 py-4 text-primary font-medium text-right">10:00 - 16:00</td>
-                  </tr>
-                  <tr className="border-b border-cream">
-                    <td className="px-6 py-4 text-text-light">점심시간</td>
-                    <td className="px-6 py-4 text-primary font-medium text-right">13:00 - 14:00</td>
+                    <td className="px-6 py-4 text-primary font-medium text-right">09:00 - 13:00</td>
                   </tr>
                   <tr>
                     <td className="px-6 py-4 text-text-light">휴진</td>
@@ -172,7 +145,7 @@ export default function LocationPage() {
             </div>
 
             <p className="text-center text-text-light text-sm mt-6">
-              * 예약제로 운영되오니 방문 전 전화 예약 부탁드립니다.
+              평일, 토요일 모두 점심시간 없이 진료합니다
             </p>
           </div>
         </div>
