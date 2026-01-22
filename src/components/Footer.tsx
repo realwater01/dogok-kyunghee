@@ -67,7 +67,7 @@ export default function Footer() {
         <div style={{ borderTop: '1px solid rgba(255,255,255,0.2)', marginTop: '48px', paddingTop: '32px' }}>
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div style={{ color: 'rgba(255,255,255,0.85)' }} className="text-sm">
-              <p>서울특별시 강남구 논현로 28길 24, 1층</p>
+              <p>서울특별시 강남구 논현로 28길 24, 세양빌딩 1층</p>
               <p className="mt-1">사업자등록번호: 461-94-01431 | 대표: 이진수</p>
             </div>
             <div style={{ color: 'rgba(255,255,255,0.85)' }} className="text-sm">

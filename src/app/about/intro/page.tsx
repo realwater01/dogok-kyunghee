@@ -345,7 +345,7 @@ export default function AboutIntroPage() {
               </div>
               <h3 className="text-xl font-medium mb-3 text-center">오시는 길</h3>
               <div className="text-text-light text-sm space-y-1 text-center">
-                <p>서울시 강남구 논현로 28길 24, 1층</p>
+                <p>서울시 강남구 논현로 28길 24, 세양빌딩 1층</p>
                 <p>지하철 3호선 매봉역 4번출구</p>
                 <Link href="/about/location" className="inline-block mt-2 text-accent hover:underline">
                   자세히 보기 →

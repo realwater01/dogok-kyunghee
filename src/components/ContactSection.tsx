@@ -91,7 +91,7 @@ export default function ContactSection() {
                 <div>
                   <h3 className="font-semibold mb-1 text-primary">오시는 길</h3>
                   <p className="text-text">
-                    서울특별시 강남구 논현로 28길 24, 1층
+                    서울특별시 강남구 논현로 28길 24, 세양빌딩 1층
                   </p>
                   <p className="text-sm text-text-light">
                     지하철 3호선 매봉역 4번출구에서 도보 7분
