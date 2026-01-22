@@ -83,31 +83,44 @@ export default function AboutIntroPage() {
       <section className="py-24 bg-brown-bg">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="order-2 lg:order-1 aspect-[4/3] bg-gradient-to-br from-white to-brown-light rounded-2xl flex items-center justify-center">
-              <div className="text-center text-brown-dark">
-                <svg className="w-16 h-16 mx-auto mb-4 opacity-40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
-                <p className="text-sm opacity-60">치료 이미지</p>
+            <div className="order-2 lg:order-1 relative rounded-2xl overflow-hidden bg-white">
+              <Image
+                src="/The_Autonomic_Nervous_System.jpg"
+                alt="자율신경계 다이어그램"
+                width={770}
+                height={800}
+                className="w-full h-auto"
+                quality={100}
+                unoptimized
+              />
+              {/* 한글 오버레이 - 영어 텍스트 가림 */}
+              <div className="absolute top-[1%] left-[1%] bg-[#b8e6b8] px-4 py-2 text-sm md:text-lg font-bold text-green-800">
+                부교감신경
+              </div>
+              <div className="absolute top-[1%] right-[1%] bg-[#ffd4a8] px-4 py-2 text-sm md:text-lg font-bold text-orange-800">
+                교감신경
+              </div>
+              <div className="absolute top-[7%] left-1/2 -translate-x-1/2 bg-[#fff3c4] px-3 py-1 text-xs md:text-sm font-medium text-yellow-800">
+                대뇌
               </div>
             </div>
             <div className="order-1 lg:order-2">
               <p className="text-accent font-medium mb-4">치료 원리</p>
               <h2 className="text-3xl md:text-4xl font-medium mb-8">
-                자율신경 조율 요법
+                자율신경 조절 치료
               </h2>
               <div className="space-y-6 text-text-light leading-relaxed">
                 <p>
-                  도곡경희한의원은 자율신경계를 중심으로 몸과 마음의
-                  균형을 회복시키는 치료를 진행합니다.
+                  도곡경희한의원은 자율신경계를 회복시킴으로써<br />
+                  집중력을 개선하고<br />
+                  면역력을 정상화하며<br />
+                  잦은 감염 및 염증을 치료, 예방하며<br />
+                  만성피로를 개선하는 치료를 진행합니다.
                 </p>
                 <p>
-                  20년 이상의 임상 경험을 바탕으로 개발된 치료법으로,
-                  환자 개개인의 체질과 증상에 맞춘 맞춤형 처방을 제공합니다.
-                </p>
-                <p>
-                  침 치료, 한약 처방, 생활 교정 등을 통합적으로 적용하여
-                  근본적인 치료 효과를 이끌어냅니다.
+                  한약 치료, 침 치료, 자율신경조절 약침, 식생활 개선 등을<br />
+                  통합적으로 적용하여<br />
+                  근본적인 건강 회복을 이끌어냅니다.
                 </p>
               </div>
               <Link href="/about/principle" className="inline-flex items-center mt-8 text-accent font-medium hover:underline">
@@ -127,25 +140,59 @@ export default function AboutIntroPage() {
           <div className="text-center mb-16">
             <p className="text-accent font-medium mb-4">약재</p>
             <h2 className="text-3xl md:text-4xl font-medium mb-6">
-              엄선된 친환경 약재
+              원내에서 소량씩 탕전
             </h2>
             <p className="text-text-light max-w-2xl mx-auto">
-              GAP 인증 친환경 약재만을 사용하며,
-              최신 설비에서 전문 한약사가 직접 조제합니다.
+              경희대학교 법인 경희한약의 엄선된 식약처 인증 약재를 사용하며,<br />
+              원내 탕전실에서 소량씩 직접 탕전합니다.
             </p>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {[1, 2, 3, 4].map((item) => (
-              <div key={item} className="aspect-square bg-gradient-to-br from-cream to-brown-light rounded-xl flex items-center justify-center">
-                <div className="text-center text-brown-dark">
-                  <svg className="w-12 h-12 mx-auto mb-2 opacity-40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-                  </svg>
-                  <p className="text-xs opacity-60">약재 {item}</p>
-                </div>
-              </div>
-            ))}
+            <div className="aspect-square rounded-xl overflow-hidden">
+              <Image
+                src="/MDH_5728_00005.jpg"
+                alt="약재"
+                width={400}
+                height={400}
+                className="w-full h-full object-cover"
+                quality={100}
+                unoptimized
+              />
+            </div>
+            <div className="aspect-square rounded-xl overflow-hidden">
+              <Image
+                src="/MDH_5769_00038.jpg"
+                alt="약재"
+                width={400}
+                height={400}
+                className="w-full h-full object-cover"
+                quality={100}
+                unoptimized
+              />
+            </div>
+            <div className="aspect-square rounded-xl overflow-hidden">
+              <Image
+                src="/MDH_5867_00120.jpg"
+                alt="약재"
+                width={400}
+                height={400}
+                className="w-full h-full object-cover"
+                quality={100}
+                unoptimized
+              />
+            </div>
+            <div className="aspect-square rounded-xl overflow-hidden">
+              <Image
+                src="/rule.jpg"
+                alt="탕전"
+                width={400}
+                height={400}
+                className="w-full h-full object-cover"
+                quality={100}
+                unoptimized
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -161,33 +208,75 @@ export default function AboutIntroPage() {
               </h2>
               <div className="text-text-light leading-relaxed doctor-description">
                 <p>
-                  도곡경희한의원 원장은 20년 이상의 임상 경험과
-                  지속적인 연구를 통해 자율신경계 질환 치료의
-                  전문성을 쌓아왔습니다.
+                  도곡경희한의원 원장은 20년 이상의 임상경험과 지속적인 연구를 통해<br />
+                  소아난치질환부터 말기암까지 내과난치질환의 한약치료의 전문성을 쌓아왔습니다.
                 </p>
                 <p>
-                  환자 한 분 한 분과의 진심 어린 소통을 중요시하며,
-                  단순한 치료를 넘어 건강한 삶을 되찾을 수 있도록
-                  함께 노력합니다.
+                  환자 한분 한분과의 진심어린 소통을 바탕으로,<br />
+                  단순한 치료를 넘어 건강한 삶을 되찾을수 있도록 함께 노력합니다.
                 </p>
               </div>
 
               <div className="doctor-credentials">
-                <div className="flex items-center gap-3 credential-item">
-                  <span className="bullet-brown"></span>
+                <p className="text-accent font-medium mb-3">학력 및 경력</p>
+                <div className="credential-item">
                   <span className="text-primary">경희대학교 한의과대학 졸업</span>
                 </div>
-                <div className="flex items-center gap-3 credential-item">
-                  <span className="bullet-brown"></span>
-                  <span className="text-primary">경희대학교 한의학 석사</span>
+                <div className="credential-item">
+                  <span className="text-primary">경희대학교 한의학석사</span>
                 </div>
-                <div className="flex items-center gap-3 credential-item">
-                  <span className="bullet-brown"></span>
-                  <span className="text-primary">대한한의사협회 정회원</span>
+                <div className="credential-item">
+                  <span className="text-primary">경희대학교 한의학박사</span>
                 </div>
-                <div className="flex items-center gap-3 credential-item">
-                  <span className="bullet-brown"></span>
-                  <span className="text-primary">20년 이상 임상 경력</span>
+                <div className="credential-item">
+                  <span className="text-primary">경희대한방병원 한방내과 전문의</span>
+                </div>
+                <div className="credential-item">
+                  <span className="text-primary">20년 이상 임상경력</span>
+                </div>
+              </div>
+
+              <div className="doctor-credentials mt-6">
+                <p className="text-accent font-medium mb-3">논문 및 연구</p>
+                <div className="credential-item">
+                  <span className="text-primary">Trials 소화불량 반하사심탕 효과 논문발표</span>
+                </div>
+                <div className="credential-item">
+                  <span className="text-primary">미국 SIO 한의학적 암치료 효과 논문발표</span>
+                </div>
+                <div className="credential-item">
+                  <span className="text-primary">강동경희대병원 우수교직원상, 논문상 수상</span>
+                </div>
+                <div className="credential-item">
+                  <span className="text-primary">대한한방소아과학회지 소아비만환아의 한약치료효과 논문발표</span>
+                </div>
+                <div className="credential-item">
+                  <span className="text-primary">AJCM 한약의 폐암치료효과 논문발표</span>
+                </div>
+                <div className="credential-item">
+                  <span className="text-primary">ICT 암통증의 뜸치료효과 논문발표</span>
+                </div>
+                <div className="credential-item">
+                  <span className="text-primary">ECAM 소아뇌전증의 한약치료효과 논문발표</span>
+                </div>
+              </div>
+
+              <div className="doctor-credentials mt-6">
+                <p className="text-accent font-medium mb-3">강연 및 방송</p>
+                <div className="credential-item">
+                  <span className="text-primary">고양시한의사회 한의사대상 암치료 강연</span>
+                </div>
+                <div className="credential-item">
+                  <span className="text-primary">한의사를 위한 임상아카데미 암치료강연</span>
+                </div>
+                <div className="credential-item">
+                  <span className="text-primary">채널A 골든타임 홍삼효과 방송출연</span>
+                </div>
+                <div className="credential-item">
+                  <span className="text-primary">채널A 김현욱의 굿모닝 치유비책, 약선, 건강식 등 다수 방송출연</span>
+                </div>
+                <div className="credential-item">
+                  <span className="text-primary">tvN식스센스 쌍화탕 특별출연</span>
                 </div>
               </div>
             </div>
@@ -227,10 +316,10 @@ export default function AboutIntroPage() {
               </div>
               <h3 className="text-xl font-medium mb-3 text-center">진료 시간</h3>
               <div className="text-text-light text-sm space-y-1 text-center">
-                <p>평일 10:00 - 19:00</p>
-                <p>토요일 10:00 - 16:00</p>
-                <p>점심 13:00 - 14:00</p>
+                <p>평일 09:00 - 16:30</p>
+                <p>토요일 09:00 - 13:00</p>
                 <p className="text-accent">일요일/공휴일 휴진</p>
+                <p className="text-xs mt-2">평일, 토요일 모두 점심시간 없이 진료합니다</p>
               </div>
             </div>
 
@@ -242,7 +331,7 @@ export default function AboutIntroPage() {
               </div>
               <h3 className="text-xl font-medium mb-3 text-center">연락처</h3>
               <div className="text-text-light text-sm space-y-1 text-center">
-                <p className="text-lg text-primary font-medium">02-XXX-XXXX</p>
+                <p className="text-lg text-primary font-medium">02-6949-1888</p>
                 <p>상담 및 예약 문의</p>
               </div>
             </div>
@@ -256,8 +345,8 @@ export default function AboutIntroPage() {
               </div>
               <h3 className="text-xl font-medium mb-3 text-center">오시는 길</h3>
               <div className="text-text-light text-sm space-y-1 text-center">
-                <p>서울시 강남구 도곡동</p>
-                <p>지하철 3호선 도곡역</p>
+                <p>서울시 강남구 논현로 28길 24, 1층</p>
+                <p>지하철 3호선 매봉역 4번출구</p>
                 <Link href="/about/location" className="inline-block mt-2 text-accent hover:underline">
                   자세히 보기 →
                 </Link>
@@ -277,7 +366,7 @@ export default function AboutIntroPage() {
             궁금한 점이 있으시면 언제든지 문의해 주세요.
             친절하게 상담해 드리겠습니다.
           </p>
-          <Link href="tel:02-XXX-XXXX" className="inline-block bg-white text-brown-dark px-8 py-4 rounded font-medium hover:bg-cream transition-colors">
+          <Link href="tel:02-6949-1888" className="inline-block bg-white text-brown-dark px-8 py-4 rounded font-medium hover:bg-cream transition-colors">
             전화 상담하기
           </Link>
         </div>

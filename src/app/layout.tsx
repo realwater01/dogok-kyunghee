@@ -7,7 +7,7 @@ import GoToTop from "@/components/GoToTop";
 import MobileBottomMenu from "@/components/MobileBottomMenu";
 
 export const metadata: Metadata = {
-  title: "도곡경희한의원 - 자율신경 실조 치료 한의원",
+  title: "도곡경희한의원",
   description: "도곡경희한의원에서 자율신경 실조증, 불면증, 불안장애 등 몸과 마음의 건강을 되찾으세요.",
   keywords: "한의원, 자율신경, 불면증, 불안장애, 도곡, 경희한의원",
 };
