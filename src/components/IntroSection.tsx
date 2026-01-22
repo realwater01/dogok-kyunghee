@@ -8,10 +8,14 @@ export default function IntroSection() {
             도곡경희한의원을 소개합니다
           </h2>
           <p className="text-text-light leading-relaxed">
-            현대인들은 과도한 스트레스와 불규칙한 생활로 인해
-            자율신경계의 균형이 깨지기 쉽습니다.
-            저희 한의원은 근본적인 원인을 찾아 치료하여
-            건강한 일상을 되찾을 수 있도록 도와드립니다.
+            현대인들은 과도한 스트레스와 불규칙한 생활로 인해<br />
+            자율신경계의 균형이 깨지기 쉽습니다.<br /><br />
+            이로 인해<br />
+            면역이상, 각종 감염 및 염증,<br />
+            집중력 저하, 만성피로 등을 겪게됩니다.<br /><br />
+            저희 한의원은 자연치료를 통해<br />
+            자율신경을 안정시키고<br />
+            몸의 균형을 찾아 건강한 일상을 되찾을수 있도록 도와드립니다.
           </p>
         </div>
 
@@ -35,8 +39,9 @@ export default function IntroSection() {
             </div>
             <h3 className="text-xl font-semibold mb-3 text-primary">정확한 진단</h3>
             <p className="text-text-light text-sm leading-relaxed">
-              체계적인 문진과 한의학적 진단을 통해
-              환자분의 상태를 정확히 파악합니다.
+              체계적인 문진과 설문지, 검사 등을 통해<br />
+              환자분의 상태를 정확히 파악하고<br />
+              치료의 기준점과 목표를 정합니다.
             </p>
           </div>
 
@@ -59,8 +64,9 @@ export default function IntroSection() {
             </div>
             <h3 className="text-xl font-semibold mb-3 text-primary">맞춤 치료</h3>
             <p className="text-text-light text-sm leading-relaxed">
-              개인별 체질과 증상에 맞는
-              맞춤형 한방 치료를 제공합니다.
+              개인별 체질과 증상에 따른<br />
+              적절하고 효과적이며,<br />
+              안전한 치료를 제공합니다.
             </p>
           </div>
 
@@ -77,14 +83,14 @@ export default function IntroSection() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth={1.5}
-                  d="M13 10V3L4 14h7v7l9-11h-7z"
+                  d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11"
                 />
               </svg>
             </div>
             <h3 className="text-xl font-semibold mb-3 text-primary">지속 관리</h3>
             <p className="text-text-light text-sm leading-relaxed">
-              치료 후에도 건강한 생활을 유지할 수 있도록
-              지속적인 관리를 도와드립니다.
+              치료 후에도 건강한 생활을 유지할 수 있도록<br />
+              지속적인 건강관리를 도와드립니다.
             </p>
           </div>
         </div>

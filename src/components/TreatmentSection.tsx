@@ -2,8 +2,8 @@ import Link from "next/link";
 
 const treatments = [
   {
-    title: "자율신경 실조증",
-    description: "두통, 어지러움, 소화불량, 심장 두근거림 등 다양한 증상을 동반하는 자율신경계 이상을 치료합니다.",
+    title: "수험생 치료",
+    description: "수험생 치료 임상경험을 바탕으로 아프지 않고 좋은 컨디션으로 공부에 집중할 수 있도록 안전하고 효과적인 한약치료를 제공합니다.",
     icon: (
       <path
         strokeLinecap="round"
@@ -15,34 +15,34 @@ const treatments = [
     href: "/treatment/autonomic",
   },
   {
-    title: "불면증",
-    description: "잠들기 어렵거나 수면 유지가 힘든 분들을 위해 한방 치료와 생활 교정을 통해 숙면을 되찾아드립니다.",
+    title: "어린이 비염, TIC, ADHD, 성장부진",
+    description: "어린이들도 자율신경조절력이 튼튼해지면 아프지않고 건강하게 자랍니다.\n아이들이 스스로 건강하게 회복할 수 있도록 원인을 찾아 치료합니다.",
     icon: (
       <path
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={1.5}
-        d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+        d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
       />
     ),
     href: "/treatment/insomnia",
   },
   {
-    title: "불안장애",
-    description: "공황장애, 범불안장애, 사회불안장애 등 다양한 불안 증상을 한방 치료로 안정시켜 드립니다.",
+    title: "비염",
+    description: "도곡경희한의원만의 비염 패턴 치료 - 비염 ABC 로 정확하게 치료합니다.",
     icon: (
       <path
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={1.5}
-        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+        d="M12 4c-1.5 0-3 1-3 3v5c0 2 1.5 4 3 6 1.5-2 3-4 3-6V7c0-2-1.5-3-3-3zM9 12c-2 0-3.5 1-3.5 2.5S7 17 9 17M15 12c2 0 3.5 1 3.5 2.5S17 17 15 17"
       />
     ),
     href: "/treatment/anxiety",
   },
   {
-    title: "소화기 질환",
-    description: "위장장애, 과민성 대장증후군, 역류성 식도염 등 소화기 관련 질환을 체질에 맞게 치료합니다.",
+    title: "도곡경희보약",
+    description: "도곡경희한의원의 처방 - 달이다 쌍화, 강활 쌍금탕, 총명 쌍화탕, 사향공진단을 처방받아보세요.",
     icon: (
       <path
         strokeLinecap="round"
@@ -65,8 +65,14 @@ export default function TreatmentSection() {
             진료 안내
           </h2>
           <p className="text-text-light max-w-xl mx-auto">
-            도곡경희한의원에서는 다양한 자율신경계 관련 질환을
-            전문적으로 치료하고 있습니다.
+            도곡경희한의원에서는 자율신경계 질환을 중심으로<br /><br />
+            수험생 질환 및 집중력 체력관리<br />
+            어린이 비염, TIC, ADHD, 성장<br />
+            성인의 다양한 자율신경계질환을<br />
+            치료하고 있습니다.<br /><br />
+            또한 다양한 한약을 구비하여<br />
+            한약을 언제든 가깝고 편리하게 접하실수 있도록<br />
+            노력하고 있습니다.
           </p>
         </div>
 
@@ -92,7 +98,7 @@ export default function TreatmentSection() {
                   <h3 className="text-xl font-semibold mb-3 text-primary group-hover:text-accent transition-colors">
                     {treatment.title}
                   </h3>
-                  <p className="text-text-light text-sm leading-relaxed mb-4">
+                  <p className="text-text-light text-sm leading-relaxed mb-4 whitespace-pre-line">
                     {treatment.description}
                   </p>
                   <span className="inline-flex items-center text-sm text-accent font-medium">
