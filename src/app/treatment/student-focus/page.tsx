@@ -29,18 +29,36 @@ export default function StudentFocusPage() {
                 이런 증상으로 힘들지 않으신가요?
               </h2>
               <div className="space-y-6 text-text-light leading-relaxed">
-                <p className="first-letter:text-5xl first-letter:font-title first-letter:text-accent first-letter:float-left first-letter:mr-3 first-letter:mt-1">
-                  장시간 책상 앞에 앉아 있지만 집중이 되지 않고, 쉽게 피로해지며,
-                  시험 기간이 다가올수록 불안감과 긴장이 높아집니다.
-                </p>
                 <p>
-                  밤늦게까지 공부하다 보니 수면 패턴이 불규칙해지고,
-                  아침에 일어나기 힘들어지며, 만성적인 두통과 소화불량에
-                  시달리는 수험생들이 많습니다.
+                  장시간 책상 앞에 앉아있지만
+                  <br />
+                  집중이 되지 않고, 머리가 멍하며
+                  <br />
+                  시험 기간에는 집중해야할 에너지를
+                  <br />
+                  불안 초조 긴장에 쓰고 있지는 않나요
                 </p>
+                <br />
                 <p>
-                  이러한 증상들은 단순히 의지가 약해서가 아니라,
-                  과도한 스트레스로 인한 자율신경계의 불균형 때문입니다.
+                  아침에 일어나기 힘들고
+                  <br />
+                  만성 비염과 두통
+                  <br />
+                  복통과 변비, 설사와 소화불량
+                  <br />
+                  잦은 감기와 생리통
+                  <br />
+                  초조와 불안, 또는 지나치게 쳐지고 몸이 답답한 느낌
+                  <br />
+                  만성 피로가 모두 brain fog 로 이어집니다.
+                </p>
+                <br />
+                <p>
+                  수험생들의 집중력 저하는
+                  <br />
+                  단순히 의지가 약해서가 아니라
+                  <br />
+                  한약으로 개선될 수 있는 몸의 병적인 증상입니다.
                 </p>
               </div>
             </div>
@@ -59,35 +77,121 @@ export default function StudentFocusPage() {
       {/* Solution Section */}
       <section className="py-24 bg-brown-bg">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="order-2 lg:order-1 aspect-[4/3] bg-gradient-to-br from-white to-brown-light rounded-2xl flex items-center justify-center">
-              <div className="text-center text-brown-dark">
-                <svg className="w-16 h-16 mx-auto mb-4 opacity-40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <p className="text-sm opacity-60">치료 이미지</p>
-              </div>
-            </div>
-            <div className="order-1 lg:order-2">
+          <div className="max-w-2xl mx-auto">
+            <div>
               <p className="text-accent font-medium mb-4">맞춤 솔루션</p>
               <h2 className="text-3xl md:text-4xl font-medium mb-8">
-                자율신경 조율로<br />집중력을 되찾습니다
+                도곡경희한의원의<br />수험생 특화 프로그램
               </h2>
               <div className="space-y-6 text-text-light leading-relaxed">
                 <p>
                   도곡경희한의원의 수험생 특화 프로그램은
-                  자율신경계의 균형을 회복시켜 자연스럽게
-                  집중력과 기억력이 향상되도록 돕습니다.
+                  <br />
+                  수험생마다 집중력 저하의
+                  <br />
+                  주요원인이 되는 기전을 바로잡아
+                  <br />
+                  자율신경계의 균형을 회복시키고
+                  <br />
+                  brain fog 를 제거하고
+                  <br />
+                  집중력가 기억력이 향상되도록 합니다.
                 </p>
-                <p>
-                  침 치료와 맞춤 한약으로 뇌의 혈액순환을 개선하고,
-                  스트레스 호르몬을 조절하여 편안한 상태에서도
-                  높은 집중력을 유지할 수 있게 합니다.
-                </p>
-                <p>
-                  학습 능률 향상은 물론 시험 당일 최상의 컨디션을
-                  유지할 수 있도록 체계적으로 관리합니다.
-                </p>
+                <br />
+                <div className="space-y-5">
+                  <div className="bg-cream/50 rounded-xl p-5 border border-brown-light/30 flex gap-5 items-stretch">
+                    <div className="w-48 flex-shrink-0 bg-gradient-to-br from-amber-50 to-amber-100 rounded-xl flex items-center justify-center">
+                      <p className="text-xs text-brown-dark opacity-40">이미지</p>
+                    </div>
+                    <div>
+                      <p className="text-2xl font-bold text-accent mb-3">1. Gut Thinks</p>
+                      <p className="text-base">
+                        불규칙한 식사, 적은 신체활동으로
+                        <br />
+                        장내세균이 단순화되고 과증식되면서
+                        <br />
+                        독소가 체내로 흡수되고
+                        <br />
+                        이를 막기 위해 생긴 면역반응은
+                        <br />
+                        뇌의 활동을 방해하여 brain fog 를 일으킵니다
+                        <br />
+                        장내 세균이 건강하게 회복되면서
+                        <br />
+                        머리가 맑아지고 컨디션이 좋아집니다
+                      </p>
+                    </div>
+                  </div>
+                  <div className="bg-cream/50 rounded-xl p-5 border border-brown-light/30 flex gap-5 items-stretch">
+                    <div className="w-48 flex-shrink-0 bg-gradient-to-br from-amber-50 to-amber-100 rounded-xl flex items-center justify-center">
+                      <p className="text-xs text-brown-dark opacity-40">이미지</p>
+                    </div>
+                    <div>
+                      <p className="text-2xl font-bold text-accent mb-3">2. 머리, 목, 어깨, 체표 순환 개선</p>
+                      <p className="text-base">
+                        수험생들 중 일부는
+                        <br />
+                        유독 얼굴이 붉고 목어깨 긴장도가 높으며
+                        <br />
+                        순환이 떨어집니다
+                        <br />
+                        만성비염이나 여드름
+                        <br />
+                        고질적인 두통을 호소하기도 합니다
+                        <br />
+                        순환을 시켜주고 열을 내려주면
+                        <br />
+                        머리가 맑아지고 몸이 가벼워집니다
+                      </p>
+                    </div>
+                  </div>
+                  <div className="bg-cream/50 rounded-xl p-5 border border-brown-light/30 flex gap-5 items-stretch">
+                    <div className="w-48 flex-shrink-0 bg-gradient-to-br from-amber-50 to-amber-100 rounded-xl flex items-center justify-center">
+                      <p className="text-xs text-brown-dark opacity-40">이미지</p>
+                    </div>
+                    <div>
+                      <p className="text-2xl font-bold text-accent mb-3">3. 흉부 과긴장 완화</p>
+                      <p className="text-base">
+                        흉부가 과긴장되고 뻣뻣해지면
+                        <br />
+                        건강하게 쓰일 신체 에너지가
+                        <br />
+                        분노, 불안초조, 우울감 등의
+                        <br />
+                        정신 에너지로 소모됩니다
+                        <br />
+                        한약을 통해 흉부의 답답함이 해소되면
+                        <br />
+                        불안초조가 잦아들고
+                        <br />
+                        지나친 분노와 짜증이 줄며
+                        <br />
+                        에너지가 한곳으로 집중됩니다
+                      </p>
+                    </div>
+                  </div>
+                  <div className="bg-cream/50 rounded-xl p-5 border border-brown-light/30 flex gap-5 items-stretch">
+                    <div className="w-48 flex-shrink-0 bg-gradient-to-br from-amber-50 to-amber-100 rounded-xl flex items-center justify-center">
+                      <p className="text-xs text-brown-dark opacity-40">이미지</p>
+                    </div>
+                    <div>
+                      <p className="text-2xl font-bold text-accent mb-3">4. 기력 보충</p>
+                      <p className="text-base">
+                        수험생활을 하면서
+                        <br />
+                        에너지 자체가 소진된 경우도 많습니다
+                        <br />
+                        체질에 맞는 보약처방과 녹용, 공진단으로
+                        <br />
+                        체력을 보충해주면
+                        <br />
+                        기력이 올라가면서
+                        <br />
+                        지치고 무기력해진 몸에 생기가 돕니다
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -245,7 +349,7 @@ export default function StudentFocusPage() {
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="bullet-brown"></span>
-                  <span>스트레스 완화 치료</span>
+                  <span>체력 보충 보약, 공진단</span>
                 </li>
               </ul>
             </div>
@@ -260,11 +364,11 @@ export default function StudentFocusPage() {
               <ul className="space-y-2 text-sm text-text-light">
                 <li className="flex items-center gap-2">
                   <span className="bullet-brown"></span>
-                  <span>효율적인 학습 스케줄링</span>
+                  <span>개인별 영양제 세팅</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="bullet-brown"></span>
-                  <span>수면 패턴 개선 가이드</span>
+                  <span>식사, 수면 패턴 개선 가이드</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="bullet-brown"></span>
@@ -293,21 +397,16 @@ export default function StudentFocusPage() {
                 치료 기간은 얼마나 걸리나요?
               </h3>
               <p className="text-text-light leading-relaxed pl-6">
-                개인차가 있지만, 일반적으로 2-3개월의 집중 치료 기간을 권장합니다.
-                초기 1-2주 내에 수면과 컨디션 개선 효과를 느끼실 수 있으며,
-                4-6주 정도면 집중력과 기억력 향상을 체감하실 수 있습니다.
-              </p>
-            </div>
-
-            <div className="bg-cream p-8 rounded-xl">
-              <h3 className="text-lg font-medium mb-3 flex items-center gap-2">
-                <span className="text-accent">Q.</span>
-                학원이나 학교를 다니면서도 치료받을 수 있나요?
-              </h3>
-              <p className="text-text-light leading-relaxed pl-6">
-                네, 가능합니다. 1인 예약제로 운영되어 원하시는 시간에
-                예약하실 수 있으며, 평일 저녁 시간과 토요일에도 진료가 가능합니다.
-                치료 시간도 30분-1시간 정도로 부담 없이 받으실 수 있습니다.
+                초등학생은 건강한 성장을 우선시하여 체질상 치우치는 부분을
+                완화시켜 건강한 몸을 만드는 것을 목표로 치료기간을 정합니다.
+                <br /><br />
+                중·고등학생은 개인별 건강이 무너지는 시기에 맞춰 치료하며,
+                건강이 나빠지는 시기에 건강한 몸과 맑은 집중력으로
+                자꾸 회복할 수 있도록 합니다.
+                <br /><br />
+                수능을 앞둔 수험생은 최대한 체력을 보충해주고
+                머리가 맑아질 수 있도록 몸의 패턴에 맞춰
+                집중력 체력을 지속적으로 돕는 방향으로 치료합니다.
               </p>
             </div>
 

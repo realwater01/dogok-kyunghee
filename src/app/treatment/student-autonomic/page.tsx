@@ -7,13 +7,12 @@ export default function StudentAutonomicPage() {
       <section className="bg-brown-bg py-24">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl">
-            <p className="text-accent font-medium mb-4">STUDENT AUTONOMIC NERVOUS DISORDER</p>
             <h1 className="text-4xl md:text-5xl font-medium leading-tight mb-6">
-              수험생 자율신경실조 치료 프로그램
+              수험생 치료 프로그램
             </h1>
             <p className="text-text-light text-lg leading-relaxed">
-              과도한 스트레스로 힘들어하는 수험생들을 위한<br />
-              자율신경 균형 회복 전문 프로그램
+              지친 수험생들을 위한<br />
+              집중력과 자율신경균형 회복 치료
             </p>
           </div>
         </div>
@@ -24,25 +23,28 @@ export default function StudentAutonomicPage() {
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <p className="text-accent font-medium mb-4">수험생의 고민</p>
+              <p className="text-accent font-medium mb-4">집중력 저하는 같은데 원인이 달라요</p>
               <h2 className="text-3xl md:text-4xl font-medium mb-8">
-                이런 증상으로 힘들지 않으신가요?
+                개인별 집중력 향상 치료 한약
               </h2>
               <div className="space-y-6 text-text-light leading-relaxed">
-                <p className="first-letter:text-5xl first-letter:font-title first-letter:text-accent first-letter:float-left first-letter:mr-3 first-letter:mt-1">
-                  시험 스트레스로 인해 속이 더부룩하고 소화가 안 되며,
-                  시험이 다가올수록 두통이 심해지고, 가슴이 답답하며
-                  긴장과 불안감에 시달립니다.
+                <p>
+                  공부할 양은 많고 시험 스트레스로 집중해야할 시간에
+                  <br />
+                  아프거나, 불안초조함으로 집중력이 온전하지 못한 경험을
+                  많이 합니다.
                 </p>
                 <p>
-                  아침에 일어나면 머리가 무겁고 몸이 천근만근처럼 무거우며,
-                  공부를 하려고 해도 우울한 기분과 의욕 저하로
-                  책상 앞에 앉기가 힘듭니다.
+                  수험생들의 집중력저하는 단순히 마음가짐의 문제가 아니라
+                  <br />
+                  몸의 이상상태입니다.
                 </p>
                 <p>
-                  이러한 증상들은 단순히 마음가짐의 문제가 아니라,
-                  과도한 학업 스트레스로 인한 자율신경계의 불균형에서
-                  비롯된 신체적 증상입니다.
+                  개인별 체질을 고려한 치료한약으로
+                  <br />
+                  비건강할때 나타나는 체질별 몸의 반응을 치료함으로써
+                  <br />
+                  건강은 회복되고 집중력이 향상됩니다.
                 </p>
               </div>
             </div>
@@ -71,9 +73,9 @@ export default function StudentAutonomicPage() {
               </div>
             </div>
             <div className="order-1 lg:order-2">
-              <p className="text-accent font-medium mb-4">맞춤 솔루션</p>
+              <p className="text-accent font-medium mb-4">체력 집중력향상</p>
               <h2 className="text-3xl md:text-4xl font-medium mb-8">
-                자율신경 조율로<br />몸과 마음의 균형을 회복합니다
+                수험생 사향공진단
               </h2>
               <div className="space-y-6 text-text-light leading-relaxed">
                 <p>
