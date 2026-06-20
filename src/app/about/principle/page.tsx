@@ -1,6 +1,33 @@
+import type { Metadata } from "next";
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbSchema, medicalWebPageSchema } from "@/lib/structured-data";
+
+export const metadata: Metadata = {
+  title: "치료 원리 — 자율신경 조절 치료",
+  description:
+    "자율신경계를 중심으로 몸과 마음의 균형을 회복시키는 도곡경희한의원의 치료 원리. 한약·침·약침·식생활 개선을 통합 적용해 집중력 개선, 면역력 정상화, 만성피로 회복을 이끌어냅니다.",
+  alternates: { canonical: "/about/principle" },
+};
+
+const pagePath = "/about/principle";
+
 export default function PrinciplePage() {
   return (
     <div>
+      <JsonLd
+        data={[
+          medicalWebPageSchema({
+            path: pagePath,
+            name: "치료 원리 — 도곡경희한의원",
+            description:
+              "자율신경계 회복을 통한 근본 치료 원리. 한약·침·약침·식생활 개선의 통합 치료.",
+          }),
+          breadcrumbSchema([
+            { name: "홈", path: "/" },
+            { name: "치료 원리", path: pagePath },
+          ]),
+        ]}
+      />
       {/* Hero Section */}
       <section className="bg-brown-bg section">
         <div className="container mx-auto px-6">

@@ -1,8 +1,47 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbSchema, faqSchema, medicalWebPageSchema } from "@/lib/structured-data";
+
+export const metadata: Metadata = {
+  title: "어린이 ADHD·틱·불안 치료",
+  description:
+    "집중하지 못하고 산만한 아이, 틱과 불안을 보이는 아이를 위한 근본 원인 치료 프로그램. 도곡경희한의원은 자율신경 균형을 회복시켜 어린이 ADHD·틱·불안을 한약·침으로 치료합니다. 강남 매봉역, 전화 02-6949-1888.",
+  alternates: { canonical: "/treatment/children-adhd-tic" },
+};
+
+const pagePath = "/treatment/children-adhd-tic";
+const faqs = [
+  {
+    question: "어린이 ADHD·틱을 한방으로 치료할 수 있나요?",
+    answer:
+      "도곡경희한의원은 ADHD·틱·불안의 근본 원인인 자율신경 불균형을 진단해 어린이 맞춤 한약과 침으로 치료합니다. 증상 억제가 아니라 원인 회복에 중점을 둡니다.",
+  },
+  {
+    question: "몇 살부터 치료가 가능한가요?",
+    answer:
+      "아이의 연령과 증상에 따라 치료 방법을 조절합니다. 1인 예약제로 충분히 상담한 뒤 연령에 맞는 한약·침 치료 계획을 안내합니다. 02-6949-1888로 문의하세요.",
+  },
+];
 
 export default function ChildrenAdhdTicPage() {
   return (
     <>
+      <JsonLd
+        data={[
+          medicalWebPageSchema({
+            path: pagePath,
+            name: "어린이 ADHD·틱·불안 치료 — 도곡경희한의원",
+            description:
+              "자율신경 균형 회복을 통한 어린이 ADHD·틱·불안의 근본 원인 한방 치료 프로그램.",
+          }),
+          faqSchema(faqs),
+          breadcrumbSchema([
+            { name: "홈", path: "/" },
+            { name: "어린이 ADHD·틱·불안 치료", path: pagePath },
+          ]),
+        ]}
+      />
       {/* Hero Section */}
       <section className="bg-brown-bg section">
         <div className="container mx-auto px-6">

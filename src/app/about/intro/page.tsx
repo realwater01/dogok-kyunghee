@@ -1,9 +1,35 @@
 import Link from "next/link";
 import Image from "next/image";
+import type { Metadata } from "next";
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbSchema, medicalWebPageSchema } from "@/lib/structured-data";
+
+export const metadata: Metadata = {
+  title: "한의원 소개 — 진료 철학과 원장 약력",
+  description:
+    "도곡경희한의원은 자율신경계의 균형 회복을 통해 집중력·면역력·만성피로를 근본적으로 치료합니다. 경희대 한의학박사이자 한방내과 전문의(20년 이상 임상)가 진료하며, 식약처 인증 약재를 원내에서 소량씩 탕전합니다.",
+  alternates: { canonical: "/about/intro" },
+};
+
+const pagePath = "/about/intro";
 
 export default function AboutIntroPage() {
   return (
     <>
+      <JsonLd
+        data={[
+          medicalWebPageSchema({
+            path: pagePath,
+            name: "한의원 소개 — 도곡경희한의원",
+            description:
+              "도곡경희한의원의 진료 철학, 자율신경 조절 치료 원리, 원장 약력, 약재 및 탕전 안내.",
+          }),
+          breadcrumbSchema([
+            { name: "홈", path: "/" },
+            { name: "한의원 소개", path: pagePath },
+          ]),
+        ]}
+      />
       {/* Hero Section */}
       <section className="bg-brown-bg section">
         <div className="container mx-auto px-6">

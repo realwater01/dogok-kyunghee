@@ -2,8 +2,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "준비중 | 도곡경희한의원",
+  title: "준비중",
   description: "준비중인 페이지입니다. 곧 더 나은 내용으로 찾아뵙겠습니다.",
+  robots: { index: false, follow: true },
 };
 
 export default function ComingSoonPage() {

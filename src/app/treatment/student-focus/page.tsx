@@ -1,8 +1,47 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbSchema, faqSchema, medicalWebPageSchema } from "@/lib/structured-data";
+
+export const metadata: Metadata = {
+  title: "수험생 집중력 향상 프로그램",
+  description:
+    "장시간 학습에 지친 수험생을 위한 집중력·체력 동시 회복 프로그램. 도곡경희한의원은 자율신경 균형을 되찾아 집중력 저하의 근본 원인을 한약·침으로 치료합니다. 강남 매봉역, 전화 02-6949-1888.",
+  alternates: { canonical: "/treatment/student-focus" },
+};
+
+const pagePath = "/treatment/student-focus";
+const faqs = [
+  {
+    question: "수험생 집중력 저하의 원인은 무엇인가요?",
+    answer:
+      "장시간 학습으로 인한 자율신경 균형 붕괴, 체력 저하, 수면 부족이 주요 원인입니다. 도곡경희한의원은 단순 각성이 아니라 자율신경 조절을 통해 집중력과 체력을 함께 회복시킵니다.",
+  },
+  {
+    question: "치료 기간은 얼마나 걸리나요?",
+    answer:
+      "학생의 상태와 학습 강도에 따라 다릅니다. 1인 예약제로 충분히 상담한 뒤 개인별 맞춤 한약과 침 치료 계획을 안내합니다. 자세한 상담은 02-6949-1888로 문의하세요.",
+  },
+];
 
 export default function StudentFocusPage() {
   return (
     <>
+      <JsonLd
+        data={[
+          medicalWebPageSchema({
+            path: pagePath,
+            name: "수험생 집중력 향상 프로그램 — 도곡경희한의원",
+            description:
+              "자율신경 균형 회복으로 수험생의 집중력과 체력을 동시에 끌어올리는 한방 치료 프로그램.",
+          }),
+          faqSchema(faqs),
+          breadcrumbSchema([
+            { name: "홈", path: "/" },
+            { name: "수험생 집중력 향상 프로그램", path: pagePath },
+          ]),
+        ]}
+      />
       {/* Hero Section */}
       <section className="bg-brown-bg section">
         <div className="container mx-auto px-6">

@@ -1,8 +1,24 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbSchema } from "@/lib/structured-data";
+
+export const metadata: Metadata = {
+  title: "오시는 길 — 강남 매봉역 도보 7분",
+  description:
+    "도곡경희한의원 위치 안내. 서울특별시 강남구 논현로28길 24, 세양빌딩 1층. 지하철 3호선 매봉역 4번 출구에서 도보 7분, 건물 내 주차 가능. 진료시간 평일 09:00–16:30, 토요일 09:00–13:00. 전화 02-6949-1888.",
+  alternates: { canonical: "/about/location" },
+};
 
 export default function LocationPage() {
   return (
     <div>
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "홈", path: "/" },
+          { name: "오시는 길", path: "/about/location" },
+        ])}
+      />
       {/* Hero Section */}
       <section className="bg-brown-bg section">
         <div className="container mx-auto px-6">
