@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/dedoub/dogok-kyunghee#readme",
   "dependencies": {
+    "@supabase/ssr": "^0.12.0",
+    "@supabase/supabase-js": "^2.108.2",
     "@tailwindcss/postcss": "^4.1.18",
     "next": "^16.1.3",
     "react": "^19.2.3",
