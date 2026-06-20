@@ -45,13 +45,12 @@ export const metadata: Metadata = {
     siteName: clinic.name,
     title: `${clinic.name} | 강남 매봉역 자율신경 한의원`,
     description: clinic.description,
-    images: [{ url: "/daepyo.jpg", width: 900, height: 720, alt: clinic.name }],
+    // 대표 이미지는 app/opengraph-image.tsx가 자동으로 주입한다.
   },
   twitter: {
     card: "summary_large_image",
     title: `${clinic.name} | 강남 매봉역 자율신경 한의원`,
     description: clinic.description,
-    images: ["/daepyo.jpg"],
   },
 };
 
