@@ -15,7 +15,7 @@ const menuItems = [
   },
   {
     title: "수험생",
-    href: "/student",
+    href: "/treatment/student-focus",
     subMenu: [
       { title: "집중력", href: "/treatment/student-focus" },
       { title: "수험생 치료", href: "/treatment/student-autonomic" },
@@ -23,45 +23,45 @@ const menuItems = [
   },
   {
     title: "어린이",
-    href: "/children",
+    href: "/treatment/children-adhd-tic",
     subMenu: [
       { title: "ADHD, TIC, 불안", href: "/treatment/children-adhd-tic" },
-      { title: "면역", href: "/children/immunity" },
-      { title: "성장", href: "/children/growth" },
+      { title: "면역", href: "/coming-soon" },
+      { title: "성장", href: "/coming-soon" },
     ],
   },
   {
     title: "비염",
-    href: "/rhinitis",
+    href: "/coming-soon",
     subMenu: [
-      { title: "비염ABC", href: "/rhinitis/abc" },
+      { title: "비염ABC", href: "/coming-soon" },
     ],
   },
   {
     title: "자율신경계",
-    href: "/autonomic",
+    href: "/coming-soon",
     subMenu: [
-      { title: "만성두통, 어지러움, 피로", href: "/autonomic/headache" },
-      { title: "공황장애, 불안, 실신", href: "/autonomic/panic" },
-      { title: "감염, 염증", href: "/autonomic/infection" },
+      { title: "만성두통, 어지러움, 피로", href: "/coming-soon" },
+      { title: "공황장애, 불안, 실신", href: "/coming-soon" },
+      { title: "감염, 염증", href: "/coming-soon" },
     ],
   },
   {
     title: "다이어트",
-    href: "/diet",
+    href: "/coming-soon",
     subMenu: [
-      { title: "도곡환", href: "/diet/dogok" },
-      { title: "수면비움환", href: "/diet/sleep" },
-      { title: "도곡유지환", href: "/diet/maintain" },
+      { title: "도곡환", href: "/coming-soon" },
+      { title: "수면비움환", href: "/coming-soon" },
+      { title: "도곡유지환", href: "/coming-soon" },
     ],
   },
   {
     title: "보약",
-    href: "/tonic",
+    href: "/coming-soon",
     subMenu: [
-      { title: "사향공진단", href: "/tonic/gongjindan" },
-      { title: "달이다, 쌍화", href: "/tonic/ssanghwa" },
-      { title: "체질별 보약", href: "/tonic/constitution" },
+      { title: "사향공진단", href: "/coming-soon" },
+      { title: "달이다, 쌍화", href: "/coming-soon" },
+      { title: "체질별 보약", href: "/coming-soon" },
     ],
   },
 ];
@@ -245,8 +245,8 @@ export default function Header() {
           </nav>
 
           <div className="mt-8 text-sm text-gray-400">
-            <p className="mb-1">전화 상담: 02-XXX-XXXX</p>
-            <p>평일 09:00 - 18:00</p>
+            <p className="mb-1">전화 상담: 02-6949-1888</p>
+            <p>평일 09:00 - 16:30 / 토 09:00 - 13:00</p>
           </div>
         </div>
       </div>

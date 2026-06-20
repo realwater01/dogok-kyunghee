@@ -4,7 +4,7 @@ export default function LocationPage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-brown-bg py-20">
+      <section className="bg-brown-bg section">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl">
             <p className="text-accent font-medium mb-4">LOCATION</p>

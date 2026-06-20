@@ -25,19 +25,19 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/treatment" className="hover:opacity-100 transition-opacity">
+                <Link href="/#treatment" className="hover:opacity-100 transition-opacity">
                   진료 안내
                 </Link>
               </li>
               <li>
-                <Link href="/cases" className="hover:opacity-100 transition-opacity">
+                <Link href="/coming-soon" className="hover:opacity-100 transition-opacity">
                   치료 사례
                 </Link>
               </li>
               <li>
-                <Link href="/reservation" className="hover:opacity-100 transition-opacity">
+                <a href="tel:02-6949-1888" className="hover:opacity-100 transition-opacity">
                   예약 상담
-                </Link>
+                </a>
               </li>
             </ul>
           </div>

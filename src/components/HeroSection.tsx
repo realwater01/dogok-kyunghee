@@ -30,8 +30,8 @@ export default function HeroSection() {
 
       {/* 하단 영역 - 베이지 배경 (한약 설명 + 사진) */}
       <div className="bg-[#FAF8F5]">
-        <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-end">
+        <div className="container mx-auto px-6 pt-16">
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.45fr] gap-8 lg:gap-12 items-end">
             {/* 한약, 제대로 달이다 텍스트 */}
             <div className="order-2 lg:order-1 lg:pl-16">
               <p className="text-accent font-bold mb-6 tracking-wide text-xl">한약, 제대로 달이다</p>
@@ -64,32 +64,28 @@ export default function HeroSection() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/reservation" className="btn-primary text-center">
-                  카카오톡 상담 바로가기
-                </Link>
+                <a href="tel:02-6949-1888" className="btn-primary text-center">
+                  전화 상담 바로가기
+                </a>
                 <Link href="/about" className="btn-outline text-center">
                   한의원 소개
-                </Link>
-                <Link href="/naver-reservation" className="btn-primary text-center">
-                  네이버 예약 바로가기
                 </Link>
               </div>
 
             </div>
 
             {/* Doctor Image */}
-            <div className="order-1 lg:order-2 relative flex items-end">
-              <div className="max-w-[750px] ml-0 relative">
+            <div className="order-1 lg:order-2 relative flex items-end lg:-mr-6">
+              <div className="w-full relative">
                 <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#FAF8F5] to-transparent z-10"></div>
                 <Image
-                  src="/대표사진.jpg"
+                  src="/daepyo.jpg"
                   alt="도곡경희한의원 원장"
-                  width={700}
-                  height={560}
+                  width={900}
+                  height={720}
                   className="w-full h-auto"
+                  sizes="(max-width: 1024px) 100vw, 58vw"
                   priority
-                  quality={100}
-                  unoptimized
                 />
               </div>
             </div>

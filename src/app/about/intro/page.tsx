@@ -5,7 +5,7 @@ export default function AboutIntroPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-brown-bg py-24">
+      <section className="bg-brown-bg section">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl">
             <p className="text-accent font-medium mb-4">ABOUT US</p>
@@ -24,7 +24,7 @@ export default function AboutIntroPage() {
       </section>
 
       {/* Philosophy Section */}
-      <section className="py-24 bg-white">
+      <section className="section bg-white">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-end">
             <div>
@@ -80,7 +80,7 @@ export default function AboutIntroPage() {
       </section>
 
       {/* Treatment Principle Section */}
-      <section className="py-24 bg-brown-bg">
+      <section className="section bg-brown-bg">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1 relative rounded-2xl overflow-hidden bg-white">
@@ -135,7 +135,7 @@ export default function AboutIntroPage() {
       </section>
 
       {/* Herbal Medicine Section */}
-      <section className="py-24 bg-white">
+      <section className="section bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <p className="text-accent font-medium mb-4">약재</p>
@@ -198,7 +198,7 @@ export default function AboutIntroPage() {
       </section>
 
       {/* Doctor Section */}
-      <section className="py-24 bg-brown-bg">
+      <section className="section bg-brown-bg">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -293,7 +293,7 @@ export default function AboutIntroPage() {
       </section>
 
       {/* Clinic Info Section */}
-      <section className="py-24 bg-white">
+      <section className="section bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <p className="text-accent font-medium mb-4">진료 안내</p>
@@ -357,7 +357,7 @@ export default function AboutIntroPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-brown-dark text-white">
+      <section className="section bg-brown-dark text-white">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-medium mb-6">
             건강한 삶의 시작,<br />도곡경희한의원과 함께하세요
@@ -366,7 +366,7 @@ export default function AboutIntroPage() {
             궁금한 점이 있으시면 언제든지 문의해 주세요.
             친절하게 상담해 드리겠습니다.
           </p>
-          <Link href="tel:02-6949-1888" className="inline-block bg-white text-brown-dark px-8 py-4 rounded font-medium hover:bg-cream transition-colors">
+          <Link href="tel:02-6949-1888" className="inline-block text-center whitespace-nowrap min-w-[12rem] bg-white text-brown-dark px-8 py-4 rounded font-medium hover:bg-cream transition-colors">
             전화 상담하기
           </Link>
         </div>

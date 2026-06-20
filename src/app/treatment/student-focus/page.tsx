@@ -4,7 +4,7 @@ export default function StudentFocusPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-brown-bg py-24">
+      <section className="bg-brown-bg section">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl">
             <p className="text-accent font-medium mb-4">STUDENT FOCUS</p>
@@ -20,7 +20,7 @@ export default function StudentFocusPage() {
       </section>
 
       {/* Problem Section */}
-      <section className="py-24 bg-white">
+      <section className="section bg-white">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -75,7 +75,7 @@ export default function StudentFocusPage() {
       </section>
 
       {/* Solution Section */}
-      <section className="py-24 bg-brown-bg">
+      <section className="section bg-brown-bg">
         <div className="container mx-auto px-6">
           <div className="max-w-2xl mx-auto">
             <div>
@@ -199,7 +199,7 @@ export default function StudentFocusPage() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-24 bg-white">
+      <section className="section bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <p className="text-accent font-medium mb-4">치료 효과</p>
@@ -294,7 +294,7 @@ export default function StudentFocusPage() {
       </section>
 
       {/* Treatment Method Section */}
-      <section className="py-24 bg-brown-bg">
+      <section className="section bg-brown-bg">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <p className="text-accent font-medium mb-4">치료 방법</p>
@@ -381,7 +381,7 @@ export default function StudentFocusPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-24 bg-white">
+      <section className="section bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <p className="text-accent font-medium mb-4">자주 묻는 질문</p>
@@ -438,7 +438,7 @@ export default function StudentFocusPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-brown-dark text-white">
+      <section className="section bg-brown-dark text-white">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-medium mb-6">
             최상의 컨디션으로<br />목표를 이루세요
@@ -448,10 +448,10 @@ export default function StudentFocusPage() {
             언제든지 문의해 주세요.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/reservation" className="inline-block bg-white text-brown-dark px-8 py-4 rounded font-medium hover:bg-cream transition-colors">
+            <Link href="/coming-soon" className="inline-block text-center whitespace-nowrap min-w-[12rem] bg-white text-brown-dark px-8 py-4 rounded font-medium hover:bg-cream transition-colors">
               온라인 상담 예약
             </Link>
-            <Link href="tel:02-XXX-XXXX" className="inline-block bg-transparent border-2 border-white text-white px-8 py-4 rounded font-medium hover:bg-white hover:text-brown-dark transition-colors">
+            <Link href="tel:02-6949-1888" className="inline-block text-center whitespace-nowrap min-w-[12rem] bg-transparent border-2 border-white text-white px-8 py-4 rounded font-medium hover:bg-white hover:text-brown-dark transition-colors">
               전화 상담하기
             </Link>
           </div>

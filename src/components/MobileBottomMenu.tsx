@@ -7,7 +7,7 @@ export default function MobileBottomMenu() {
     <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-brown-light/30 z-40 lg:hidden">
       <div className="flex justify-around items-center h-16">
         <Link
-          href="tel:02-XXX-XXXX"
+          href="tel:02-6949-1888"
           className="flex flex-col items-center justify-center text-text-light hover:text-accent transition-colors"
         >
           <svg
