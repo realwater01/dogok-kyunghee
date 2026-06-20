@@ -61,19 +61,9 @@ export default function TreatmentSection() {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <p className="text-accent font-medium mb-4">TREATMENT</p>
-          <h2 className="text-3xl md:text-4xl font-semibold mb-6 text-primary">
+          <h2 className="text-3xl md:text-4xl font-semibold text-primary">
             진료 안내
           </h2>
-          <p className="text-text-light max-w-xl mx-auto">
-            도곡경희한의원에서는 자율신경계 질환을 중심으로<br /><br />
-            수험생 질환 및 집중력 체력관리<br />
-            어린이 비염, TIC, ADHD, 성장<br />
-            성인의 다양한 자율신경계질환을<br />
-            치료하고 있습니다.<br /><br />
-            또한 다양한 한약을 구비하여<br />
-            한약을 언제든 가깝고 편리하게 접하실수 있도록<br />
-            노력하고 있습니다.
-          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
