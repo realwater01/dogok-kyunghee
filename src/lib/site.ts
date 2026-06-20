@@ -21,8 +21,8 @@ export const clinic = {
     postalCode: "06301",
     addressCountry: "KR",
   },
-  // 논현로28길(도곡2동) 도로 대표점. OSM/Photon 지오코딩 기준, 인근 건물 우편번호 06301로 교차 확인.
-  geo: { latitude: 37.4836345, longitude: 127.0445112 },
+  // 네이버 지도 "도곡경희한의원"(논현로28길 24 1층) 장소 핀 좌표 (WGS84).
+  geo: { latitude: 37.4832424, longitude: 127.0443959 },
   transit: "지하철 3호선 매봉역 4번 출구에서 도보 7분",
   parking: "건물 내 주차 가능",
   priceRange: "₩₩",
