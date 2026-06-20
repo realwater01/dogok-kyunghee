@@ -15,7 +15,7 @@ const treatments = [
     href: "/treatment/student-autonomic",
   },
   {
-    title: "자율신경실조\n- 반복감염, TIC, ADHD, 우울, 공황",
+    title: "자율신경실조\n- 반복감염, TIC, ADHD, 우울, 공황장애",
     description: "어린이들도 자율신경조절력이 튼튼해지면 아프지않고 건강하게 자랍니다.\n아이들이 스스로 건강하게 회복할 수 있도록 원인을 찾아 치료합니다.",
     icon: (
       <path
