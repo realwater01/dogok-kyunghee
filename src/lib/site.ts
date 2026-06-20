@@ -18,11 +18,11 @@ export const clinic = {
     streetAddress: "논현로28길 24, 세양빌딩 1층",
     addressLocality: "강남구",
     addressRegion: "서울특별시",
-    postalCode: "06280",
+    postalCode: "06301",
     addressCountry: "KR",
   },
-  // 매봉역(서울 지하철 3호선) 인근 좌표
-  geo: { latitude: 37.4866, longitude: 127.0476 },
+  // 논현로28길(도곡2동) 도로 대표점. OSM/Photon 지오코딩 기준, 인근 건물 우편번호 06301로 교차 확인.
+  geo: { latitude: 37.4836345, longitude: 127.0445112 },
   transit: "지하철 3호선 매봉역 4번 출구에서 도보 7분",
   parking: "건물 내 주차 가능",
   priceRange: "₩₩",
