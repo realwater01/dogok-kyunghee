@@ -31,7 +31,7 @@ export default function ProcessSection() {
             진료 프로세스
           </h2>
           <p className="text-text-light max-w-xl mx-auto">
-            처음 방문하시는 분들을 위해 진료 과정을 안내해 드립니다.
+            처음 방문하시는 분들을 위해 진료 과정을 안내해 드립니다
           </p>
         </div>
 
