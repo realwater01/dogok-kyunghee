@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const treatments = [
   {
-    title: "수험생 치료",
+    title: "수험생 집중력 치료",
     description: "수험생 치료 임상경험을 바탕으로 아프지 않고 좋은 컨디션으로 공부에 집중할 수 있도록 안전하고 효과적인 한약치료를 제공합니다.",
     icon: (
       <path

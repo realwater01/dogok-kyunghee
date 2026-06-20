@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { submitConsult } from "@/app/actions/consult";
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -9,11 +10,30 @@ export default function ContactSection() {
     email: "",
     message: "",
   });
+  const [submitting, setSubmitting] = useState(false);
+  const [feedback, setFeedback] = useState<
+    { type: "success" | "error"; text: string } | null
+  >(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    alert("상담 문의가 접수되었습니다. 빠른 시일 내에 연락드리겠습니다.");
-    setFormData({ name: "", phone: "", email: "", message: "" });
+    if (submitting) return;
+    setSubmitting(true);
+    setFeedback(null);
+
+    const result = await submitConsult(formData);
+
+    if (result.status === "success") {
+      setFeedback({
+        type: "success",
+        text: "상담 문의가 접수되었습니다. 빠른 시일 내에 연락드리겠습니다.",
+      });
+      setFormData({ name: "", phone: "", email: "", message: "" });
+    } else {
+      setFeedback({ type: "error", text: result.message });
+    }
+
+    setSubmitting(false);
   };
 
   const handleChange = (
@@ -211,10 +231,22 @@ export default function ContactSection() {
 
               <button
                 type="submit"
-                className="w-full btn-primary text-center py-4 mt-4"
+                disabled={submitting}
+                className="w-full btn-primary text-center py-4 mt-4 disabled:opacity-60 disabled:cursor-not-allowed"
               >
-                상담 신청하기
+                {submitting ? "접수 중..." : "상담 신청하기"}
               </button>
+
+              {feedback && (
+                <p
+                  role="status"
+                  className={`text-sm text-center ${
+                    feedback.type === "success" ? "text-accent" : "text-red-600"
+                  }`}
+                >
+                  {feedback.text}
+                </p>
+              )}
             </form>
           </div>
         </div>
