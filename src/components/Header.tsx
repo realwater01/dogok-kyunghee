@@ -40,7 +40,11 @@ const menuItems = [
   {
     title: "자율신경계",
     href: "/treatment/autonomic",
-    subMenu: [],
+    subMenu: [
+      { title: "만성두통, 어지러움, 피로", href: "/treatment/autonomic" },
+      { title: "공황장애, 불안, 실신", href: "/coming-soon" },
+      { title: "감염, 염증", href: "/coming-soon" },
+    ],
   },
   {
     title: "다이어트",
