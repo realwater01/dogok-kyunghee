@@ -68,5 +68,5 @@ export const sitePages = [
   { path: "/treatment/student-focus", title: "수험생 집중력 향상 프로그램", changeFrequency: "monthly", priority: 0.8 },
   { path: "/treatment/student-autonomic", title: "수험생 치료 프로그램", changeFrequency: "monthly", priority: 0.8 },
   { path: "/treatment/children-adhd-tic", title: "어린이 ADHD·틱·불안 치료", changeFrequency: "monthly", priority: 0.8 },
-  { path: "/treatment/autonomic-headache", title: "만성두통·어지러움·피로", changeFrequency: "monthly", priority: 0.8 },
+  { path: "/treatment/autonomic", title: "자율신경계 치료", changeFrequency: "monthly", priority: 0.8 },
 ] as const;

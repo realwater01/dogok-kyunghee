@@ -3,28 +3,28 @@ import JsonLd from "@/components/JsonLd";
 import { breadcrumbSchema, medicalWebPageSchema } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "만성두통·어지러움·피로 — 자율신경 균형 회복",
+  title: "자율신경계 치료 — 만성두통·어지러움·피로, 공황·불안, 감염·염증",
   description:
-    "과도한 스트레스와 불규칙한 생활은 자율신경계의 균형을 무너뜨려 만성두통, 어지러움, 만성피로를 일으킵니다. 도곡경희한의원은 자연치료로 자율신경을 안정시켜 근본적인 회복을 돕습니다. 강남 매봉역, 전화 02-6949-1888.",
-  alternates: { canonical: "/treatment/autonomic-headache" },
+    "과도한 스트레스와 불규칙한 생활은 자율신경계의 균형을 무너뜨려 만성두통·어지러움·피로, 공황장애·불안·실신, 잦은 감염·염증을 일으킵니다. 도곡경희한의원은 자연치료로 자율신경을 안정시켜 근본적인 회복을 돕습니다. 강남 매봉역, 전화 02-6949-1888.",
+  alternates: { canonical: "/treatment/autonomic" },
 };
 
-const pagePath = "/treatment/autonomic-headache";
+const pagePath = "/treatment/autonomic";
 
-export default function AutonomicHeadachePage() {
+export default function AutonomicPage() {
   return (
     <>
       <JsonLd
         data={[
           medicalWebPageSchema({
             path: pagePath,
-            name: "만성두통·어지러움·피로 — 도곡경희한의원",
+            name: "자율신경계 치료 — 도곡경희한의원",
             description:
-              "자율신경계 균형 회복을 통해 만성두통, 어지러움, 만성피로를 근본적으로 치료하는 한방 치료.",
+              "자율신경계 균형 회복을 통해 만성두통·어지러움·피로, 공황장애·불안·실신, 감염·염증을 근본적으로 치료하는 한방 치료.",
           }),
           breadcrumbSchema([
             { name: "홈", path: "/" },
-            { name: "만성두통·어지러움·피로", path: pagePath },
+            { name: "자율신경계", path: pagePath },
           ]),
         ]}
       />
@@ -32,13 +32,12 @@ export default function AutonomicHeadachePage() {
       <section className="bg-brown-bg section">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl">
-            <p className="text-accent font-medium mb-4">자율신경계</p>
             <h1 className="text-4xl md:text-5xl font-medium leading-tight mb-6">
-              만성두통, 어지러움, 피로
+              자율신경계
             </h1>
             <p className="text-text-light text-lg leading-relaxed">
-              자율신경계의 균형을 회복하여<br />
-              만성두통과 어지러움, 피로를 근본부터 치료합니다.
+              만성두통·어지러움·피로, 공황장애·불안·실신, 감염·염증까지<br />
+              자율신경계의 균형을 회복하여 근본부터 치료합니다.
             </p>
           </div>
         </div>
