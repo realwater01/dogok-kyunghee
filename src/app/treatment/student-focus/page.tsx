@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbSchema, faqSchema, medicalWebPageSchema } from "@/lib/structured-data";
@@ -135,8 +136,15 @@ export default function StudentFocusPage() {
                 <br />
                 <div className="space-y-5">
                   <div className="bg-cream/50 rounded-xl p-5 border border-brown-light/30 flex gap-5 items-stretch">
-                    <div className="w-48 flex-shrink-0 bg-gradient-to-br from-amber-50 to-amber-100 rounded-xl flex items-center justify-center">
-                      <p className="text-xs text-brown-dark opacity-40">이미지</p>
+                    <div className="w-48 flex-shrink-0 bg-[#FBEEEC] rounded-xl overflow-hidden flex items-center justify-center">
+                      <Image
+                        src="/brain-gut-axis.svg"
+                        alt="뇌-장 축: 장 건강이 뇌 활동에 영향을 준다"
+                        width={400}
+                        height={416}
+                        className="w-full h-auto"
+                        unoptimized
+                      />
                     </div>
                     <div>
                       <p className="text-2xl font-bold text-accent mb-3">1. Gut Thinks</p>

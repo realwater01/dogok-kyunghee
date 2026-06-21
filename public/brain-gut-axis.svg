@@ -1,0 +1,117 @@
+<svg width="1000" height="1040" viewBox="0 0 1000 1040" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="뇌-장 축 (Brain–Gut Axis)">
+  <defs>
+    <linearGradient id="brainGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F8C0A8"/>
+      <stop offset="1" stop-color="#E89C7E"/>
+    </linearGradient>
+    <linearGradient id="siGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F4949F"/>
+      <stop offset="1" stop-color="#E7798A"/>
+    </linearGradient>
+    <linearGradient id="colonGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D2ABA7"/>
+      <stop offset="1" stop-color="#BD908C"/>
+    </linearGradient>
+    <marker id="mArrow" viewBox="0 0 14 14" refX="7" refY="7" markerWidth="6.5" markerHeight="6.5" orient="auto">
+      <path d="M1 1 L13 7 L1 13 L5 7 Z" fill="#7C3030"/>
+    </marker>
+  </defs>
+
+  <rect width="1000" height="1040" fill="#FBEEEC"/>
+
+  <!-- ===== BRAIN (front view) ===== -->
+  <g transform="translate(190,60) scale(0.62)" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M500 138
+             C 476 116 440 108 416 122 C 398 132 390 152 372 166
+             C 348 156 322 168 312 194 C 290 206 280 236 294 262
+             C 282 286 290 316 312 330 C 320 360 348 382 376 378
+             C 396 398 416 410 438 406 C 452 404 462 396 470 388
+             C 476 400 482 414 491 424 C 496 430 504 430 509 424
+             C 518 414 524 400 530 388 C 538 396 548 404 562 406
+             C 584 410 604 398 624 378 C 652 382 680 360 688 330
+             C 710 316 718 286 706 262 C 720 236 710 206 688 194
+             C 678 168 652 156 628 166 C 610 152 602 132 584 122
+             C 560 108 524 116 500 138 Z"
+          fill="url(#brainGrad)" stroke="#CF7E5C" stroke-width="3.5"/>
+    <g fill="none" stroke="#CB7A57" stroke-width="3.4">
+      <!-- central fissure -->
+      <path d="M500 142 C 508 185 492 230 500 274 C 508 318 494 360 500 400" stroke-width="4.2"/>
+      <!-- left hemisphere gyri -->
+      <path d="M432 158 C 410 168 412 196 436 196"/>
+      <path d="M392 180 C 372 192 378 220 404 216"/>
+      <path d="M344 214 C 326 232 340 258 364 250"/>
+      <path d="M322 268 C 338 286 326 312 350 318"/>
+      <path d="M388 244 C 404 256 396 282 418 282"/>
+      <path d="M362 326 C 380 332 374 356 396 356"/>
+      <path d="M300 282 C 314 298 305 320 326 324"/>
+      <!-- right hemisphere gyri (mirror) -->
+      <path d="M568 158 C 590 168 588 196 564 196"/>
+      <path d="M608 180 C 628 192 622 220 596 216"/>
+      <path d="M656 214 C 674 232 660 258 636 250"/>
+      <path d="M678 268 C 662 286 674 312 650 318"/>
+      <path d="M612 244 C 596 256 604 282 582 282"/>
+      <path d="M638 326 C 620 332 626 356 604 356"/>
+      <path d="M700 282 C 686 298 695 320 674 324"/>
+    </g>
+  </g>
+
+  <!-- ===== CYCLE ARROWS ===== -->
+  <path d="M360 560 C 285 500 285 408 358 360" fill="none" stroke="#7C3030" stroke-width="13" stroke-linecap="round" marker-end="url(#mArrow)"/>
+  <path d="M642 360 C 715 408 715 500 640 560" fill="none" stroke="#7C3030" stroke-width="13" stroke-linecap="round" marker-end="url(#mArrow)"/>
+
+  <!-- ===== GUT ===== -->
+  <!-- small intestine mass (inside) -->
+  <g>
+    <path d="M380 642
+             C 380 614 420 602 470 602 C 520 602 540 598 580 604
+             C 620 610 644 630 642 662 C 650 702 642 742 612 770
+             C 580 800 520 804 470 798 C 420 792 384 774 374 738
+             C 366 708 372 670 380 642 Z"
+          fill="url(#siGrad)" stroke="#D76B7C" stroke-width="3"/>
+    <g fill="none" stroke="#D76B7C" stroke-width="3" stroke-linecap="round" opacity="0.85">
+      <path d="M404 644 C 444 636 472 652 462 672 C 454 690 414 688 412 710"/>
+      <path d="M474 636 C 514 632 542 652 530 676 C 520 696 482 694 486 716"/>
+      <path d="M560 646 C 592 654 602 678 584 696"/>
+      <path d="M410 724 C 450 716 480 734 472 756"/>
+      <path d="M502 724 C 542 718 574 736 562 762"/>
+      <path d="M446 766 C 486 760 516 774 510 792"/>
+    </g>
+  </g>
+  <!-- large intestine (colon) as bumpy haustra chain -->
+  <g fill="url(#colonGrad)" stroke="#A87E7B" stroke-width="3">
+    <!-- transverse (top) -->
+    <circle cx="352" cy="584" r="26"/>
+    <circle cx="398" cy="592" r="27"/>
+    <circle cx="446" cy="598" r="27"/>
+    <circle cx="498" cy="600" r="27"/>
+    <circle cx="550" cy="596" r="27"/>
+    <circle cx="600" cy="588" r="27"/>
+    <circle cx="648" cy="582" r="26"/>
+    <!-- right limb (descending) -->
+    <circle cx="680" cy="606" r="27"/>
+    <circle cx="690" cy="644" r="27"/>
+    <circle cx="694" cy="682" r="27"/>
+    <circle cx="694" cy="720" r="27"/>
+    <circle cx="688" cy="758" r="27"/>
+    <circle cx="676" cy="792" r="26"/>
+    <!-- sigmoid toward center -->
+    <circle cx="650" cy="818" r="26"/>
+    <circle cx="620" cy="836" r="25"/>
+    <circle cx="588" cy="842" r="24"/>
+    <!-- rectum (center, down) -->
+    <circle cx="560" cy="860" r="23"/>
+    <circle cx="544" cy="892" r="22"/>
+    <circle cx="534" cy="922" r="21"/>
+    <circle cx="528" cy="950" r="20"/>
+    <!-- left limb (ascending) -->
+    <circle cx="324" cy="606" r="27"/>
+    <circle cx="314" cy="644" r="27"/>
+    <circle cx="308" cy="682" r="27"/>
+    <circle cx="308" cy="720" r="27"/>
+    <circle cx="314" cy="758" r="27"/>
+    <circle cx="326" cy="792" r="26"/>
+    <!-- cecum (bottom-left) -->
+    <circle cx="348" cy="818" r="26"/>
+    <circle cx="372" cy="838" r="24"/>
+  </g>
+</svg>
