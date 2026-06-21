@@ -65,7 +65,7 @@ export default function StudentFocusPage() {
             <div>
               <p className="text-accent font-medium mb-4">수험생의 고민</p>
               <h2 className="text-3xl md:text-4xl font-medium mb-8">
-                이런 증상으로 힘들지 않으신가요?
+                이런 증상으로 힘든가요?
               </h2>
               <div className="space-y-6 text-text-light leading-relaxed">
                 <p>
@@ -120,21 +120,17 @@ export default function StudentFocusPage() {
             <div>
               <p className="text-accent font-medium mb-4">맞춤 솔루션</p>
               <h2 className="text-3xl md:text-4xl font-medium mb-8">
-                도곡경희한의원의<br />수험생 특화 프로그램
+                집중력 저하의 기전을 찾아서 치료합니다
               </h2>
               <div className="space-y-6 text-text-light leading-relaxed">
                 <p>
-                  도곡경희한의원의 수험생 특화 프로그램은
-                  <br />
                   수험생마다 집중력 저하의
                   <br />
                   주요원인이 되는 기전을 바로잡아
                   <br />
-                  자율신경계의 균형을 회복시키고
+                  brain fog를 제거하고
                   <br />
-                  brain fog 를 제거하고
-                  <br />
-                  집중력가 기억력이 향상되도록 합니다.
+                  맑은 정신으로 집중할수 있도록 도와줍니다.
                 </p>
                 <br />
                 <div className="space-y-5">
