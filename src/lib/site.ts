@@ -59,9 +59,8 @@ export const services = [
   "비염 치료",
 ] as const;
 
-// 카카오 채널 1:1 채팅 주소. 실제 채널 주소를 받으면 이 값만 바꾸면 된다.
-// 형식 예: "http://pf.kakao.com/_xXXXX/chat"  (임시값 — 채널 주소 받기 전까지 placeholder)
-export const kakaoChatUrl = "http://pf.kakao.com/_xXXXX/chat";
+// 카카오 채널 1:1 채팅 주소. 채널 홈 URL 코드(_Lxhcwj) 기준.
+export const kakaoChatUrl = "http://pf.kakao.com/_Lxhcwj/chat";
 
 // 사이트맵·내비게이션에 실제 존재하는 페이지 목록
 export const sitePages = [
