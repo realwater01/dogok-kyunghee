@@ -169,6 +169,7 @@ export default function AboutIntroPage() {
               원내에서 소량씩 탕전
             </h2>
             <p className="text-text-light max-w-2xl mx-auto">
+              경희대학교 법인 경희한약의 엄선된 식약처 인증 약재를 사용합니다.<br />
               철저한 원내 시스템을 통해 약재를 신선하게 관리하며,<br />
               저렴한 상비약부터 최고급 한약까지 모두 원내 탕전실에서 소량씩 직접 탕전합니다.
             </p>
