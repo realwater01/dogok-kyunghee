@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollProgress from "@/components/ScrollProgress";
 import GoToTop from "@/components/GoToTop";
+import QuickConsult from "@/components/QuickConsult";
 import MobileBottomMenu from "@/components/MobileBottomMenu";
 import JsonLd from "@/components/JsonLd";
 import { clinic, siteUrl } from "@/lib/site";
@@ -75,6 +76,7 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <GoToTop />
+        <QuickConsult />
         <MobileBottomMenu />
       </body>
     </html>
