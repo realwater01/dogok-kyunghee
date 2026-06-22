@@ -297,9 +297,9 @@ export default function AboutIntroPage() {
             궁금한 점이 있으시면 언제든지 문의해 주세요.
             친절하게 상담해 드리겠습니다.
           </p>
-          <Link href="tel:02-6949-1888" className="inline-block text-center whitespace-nowrap min-w-[12rem] bg-white text-brown-dark px-8 py-4 rounded font-medium hover:bg-cream transition-colors">
+          <a href="tel:02-6949-1888" className="inline-block text-center whitespace-nowrap min-w-[12rem] bg-white text-brown-dark px-8 py-4 rounded font-medium hover:bg-cream transition-colors">
             전화 상담하기
-          </Link>
+          </a>
         </div>
       </section>
     </>
