@@ -1,4 +1,5 @@
 import HeroSection from "@/components/HeroSection";
+import StudentSection from "@/components/StudentSection";
 import IntroSection from "@/components/IntroSection";
 import DoctorSection from "@/components/DoctorSection";
 import TreatmentSection from "@/components/TreatmentSection";
@@ -35,6 +36,7 @@ export default function Home() {
     <>
       <JsonLd data={faqSchema(faqs)} />
       <HeroSection />
+      <StudentSection />
       <IntroSection />
       <DoctorSection />
       <TreatmentSection />

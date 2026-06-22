@@ -19,6 +19,7 @@ export default function HeroSection() {
                 <span className="font-normal text-primary block mb-3">한약 치료 상위 1% 자부심</span>
                 <span className="text-sm font-normal leading-normal block">경희대학교 한의학과 학사 석사 박사</span>
                 <span className="text-sm font-normal leading-normal block">20년 경력의 한방내과 전문의</span>
+                <span className="text-sm font-medium leading-normal block text-accent mt-2">집중력·체력·자율신경계 치료</span>
               </p>
             </div>
 
