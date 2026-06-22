@@ -397,9 +397,9 @@ export default function StudentAutonomicPage() {
             <Link href="/coming-soon" className="inline-block text-center whitespace-nowrap min-w-[12rem] bg-white text-brown-dark px-8 py-4 rounded font-medium hover:bg-cream transition-colors">
               온라인 상담 예약
             </Link>
-            <Link href="tel:02-6949-1888" className="inline-block text-center whitespace-nowrap min-w-[12rem] bg-transparent border-2 border-white text-white px-8 py-4 rounded font-medium hover:bg-white hover:text-brown-dark transition-colors">
+            <a href="tel:02-6949-1888" className="inline-block text-center whitespace-nowrap min-w-[12rem] bg-transparent border-2 border-white text-white px-8 py-4 rounded font-medium hover:bg-white hover:text-brown-dark transition-colors">
               전화 상담하기
-            </Link>
+            </a>
           </div>
         </div>
       </section>
