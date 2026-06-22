@@ -164,7 +164,7 @@ export default function AboutIntroPage() {
       <section className="section bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <p className="text-accent font-medium mb-4">약재</p>
+            <p className="text-accent font-medium mb-4">도곡경희한의원 한약</p>
             <h2 className="text-3xl md:text-4xl font-medium mb-6">
               원내에서 소량씩 탕전
             </h2>
