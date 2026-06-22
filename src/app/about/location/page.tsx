@@ -112,9 +112,9 @@ export default function LocationPage() {
                 <div className="space-y-2">
                   <p className="text-text">
                     <span className="text-text-light">전화:</span>{" "}
-                    <Link href="tel:02-6949-1888" className="text-accent hover:underline">
+                    <a href="tel:02-6949-1888" className="text-accent hover:underline">
                       02-6949-1888
-                    </Link>
+                    </a>
                   </p>
                   <p className="text-text">
                     <span className="text-text-light">팩스:</span>{" "}
