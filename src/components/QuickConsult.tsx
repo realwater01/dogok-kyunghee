@@ -50,7 +50,7 @@ export default function QuickConsult() {
         <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
           <path d="M16.273 12.845 7.376 0H0v24h7.726V11.155L16.624 24H24V0h-7.727z" />
         </svg>
-        <span className="text-[10px] font-medium leading-none">예약하기</span>
+        <span className="text-[10px] font-medium leading-none mt-1">예약하기</span>
       </a>
     </div>
   );
