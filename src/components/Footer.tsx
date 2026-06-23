@@ -1,10 +1,8 @@
-import Link from "next/link";
-
 export default function Footer() {
   return (
     <footer style={{ backgroundColor: '#5D4E3C', color: '#ffffff', padding: '48px 0' }}>
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {/* Logo & Info */}
           <div>
             <h3 style={{ color: '#ffffff' }} className="text-xl font-semibold mb-4">도곡경희한의원</h3>
@@ -13,33 +11,6 @@ export default function Footer() {
               천연약재의 배합을 통한 최적의 자연치료로<br />
               건강한 삶을 되찾아드립니다.
             </p>
-          </div>
-
-          {/* Quick Links */}
-          <div>
-            <h4 style={{ color: '#ffffff' }} className="font-medium mb-4">바로가기</h4>
-            <ul style={{ color: 'rgba(255,255,255,0.85)' }} className="space-y-2.5 text-sm">
-              <li>
-                <Link href="/about" className="hover:opacity-100 transition-opacity">
-                  한의원 소개
-                </Link>
-              </li>
-              <li>
-                <Link href="/#treatment" className="hover:opacity-100 transition-opacity">
-                  진료 안내
-                </Link>
-              </li>
-              <li>
-                <Link href="/coming-soon" className="hover:opacity-100 transition-opacity">
-                  치료 사례
-                </Link>
-              </li>
-              <li>
-                <a href="tel:02-6949-1888" className="hover:opacity-100 transition-opacity">
-                  예약 상담
-                </a>
-              </li>
-            </ul>
           </div>
 
           {/* Contact Info */}
