@@ -26,7 +26,7 @@ export default function DoctorSchedule() {
           <table className="w-full border-collapse text-center min-w-[480px]">
             <thead>
               <tr className="bg-accent text-white">
-                <th className="px-4 py-3 text-left text-base font-semibold whitespace-nowrap w-[28%]">
+                <th className="px-4 py-3 text-center text-base font-semibold whitespace-nowrap w-[28%]">
                   {doc.name}
                 </th>
                 {days.map((d) => (
