@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
 import KakaoMap from "@/components/KakaoMap";
+import { clinic } from "@/lib/site";
 import { breadcrumbSchema } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
@@ -44,23 +45,29 @@ export default function LocationPage() {
               <div className="aspect-square lg:aspect-auto lg:h-[500px] bg-cream rounded-xl overflow-hidden">
                 <KakaoMap />
               </div>
-              <div className="flex gap-3 justify-center mt-4">
+              <div className="flex flex-wrap gap-3 justify-center mt-5">
                 <Link
                   href="https://map.naver.com/p/search/도곡경희한의원"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2 bg-cream rounded text-sm text-primary hover:bg-brown-light/20 transition-colors"
+                  className="px-5 py-3 bg-cream rounded-lg text-base font-medium text-primary hover:bg-brown-light/20 transition-colors"
                 >
-                  네이버지도
+                  네이버지도 연결하기
                 </Link>
                 <Link
                   href="https://map.kakao.com/?q=도곡경희한의원"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2 bg-cream rounded text-sm text-primary hover:bg-brown-light/20 transition-colors"
+                  className="px-5 py-3 bg-cream rounded-lg text-base font-medium text-primary hover:bg-brown-light/20 transition-colors"
                 >
-                  카카오맵
+                  카카오맵 연결하기
                 </Link>
+                <a
+                  href={`tmap://route?goalname=${encodeURIComponent(clinic.name)}&goalx=${clinic.geo.longitude}&goaly=${clinic.geo.latitude}`}
+                  className="px-5 py-3 bg-cream rounded-lg text-base font-medium text-primary hover:bg-brown-light/20 transition-colors"
+                >
+                  티맵 연결하기
+                </a>
               </div>
             </div>
 
