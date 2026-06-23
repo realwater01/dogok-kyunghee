@@ -112,63 +112,32 @@ export default function LocationPage() {
                 </div>
               </div>
 
-              {/* Contact */}
+              {/* Hours */}
               <div>
-                <h2 className="text-2xl font-medium mb-4 text-primary">연락처</h2>
-                <div className="space-y-2">
-                  <p className="text-text">
-                    <span className="text-text-light">전화:</span>{" "}
-                    <a href="tel:02-6949-1888" className="text-accent hover:underline">
-                      02-6949-1888
-                    </a>
-                  </p>
-                  <p className="text-text">
-                    <span className="text-text-light">팩스:</span>{" "}
-                    070-5208-0631
-                  </p>
-                  <p className="text-text">
-                    <span className="text-text-light">이메일:</span>{" "}
-                    <Link href="mailto:jsryan@naver.com" className="text-accent hover:underline">
-                      jsryan@naver.com
-                    </Link>
-                  </p>
+                <h2 className="text-2xl font-medium mb-4 text-primary">진료 시간</h2>
+                <div className="bg-cream rounded-lg overflow-hidden">
+                  <table className="w-full">
+                    <tbody>
+                      <tr className="border-b border-white">
+                        <td className="px-5 py-3 text-text-light">평일</td>
+                        <td className="px-5 py-3 text-primary font-medium text-right">09:00 - 16:30</td>
+                      </tr>
+                      <tr className="border-b border-white">
+                        <td className="px-5 py-3 text-text-light">토요일</td>
+                        <td className="px-5 py-3 text-primary font-medium text-right">09:00 - 13:00</td>
+                      </tr>
+                      <tr>
+                        <td className="px-5 py-3 text-text-light">휴진</td>
+                        <td className="px-5 py-3 text-accent font-medium text-right">일요일, 공휴일</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
+                <p className="text-text-light text-sm mt-3">
+                  평일, 토요일 모두 점심시간 없이 진료합니다
+                </p>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Hours Section */}
-      <section className="section bg-brown-bg">
-        <div className="container mx-auto px-6">
-          <div className="max-w-2xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-medium mb-8 text-center text-primary">
-              진료 시간
-            </h2>
-
-            <div className="bg-white rounded-xl overflow-hidden">
-              <table className="w-full">
-                <tbody>
-                  <tr className="border-b border-cream">
-                    <td className="px-6 py-4 text-text-light">평일</td>
-                    <td className="px-6 py-4 text-primary font-medium text-right">09:00 - 16:30</td>
-                  </tr>
-                  <tr className="border-b border-cream">
-                    <td className="px-6 py-4 text-text-light">토요일</td>
-                    <td className="px-6 py-4 text-primary font-medium text-right">09:00 - 13:00</td>
-                  </tr>
-                  <tr>
-                    <td className="px-6 py-4 text-text-light">휴진</td>
-                    <td className="px-6 py-4 text-accent font-medium text-right">일요일, 공휴일</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <p className="text-center text-text-light text-sm mt-6">
-              평일, 토요일 모두 점심시간 없이 진료합니다
-            </p>
           </div>
         </div>
       </section>
