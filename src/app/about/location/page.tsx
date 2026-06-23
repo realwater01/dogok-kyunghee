@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
+import KakaoMap from "@/components/KakaoMap";
 import { breadcrumbSchema } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
@@ -38,32 +39,28 @@ export default function LocationPage() {
       <section className="section bg-white">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Map Placeholder */}
-            <div className="aspect-square lg:aspect-auto lg:h-[500px] bg-cream rounded-xl flex items-center justify-center">
-              <div className="text-center text-brown-dark">
-                <svg className="w-16 h-16 mx-auto mb-4 opacity-40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-                <p className="text-sm opacity-60 mb-4">지도 영역</p>
-                <div className="flex gap-3 justify-center">
-                  <Link
-                    href="https://map.naver.com/p/search/도곡경희한의원"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-4 py-2 bg-white rounded text-sm text-primary hover:bg-brown-light/20 transition-colors"
-                  >
-                    네이버지도
-                  </Link>
-                  <Link
-                    href="https://map.kakao.com/?q=도곡경희한의원"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-4 py-2 bg-white rounded text-sm text-primary hover:bg-brown-light/20 transition-colors"
-                  >
-                    카카오맵
-                  </Link>
-                </div>
+            {/* Map */}
+            <div>
+              <div className="aspect-square lg:aspect-auto lg:h-[500px] bg-cream rounded-xl overflow-hidden">
+                <KakaoMap />
+              </div>
+              <div className="flex gap-3 justify-center mt-4">
+                <Link
+                  href="https://map.naver.com/p/search/도곡경희한의원"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 bg-cream rounded text-sm text-primary hover:bg-brown-light/20 transition-colors"
+                >
+                  네이버지도
+                </Link>
+                <Link
+                  href="https://map.kakao.com/?q=도곡경희한의원"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 bg-cream rounded text-sm text-primary hover:bg-brown-light/20 transition-colors"
+                >
+                  카카오맵
+                </Link>
               </div>
             </div>
 
