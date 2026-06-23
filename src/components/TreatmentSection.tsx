@@ -29,7 +29,7 @@ const treatments = [
   },
   {
     title: "비염",
-    description: "도곡경희한의원만의 비염 패턴 치료 - 비염 ABC 로 정확하게 치료합니다.",
+    description: "어린이 비염, 잦은감기부터 성인 체질별 비염까지\n도곡경희한의원만의 비염패턴치료 - 비염ABC 로 정확하게 치료합니다.",
     icon: (
       <path
         strokeLinecap="round"
