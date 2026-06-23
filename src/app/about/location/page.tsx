@@ -154,9 +154,6 @@ export default function LocationPage() {
               원장별 진료 시간
             </h2>
             <DoctorSchedule />
-            <p className="text-center text-text-light text-sm mt-6">
-              점심시간 없이 진료합니다 · 일요일·공휴일 휴진
-            </p>
           </div>
         </div>
       </section>
