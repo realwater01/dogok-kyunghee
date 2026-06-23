@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
 import KakaoMap from "@/components/KakaoMap";
+import DoctorSchedule from "@/components/DoctorSchedule";
 import { clinic } from "@/lib/site";
 import { breadcrumbSchema } from "@/lib/structured-data";
 
@@ -141,6 +142,21 @@ export default function LocationPage() {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Doctor Schedule Section */}
+      <section className="section bg-brown-bg">
+        <div className="container mx-auto px-6">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-medium mb-8 text-center text-primary">
+              원장별 진료 시간
+            </h2>
+            <DoctorSchedule />
+            <p className="text-center text-text-light text-sm mt-6">
+              점심시간 없이 진료합니다 · 일요일·공휴일 휴진
+            </p>
           </div>
         </div>
       </section>
