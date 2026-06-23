@@ -1,6 +1,6 @@
-import { clinic, kakaoChatUrl } from "@/lib/site";
+import { clinic, kakaoChatUrl, naverBookingUrl } from "@/lib/site";
 
-// 모든 페이지 우측에 고정으로 떠 있는 빠른 상담 버튼(전화 / 카카오톡).
+// 모든 페이지 우측에 고정으로 떠 있는 빠른 상담 버튼(전화 / 카카오톡 / 네이버 예약).
 // 정사각형 버튼을 세로로 쌓는다. 우측 하단 GoToTop·모바일 하단 메뉴와 겹치지 않도록
 // 화면 우측 중앙에 배치한다.
 export default function QuickConsult() {
@@ -38,6 +38,17 @@ export default function QuickConsult() {
           <path d="M12 3C6.486 3 2 6.477 2 10.77c0 2.74 1.83 5.146 4.59 6.52-.2.72-.726 2.62-.83 3.026-.13.5.184.494.387.36.16-.106 2.53-1.72 3.555-2.42.74.108 1.51.165 2.298.165 5.514 0 10-3.477 10-7.77S17.514 3 12 3z" />
         </svg>
         <span className="text-[10px] font-medium leading-none">카톡상담</span>
+      </a>
+
+      <a
+        href={naverBookingUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-14 h-14 rounded-xl shadow-lg bg-[#03C75A] text-white flex flex-col items-center justify-center gap-0.5 hover:brightness-95 transition-all"
+        aria-label="네이버 예약"
+      >
+        <span className="text-lg font-bold leading-none">N</span>
+        <span className="text-[10px] font-medium leading-none">예약</span>
       </a>
     </div>
   );

@@ -62,6 +62,9 @@ export const services = [
 // 카카오 채널 1:1 채팅 주소. 채널 홈 URL 코드(_Lxhcwj) 기준.
 export const kakaoChatUrl = "http://pf.kakao.com/_Lxhcwj/chat";
 
+// 네이버 예약 페이지 주소(네이버 플레이스 예약 직접 링크).
+export const naverBookingUrl = "https://m.booking.naver.com/booking/13/bizes/1572307";
+
 // 사이트맵·내비게이션에 실제 존재하는 페이지 목록
 export const sitePages = [
   { path: "/", title: "홈", changeFrequency: "weekly", priority: 1.0 },
