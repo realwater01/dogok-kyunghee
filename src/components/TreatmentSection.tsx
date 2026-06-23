@@ -3,7 +3,7 @@ import Link from "next/link";
 const treatments = [
   {
     title: "수험생 집중력 치료",
-    description: "수험생 치료 임상경험을 바탕으로 아프지 않고 좋은 컨디션으로 공부에 집중할 수 있도록 안전하고 효과적인 한약치료를 제공합니다.",
+    description: "수험생 치료 임상경험을 바탕으로 좋은 컨디션으로 공부에 집중할 수 있도록 개인에 맞춘 한약 치료를 제공합니다.",
     icon: (
       <path
         strokeLinecap="round"
@@ -16,7 +16,7 @@ const treatments = [
   },
   {
     title: "자율신경실조\n- 반복감염, TIC, ADHD, 우울, 공황장애",
-    description: "자율신경계 문제는 각종 신경정신문제, 면역력약화를 일으킵니다.\n근본적 접근으로 건강하게 회복하도록 돕습니다.",
+    description: "자율신경계 문제는 각종 신경정신문제, 면역력약화를 일으킵니다.\n원인에 접근하여 건강 회복을 돕습니다.",
     icon: (
       <path
         strokeLinecap="round"

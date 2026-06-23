@@ -6,7 +6,7 @@ import { breadcrumbSchema, faqSchema, medicalWebPageSchema } from "@/lib/structu
 export const metadata: Metadata = {
   title: "어린이 ADHD·틱·불안 치료",
   description:
-    "집중하지 못하고 산만한 아이, 틱과 불안을 보이는 아이를 위한 근본 원인 치료 프로그램. 도곡경희한의원은 자율신경 균형을 회복시켜 어린이 ADHD·틱·불안을 한약·침으로 치료합니다. 강남 매봉역, 전화 02-6949-1888.",
+    "집중하지 못하고 산만한 아이, 틱과 불안을 보이는 아이를 위한 원인 접근 프로그램. 도곡경희한의원은 자율신경 균형 회복을 통해 어린이 ADHD·틱·불안의 개선을 한약·침으로 돕습니다. 강남 매봉역, 전화 02-6949-1888.",
   alternates: { canonical: "/treatment/children-adhd-tic" },
 };
 
@@ -15,7 +15,7 @@ const faqs = [
   {
     question: "어린이 ADHD·틱을 한방으로 치료할 수 있나요?",
     answer:
-      "도곡경희한의원은 ADHD·틱·불안의 근본 원인인 자율신경 불균형을 진단해 어린이 맞춤 한약과 침으로 치료합니다. 증상 억제가 아니라 원인 회복에 중점을 둡니다.",
+      "도곡경희한의원은 ADHD·틱·불안의 원인 중 하나인 자율신경 불균형을 진단해 어린이 맞춤 한약과 침으로 치료합니다. 증상 억제보다 원인 개선에 중점을 둡니다.",
   },
   {
     question: "몇 살부터 치료가 가능한가요?",
@@ -33,7 +33,7 @@ export default function ChildrenAdhdTicPage() {
             path: pagePath,
             name: "어린이 ADHD·틱·불안 치료 — 도곡경희한의원",
             description:
-              "자율신경 균형 회복을 통한 어린이 ADHD·틱·불안의 근본 원인 한방 치료 프로그램.",
+              "자율신경 균형 회복을 통해 어린이 ADHD·틱·불안의 원인에 접근하는 한방 프로그램.",
           }),
           faqSchema(faqs),
           breadcrumbSchema([
@@ -52,7 +52,7 @@ export default function ChildrenAdhdTicPage() {
             </h1>
             <p className="text-text-light text-lg leading-relaxed">
               집중하지 못하고 산만한 우리 아이를 위한<br />
-              근본적인 원인 치료 프로그램
+              원인에 접근하는 프로그램
             </p>
           </div>
         </div>
@@ -112,13 +112,13 @@ export default function ChildrenAdhdTicPage() {
             <div className="order-1 lg:order-2">
               <p className="text-accent font-medium mb-4">맞춤 솔루션</p>
               <h2 className="text-3xl md:text-4xl font-medium mb-8">
-                한의학으로<br />근본 원인을 치료합니다
+                한의학으로<br />원인에 접근합니다
               </h2>
               <div className="space-y-6 text-text-light leading-relaxed">
                 <p>
                   도곡경희한의원의 어린이 ADHD·틱 치료는
                   뇌의 신경전달물질 균형을 회복시키고
-                  자율신경계를 안정화하여 근본적인 개선을 도모합니다.
+                  자율신경계 안정을 통해 개선을 돕습니다.
                 </p>
                 <p>
                   침 치료와 아이 체질에 맞춘 한약으로
@@ -126,7 +126,7 @@ export default function ChildrenAdhdTicPage() {
                   틱 증상을 완화하며, 정서적 안정을 되찾습니다.
                 </p>
                 <p>
-                  약물 부작용 걱정 없이 안전하게 치료하며,
+                  아이 상태에 맞춰 신중하게 치료하며,
                   아이의 성장 발달을 함께 고려한
                   통합적인 접근을 제공합니다.
                 </p>
@@ -241,7 +241,7 @@ export default function ChildrenAdhdTicPage() {
             </h2>
             <p className="text-text-light max-w-2xl mx-auto">
               아이의 체질과 증상에 맞춘 개별화된 치료로
-              안전하고 효과적인 개선을 이룹니다.
+              개선을 돕습니다.
             </p>
           </div>
 
@@ -297,7 +297,7 @@ export default function ChildrenAdhdTicPage() {
               <h3 className="text-xl font-medium mb-4">생활 관리</h3>
               <p className="text-text-light text-sm leading-relaxed mb-6">
                 가정에서 실천할 수 있는 생활 관리법을 안내하여
-                치료 효과를 극대화합니다.
+                치료에 도움이 되도록 합니다.
               </p>
               <ul className="space-y-2 text-sm text-text-light">
                 <li className="flex items-center gap-2">

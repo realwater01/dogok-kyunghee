@@ -5,7 +5,7 @@ import { breadcrumbSchema, medicalWebPageSchema } from "@/lib/structured-data";
 export const metadata: Metadata = {
   title: "자율신경계 치료 — 만성두통·어지러움·피로, 공황·불안, 감염·염증",
   description:
-    "과도한 스트레스와 불규칙한 생활은 자율신경계의 균형을 무너뜨려 만성두통·어지러움·피로, 공황장애·불안·실신, 잦은 감염·염증을 일으킵니다. 도곡경희한의원은 자연치료로 자율신경을 안정시켜 근본적인 회복을 돕습니다. 강남 매봉역, 전화 02-6949-1888.",
+    "과도한 스트레스와 불규칙한 생활은 자율신경계의 균형을 무너뜨려 만성두통·어지러움·피로, 공황장애·불안·실신, 잦은 감염·염증을 일으킵니다. 도곡경희한의원은 자연치료로 자율신경을 안정시켜 회복을 돕습니다. 강남 매봉역, 전화 02-6949-1888.",
   alternates: { canonical: "/treatment/autonomic" },
 };
 
@@ -20,7 +20,7 @@ export default function AutonomicPage() {
             path: pagePath,
             name: "자율신경계 치료 — 도곡경희한의원",
             description:
-              "자율신경계 균형 회복을 통해 만성두통·어지러움·피로, 공황장애·불안·실신, 감염·염증을 근본적으로 치료하는 한방 치료.",
+              "자율신경계 균형 회복을 통해 만성두통·어지러움·피로, 공황장애·불안·실신, 감염·염증의 개선을 돕는 한방 치료.",
           }),
           breadcrumbSchema([
             { name: "홈", path: "/" },
@@ -37,7 +37,7 @@ export default function AutonomicPage() {
             </h1>
             <p className="text-text-light text-lg leading-relaxed">
               만성두통·어지러움·피로, 공황장애·불안·실신, 감염·염증까지<br />
-              자율신경계의 균형을 회복하여 근본부터 치료합니다.
+              자율신경계의 균형 회복에 중점을 둡니다.
             </p>
           </div>
         </div>
@@ -105,8 +105,7 @@ export default function AutonomicPage() {
               <h3 className="text-xl font-semibold mb-3 text-primary">맞춤 치료</h3>
               <p className="text-text-light text-sm leading-relaxed">
                 개인별 체질과 증상에 따른<br />
-                적절하고 효과적이며,<br />
-                안전한 치료를 제공합니다.
+                맞춤 치료를 제공합니다.
               </p>
             </div>
 

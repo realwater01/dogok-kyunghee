@@ -16,7 +16,7 @@ export default function HeroSection() {
                 몸과 마음을 치료합니다
               </h1>
               <p className="text-xl text-text-light mb-6 max-w-md">
-                <span className="text-2xl font-normal text-primary block mb-3">한약 치료 상위 1% 자부심</span>
+                <span className="text-2xl font-normal text-primary block mb-3">한약, 정성을 다해 짓습니다</span>
                 <span className="text-base font-normal leading-normal block">경희대학교 한의학과 학사 석사 박사</span>
                 <span className="text-base font-normal leading-normal block">20년 경력의 한방내과 전문의</span>
                 <span className="text-base font-medium leading-normal block text-accent mt-2">집중력·체력·자율신경계 치료</span>
@@ -43,7 +43,7 @@ export default function HeroSection() {
                 <br />
                 몸과 마음의 균형을 회복하도록 돕는
                 <br />
-                최상의 자연치료법입니다.
+                자연에 가까운 치료법입니다.
                 <br /><br />
                 바쁜 일상 속 스트레스와 과로,
                 <br />
@@ -57,11 +57,11 @@ export default function HeroSection() {
                 <br />
                 정성껏 직접 달인 한약으로
                 <br />
-                몸의 회복을 돕고 체질을 근본부터 바로잡습니다.
+                몸의 회복과 체질의 균형을 돕습니다.
                 <br /><br />
                 당신의 일상이 다시 편안해질 수 있도록
                 <br />
-                가장 평온한 공간에서 문을 열고 기다립니다.
+                편안한 공간에서 문을 열고 기다립니다.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">

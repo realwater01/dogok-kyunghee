@@ -7,7 +7,7 @@ import { breadcrumbSchema, faqSchema, medicalWebPageSchema } from "@/lib/structu
 export const metadata: Metadata = {
   title: "수험생 집중력 향상 프로그램",
   description:
-    "장시간 학습에 지친 수험생을 위한 집중력·체력 동시 회복 프로그램. 도곡경희한의원은 자율신경 균형을 되찾아 집중력 저하의 근본 원인을 한약·침으로 치료합니다. 강남 매봉역, 전화 02-6949-1888.",
+    "장시간 학습에 지친 수험생을 위한 집중력·체력 동시 회복 프로그램. 도곡경희한의원은 자율신경 균형을 되찾아 집중력 저하의 원인에 접근하여 한약·침으로 도움을 줍니다. 강남 매봉역, 전화 02-6949-1888.",
   alternates: { canonical: "/treatment/student-focus" },
 };
 
@@ -346,7 +346,7 @@ export default function StudentFocusPage() {
             </h2>
             <p className="text-text-light max-w-2xl mx-auto">
               수험생 개개인의 상태에 맞춘 체계적인 관리로
-              최상의 컨디션을 유지하도록 돕습니다.
+              좋은 컨디션을 유지하도록 돕습니다.
             </p>
           </div>
 
@@ -401,7 +401,7 @@ export default function StudentFocusPage() {
               <div className="text-accent text-5xl font-bold mb-4">03</div>
               <h3 className="text-xl font-medium mb-4">생활 관리</h3>
               <p className="text-text-light text-sm leading-relaxed mb-6">
-                치료 효과를 극대화하고 장기간 유지하기 위한
+                치료에 도움이 되고 오래 유지되도록 하기 위한
                 생활습관 개선 지도를 제공합니다.
               </p>
               <ul className="space-y-2 text-sm text-text-light">
@@ -471,9 +471,9 @@ export default function StudentFocusPage() {
                 시험 직전에 받으면 효과가 있나요?
               </h3>
               <p className="text-text-light leading-relaxed pl-6">
-                시험 2-3개월 전부터 시작하는 것이 가장 좋지만,
+                시험 2-3개월 전부터 시작하는 것이 좋지만,
                 시험이 임박한 경우에도 긴급 컨디션 조절 프로그램을 통해
-                시험 당일 최상의 상태를 만들 수 있도록 돕습니다.
+                시험 당일 좋은 컨디션을 유지하도록 돕습니다.
               </p>
             </div>
           </div>
@@ -484,7 +484,7 @@ export default function StudentFocusPage() {
       <section className="section bg-brown-dark text-white">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-medium mb-6">
-            최상의 컨디션으로<br />목표를 이루세요
+            좋은 컨디션으로<br />목표를 향해 나아가세요
           </h2>
           <p className="text-brown-light mb-8 max-w-xl mx-auto">
             수험생 집중력 프로그램에 대해 더 궁금하신 점이 있으시면

@@ -120,7 +120,7 @@ export default function StudentAutonomicPage() {
                 <p>
                   도곡경희한의원의 수험생 자율신경실조 치료 프로그램은
                   교감신경과 부교감신경의 균형을 회복시켜
-                  신체 증상을 근본적으로 개선합니다.
+                  신체 증상의 개선을 돕습니다.
                 </p>
                 <p>
                   침 치료와 맞춤 한약으로 소화기능을 정상화하고,
@@ -276,7 +276,7 @@ export default function StudentAutonomicPage() {
               <h3 className="text-xl font-medium mb-4">집중 치료</h3>
               <p className="text-text-light text-sm leading-relaxed mb-6">
                 침 치료와 맞춤 한약으로 자율신경계의 균형을 회복하고
-                신체 증상을 근본적으로 개선합니다.
+                신체 증상의 개선을 돕습니다.
               </p>
               <ul className="space-y-2 text-sm text-text-light">
                 <li className="flex items-center gap-2">
@@ -298,7 +298,7 @@ export default function StudentAutonomicPage() {
               <div className="text-accent text-5xl font-bold mb-4">03</div>
               <h3 className="text-xl font-medium mb-4">생활 관리</h3>
               <p className="text-text-light text-sm leading-relaxed mb-6">
-                치료 효과를 극대화하고 재발을 방지하기 위한
+                치료에 도움이 되고 재발을 줄이는 데 도움이 되도록
                 생활습관 개선 지도를 제공합니다.
               </p>
               <ul className="space-y-2 text-sm text-text-light">
@@ -362,7 +362,7 @@ export default function StudentAutonomicPage() {
                 약을 먹지 않고도 치료할 수 있나요?
               </h3>
               <p className="text-text-light leading-relaxed pl-6">
-                한약과 침 치료를 병행하는 것이 가장 효과적이지만,
+                한약과 침 치료를 병행하는 것이 도움이 되지만,
                 침 치료만으로도 증상 개선이 가능합니다. 환자분의 상태와 선호도에 따라
                 치료 방법을 조절할 수 있으니 상담 시 편하게 말씀해 주세요.
               </p>

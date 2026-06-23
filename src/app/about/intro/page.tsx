@@ -7,7 +7,7 @@ import { breadcrumbSchema, medicalWebPageSchema } from "@/lib/structured-data";
 export const metadata: Metadata = {
   title: "한의원 소개 — 진료 철학과 원장 약력",
   description:
-    "도곡경희한의원은 자율신경계의 균형 회복을 통해 집중력·면역력·만성피로를 근본적으로 치료합니다. 경희대 한의학박사이자 한방내과 전문의(20년 이상 임상)가 진료하며, 식약처 인증 약재를 원내에서 소량씩 탕전합니다.",
+    "도곡경희한의원은 자율신경계의 균형 회복을 통해 집중력·면역력·만성피로의 개선을 돕습니다. 경희대 한의학박사이자 한방내과 전문의(20년 이상 임상)가 진료하며, 식약처 인증 약재를 원내에서 소량씩 탕전합니다.",
   alternates: { canonical: "/about/intro" },
 };
 
@@ -146,7 +146,7 @@ export default function AboutIntroPage() {
                 <p>
                   한약 치료, 침 치료, 자율신경조절 약침, 식생활 개선 등을<br />
                   통합적으로 적용하여<br />
-                  근본적인 건강 회복을 이끌어냅니다.
+                  건강 회복을 돕습니다.
                 </p>
               </div>
               <Link href="/about/principle" className="inline-flex items-center mt-8 text-accent font-medium hover:underline">

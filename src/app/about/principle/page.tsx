@@ -20,7 +20,7 @@ export default function PrinciplePage() {
             path: pagePath,
             name: "치료 원리 — 도곡경희한의원",
             description:
-              "자율신경계 회복을 통한 근본 치료 원리. 한약·침·약침·식생활 개선의 통합 치료.",
+              "자율신경계 회복을 통해 원인에 접근하는 치료 원리. 한약·침·약침·식생활 개선의 통합 치료.",
           }),
           breadcrumbSchema([
             { name: "홈", path: "/" },
@@ -108,7 +108,7 @@ export default function PrinciplePage() {
                 <div className="space-y-4 text-text-light leading-relaxed">
                   <p>
                     도곡경희한의원은 단순히 증상을 완화하는 것이 아니라,
-                    자율신경계의 균형을 근본적으로 회복시키는 치료를 목표로 합니다.
+                    자율신경계의 균형 회복을 목표로 합니다.
                   </p>
                   <p>
                     환자 개개인의 체질, 생활 패턴, 증상의 원인을 종합적으로 분석하여
@@ -132,7 +132,7 @@ export default function PrinciplePage() {
                     {
                       step: "02",
                       title: "맞춤 처방",
-                      description: "진단 결과를 바탕으로 개인별 맞춤 한약을 처방합니다. 자율신경계 조절에 효과적인 약재를 선별하여 조제합니다."
+                      description: "진단 결과를 바탕으로 개인별 맞춤 한약을 처방합니다. 자율신경계 조절을 돕는 약재를 선별하여 조제합니다."
                     },
                     {
                       step: "03",

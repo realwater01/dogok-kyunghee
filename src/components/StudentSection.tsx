@@ -53,7 +53,7 @@ export default function StudentSection() {
           <p className="text-text-light max-w-2xl mx-auto leading-relaxed">
             집중이 안 되고 쉽게 지치는 건 의지가 아니라 컨디션 문제입니다.
             <br />
-            자율신경 균형을 잡아 공부할 수 있는 몸으로 회복시킵니다.
+            자율신경 균형을 잡아 공부할 수 있는 몸의 회복을 돕습니다.
           </p>
         </div>
 
