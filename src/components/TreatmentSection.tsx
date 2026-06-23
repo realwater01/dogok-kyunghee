@@ -42,7 +42,7 @@ const treatments = [
   },
   {
     title: "도곡경희보약",
-    description: "가성비 한약부터 최고급 한약까지\n“달이다 쌍화, 강활 쌍금탕, 총명 쌍화탕, 사향 공진단”을 처방받아보세요.",
+    description: "상비약부터 개인 맞춤 한약까지\n“달이다 쌍화, 강활 쌍금탕, 총명 쌍화탕, 사향 공진단”을 처방받아보세요.",
     icon: (
       <path
         strokeLinecap="round"
