@@ -108,6 +108,9 @@ export default function LocationPage() {
                     <p className="text-text-light text-sm ml-11">
                       건물 내 주차 가능
                     </p>
+                    <p className="text-text-light text-sm ml-11 mt-1">
+                      한의원 앞 인도 위로 올라와 주차하세요
+                    </p>
                   </div>
                 </div>
               </div>
