@@ -47,8 +47,10 @@ export default function QuickConsult() {
         className="w-14 h-14 rounded-xl shadow-lg bg-[#03C75A] text-white flex flex-col items-center justify-center gap-0.5 hover:brightness-95 transition-all"
         aria-label="네이버 예약"
       >
-        <span className="text-lg font-bold leading-none">N</span>
-        <span className="text-[10px] font-medium leading-none">예약</span>
+        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M16.273 12.845 7.376 0H0v24h7.726V11.155L16.624 24H24V0h-7.727z" />
+        </svg>
+        <span className="text-[10px] font-medium leading-none">예약하기</span>
       </a>
     </div>
   );
