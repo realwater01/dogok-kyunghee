@@ -10,16 +10,16 @@ export default function HeroSection() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             {/* Text Content */}
             <div className="order-2 lg:order-1">
-              <h1 className="text-3xl md:text-4xl lg:text-[39px] font-normal leading-[1.2] mb-8 text-primary tracking-wider">
+              <h1 className="text-4xl md:text-5xl lg:text-[48px] font-normal leading-[1.2] mb-8 text-primary tracking-wider">
                 한약으로
                 <br />
                 몸과 마음을 치료합니다
               </h1>
-              <p className="text-lg text-text-light mb-6 max-w-md">
-                <span className="font-normal text-primary block mb-3">한약 치료 상위 1% 자부심</span>
-                <span className="text-sm font-normal leading-normal block">경희대학교 한의학과 학사 석사 박사</span>
-                <span className="text-sm font-normal leading-normal block">20년 경력의 한방내과 전문의</span>
-                <span className="text-sm font-medium leading-normal block text-accent mt-2">집중력·체력·자율신경계 치료</span>
+              <p className="text-xl text-text-light mb-6 max-w-md">
+                <span className="text-2xl font-normal text-primary block mb-3">한약 치료 상위 1% 자부심</span>
+                <span className="text-base font-normal leading-normal block">경희대학교 한의학과 학사 석사 박사</span>
+                <span className="text-base font-normal leading-normal block">20년 경력의 한방내과 전문의</span>
+                <span className="text-base font-medium leading-normal block text-accent mt-2">집중력·체력·자율신경계 치료</span>
               </p>
             </div>
 
