@@ -30,7 +30,7 @@ export default function KakaoMap() {
         );
         const map = new window.kakao.maps.Map(containerRef.current, {
           center,
-          level: 3,
+          level: 2,
         });
         const marker = new window.kakao.maps.Marker({ position: center });
         marker.setMap(map);
