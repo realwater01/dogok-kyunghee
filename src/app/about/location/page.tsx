@@ -48,8 +48,9 @@ export default function LocationPage() {
                 <p className="text-sm opacity-60 mb-4">지도 영역</p>
                 <div className="flex gap-3 justify-center">
                   <Link
-                    href="https://map.naver.com"
+                    href="https://map.naver.com/p/search/도곡경희한의원"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="px-4 py-2 bg-white rounded text-sm text-primary hover:bg-brown-light/20 transition-colors"
                   >
                     네이버지도
