@@ -56,8 +56,9 @@ export default function LocationPage() {
                     네이버지도
                   </Link>
                   <Link
-                    href="https://map.kakao.com"
+                    href="https://map.kakao.com/?q=도곡경희한의원"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="px-4 py-2 bg-white rounded text-sm text-primary hover:bg-brown-light/20 transition-colors"
                   >
                     카카오맵
