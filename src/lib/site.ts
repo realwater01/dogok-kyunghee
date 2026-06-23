@@ -24,7 +24,7 @@ export const clinic = {
   // 네이버 지도 "도곡경희한의원"(논현로28길 24 1층) 장소 핀 좌표 (WGS84).
   geo: { latitude: 37.4832424, longitude: 127.0443959 },
   transit: "지하철 3호선 매봉역 4번 출구에서 도보 7분",
-  parking: "건물 내 주차 가능",
+  parking: "한의원 앞 인도 주차",
   priceRange: "₩₩",
   // 영업시간: 평일 09:00-16:30, 토 09:00-13:00, 일·공휴일 휴진 (점심시간 없음)
   openingHours: [
