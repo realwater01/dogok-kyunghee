@@ -16,10 +16,9 @@ export default function HeroSection() {
                 몸과 마음을 치료합니다
               </h1>
               <p className="text-xl text-text-light mb-6 max-w-md">
-                <span className="text-2xl font-normal text-primary block mb-3">한약, 정성을 다해 짓습니다</span>
+                <span className="text-2xl font-normal text-accent block mb-3">집중력, 체력, 자율신경계 치료</span>
                 <span className="text-base font-normal leading-normal block">경희대학교 한의학과 학사 석사 박사</span>
                 <span className="text-base font-normal leading-normal block">20년 경력의 한방내과 전문의</span>
-                <span className="text-base font-medium leading-normal block text-accent mt-2">집중력·체력·자율신경계 치료</span>
               </p>
             </div>
 
