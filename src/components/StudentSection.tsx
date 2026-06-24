@@ -61,15 +61,15 @@ export default function StudentSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
           {symptoms.map((symptom, index) => (
             <div
               key={index}
-              className="p-8 bg-white rounded-xl border border-transparent hover:border-brown-light transition-all duration-300 text-center"
+              className="p-5 md:p-8 bg-white rounded-xl border border-transparent hover:border-brown-light transition-all duration-300 flex items-center gap-4 text-left md:flex-col md:text-center md:gap-0"
             >
-              <div className="w-14 h-14 bg-secondary rounded-xl flex items-center justify-center mx-auto mb-5">
+              <div className="w-12 h-12 md:w-14 md:h-14 bg-secondary rounded-xl flex items-center justify-center flex-shrink-0 md:mx-auto md:mb-5">
                 <svg
-                  className="w-7 h-7 text-accent"
+                  className="w-6 h-6 md:w-7 md:h-7 text-accent"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -77,12 +77,14 @@ export default function StudentSection() {
                   {symptom.icon}
                 </svg>
               </div>
-              <h3 className="text-lg font-semibold mb-3 text-primary">
-                {symptom.title}
-              </h3>
-              <p className="text-text-light text-sm leading-relaxed">
-                {symptom.description}
-              </p>
+              <div>
+                <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-3 text-primary">
+                  {symptom.title}
+                </h3>
+                <p className="text-text-light text-sm leading-relaxed">
+                  {symptom.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>
