@@ -387,7 +387,7 @@ export default function StudentAutonomicPage() {
       <section className="section bg-brown-dark text-white">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-medium mb-6">
-            건강한 몸과 마음으로{" "}<br className="hidden md:block" />목표를 향해 나아가세요
+            건강한 몸과 마음으로<br />목표를 향해 나아가세요
           </h2>
           <p className="text-brown-light mb-8 max-w-xl mx-auto">
             수험생 자율신경실조 치료에 대해 더 궁금하신 점이 있으시면

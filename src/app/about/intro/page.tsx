@@ -37,7 +37,7 @@ export default function AboutIntroPage() {
             <p className="text-accent font-medium mb-4">ABOUT US</p>
             <h1 className="text-4xl md:text-5xl font-medium leading-tight mb-6">
               도곡경희한의원을
-              {" "}<br className="hidden md:block" />
+              <br />
               소개합니다
             </h1>
             <p className="text-accent font-bold mb-2">한약, 제대로 달이다</p>
@@ -294,7 +294,7 @@ export default function AboutIntroPage() {
       <section className="section bg-brown-dark text-white">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-medium mb-6">
-            건강한 삶의 시작,{" "}<br className="hidden md:block" />도곡경희한의원과 함께하세요
+            건강한 삶의 시작,<br />도곡경희한의원과 함께하세요
           </h2>
           <p className="text-brown-light mb-8 max-w-xl mx-auto">
             궁금한 점이 있으시면 언제든지 문의해 주세요.

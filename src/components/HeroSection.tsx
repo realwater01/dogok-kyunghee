@@ -12,7 +12,7 @@ export default function HeroSection() {
             <div className="order-2 lg:order-1">
               <h1 className="text-3xl md:text-4xl lg:text-[42px] font-normal leading-[1.2] mb-8 text-primary tracking-wider">
                 한약으로
-                {" "}<br className="hidden md:block" />
+                <br />
                 몸과 마음을 치료합니다
               </h1>
               <p className="text-xl text-text-light mb-6 max-w-md">
