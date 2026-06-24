@@ -14,7 +14,7 @@ export default function NotFound() {
           </h1>
           <p className="text-text-light leading-relaxed mb-10">
             주소가 바뀌었거나 준비중인 페이지일 수 있습니다.
-            <br />
+            {" "}<br className="hidden md:block" />
             궁금한 점은 전화로 편하게 문의해 주세요.
           </p>
 

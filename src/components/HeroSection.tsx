@@ -12,7 +12,7 @@ export default function HeroSection() {
             <div className="order-2 lg:order-1">
               <h1 className="text-3xl md:text-4xl lg:text-[42px] font-normal leading-[1.2] mb-8 text-primary tracking-wider">
                 한약으로
-                <br />
+                {" "}<br className="hidden md:block" />
                 몸과 마음을 치료합니다
               </h1>
               <p className="text-xl text-text-light mb-6 max-w-md">
@@ -37,29 +37,29 @@ export default function HeroSection() {
               <p className="text-accent font-bold mb-6 tracking-wide text-xl">한약, 제대로 달이다</p>
               <p className="text-accent font-normal tracking-wide text-sm leading-relaxed max-w-md mb-8">
                 한약은 자연으로부터 온 다양한 약재를 엄선하고,
-                <br />
+                {" "}<br className="hidden md:block" />
                 개인의 체질에 맞게 조화롭게 배합해
-                <br />
+                {" "}<br className="hidden md:block" />
                 몸과 마음의 균형을 회복하도록 돕는
-                <br />
+                {" "}<br className="hidden md:block" />
                 자연에 가까운 치료법입니다.
                 <br /><br />
                 바쁜 일상 속 스트레스와 과로,
-                <br />
+                {" "}<br className="hidden md:block" />
                 잘못된 생활습관으로
-                <br />
+                {" "}<br className="hidden md:block" />
                 현대인은 건강을 놓치곤 합니다.
                 <br /><br />
                 도곡경희한의원은
-                <br />
+                {" "}<br className="hidden md:block" />
                 한 사람, 한 사람을 위해
-                <br />
+                {" "}<br className="hidden md:block" />
                 정성껏 직접 달인 한약으로
-                <br />
+                {" "}<br className="hidden md:block" />
                 몸의 회복과 체질의 균형을 돕습니다.
                 <br /><br />
                 당신의 일상이 다시 편안해질 수 있도록
-                <br />
+                {" "}<br className="hidden md:block" />
                 편안한 공간에서 문을 열고 기다립니다.
               </p>
 

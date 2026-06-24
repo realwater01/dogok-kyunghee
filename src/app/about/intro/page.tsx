@@ -37,12 +37,12 @@ export default function AboutIntroPage() {
             <p className="text-accent font-medium mb-4">ABOUT US</p>
             <h1 className="text-4xl md:text-5xl font-medium leading-tight mb-6">
               도곡경희한의원을
-              <br />
+              {" "}<br className="hidden md:block" />
               소개합니다
             </h1>
             <p className="text-accent font-bold mb-2">한약, 제대로 달이다</p>
             <p className="text-text-light text-lg leading-relaxed">
-              천연약재의 배합을 통한 최적의 자연치료로<br />
+              천연약재의 배합을 통한 최적의 자연치료로{" "}<br className="hidden md:block" />
               건강한 삶을 되찾아드립니다.
             </p>
           </div>
@@ -60,30 +60,30 @@ export default function AboutIntroPage() {
               </h2>
               <div className="space-y-6 text-text-light leading-relaxed">
                 <p className="first-letter:text-5xl first-letter:font-title first-letter:text-accent first-letter:float-left first-letter:mr-3 first-letter:mt-1">
-                  몸과 마음의 균형이 깨지면<br />
+                  몸과 마음의 균형이 깨지면{" "}<br className="hidden md:block" />
                   몸의 이상반응이 시작됩니다.
                 </p>
                 <p>
-                  자율신경계의 조절력이 떨어지면서<br />
-                  면역력은 균형을 잃고<br />
-                  외부 바이러스와 세균 감염에는 취약해지고<br />
+                  자율신경계의 조절력이 떨어지면서{" "}<br className="hidden md:block" />
+                  면역력은 균형을 잃고{" "}<br className="hidden md:block" />
+                  외부 바이러스와 세균 감염에는 취약해지고{" "}<br className="hidden md:block" />
                   오히려 내 면역이 내 몸을 공격하여 염증을 만들어냅니다.
                 </p>
                 <p>
-                  호르몬 분비에도 이상이 생기며<br />
-                  소화문제, 비염, 집중력저하, 만성피로, 두통, 어지러움 등<br />
+                  호르몬 분비에도 이상이 생기며{" "}<br className="hidden md:block" />
+                  소화문제, 비염, 집중력저하, 만성피로, 두통, 어지러움 등{" "}<br className="hidden md:block" />
                   몸에는 이상신호가 발생합니다.
                 </p>
                 <p>
-                  한약은 자율신경계의 조절력을 되찾고<br />
-                  흥분된 면역반응은 가라앉히며<br />
-                  저하된 면역력을 개선합니다.<br />
+                  한약은 자율신경계의 조절력을 되찾고{" "}<br className="hidden md:block" />
+                  흥분된 면역반응은 가라앉히며{" "}<br className="hidden md:block" />
+                  저하된 면역력을 개선합니다.{" "}<br className="hidden md:block" />
                   염증을 줄이고 호르몬 분비를 정상화시킵니다.
                 </p>
                 <p>
-                  자연에서 나는 천연약재들을<br />
-                  몸과 마음의 균형을 찾듯이<br />
-                  조화롭게 배합하여 처방하면<br />
+                  자연에서 나는 천연약재들을{" "}<br className="hidden md:block" />
+                  몸과 마음의 균형을 찾듯이{" "}<br className="hidden md:block" />
+                  조화롭게 배합하여 처방하면{" "}<br className="hidden md:block" />
                   내 몸은 건강하고 활력있는 선순환을 시작합니다.
                 </p>
               </div>
@@ -137,15 +137,15 @@ export default function AboutIntroPage() {
               </h2>
               <div className="space-y-6 text-text-light leading-relaxed">
                 <p>
-                  도곡경희한의원은 자율신경계를 회복시킴으로써<br />
-                  집중력을 개선하고<br />
-                  면역력을 정상화하며<br />
-                  잦은 감염 및 염증을 치료, 예방하며<br />
+                  도곡경희한의원은 자율신경계를 회복시킴으로써{" "}<br className="hidden md:block" />
+                  집중력을 개선하고{" "}<br className="hidden md:block" />
+                  면역력을 정상화하며{" "}<br className="hidden md:block" />
+                  잦은 감염 및 염증을 치료, 예방하며{" "}<br className="hidden md:block" />
                   만성피로를 개선하는 치료를 진행합니다.
                 </p>
                 <p>
-                  한약 치료, 침 치료, 자율신경조절 약침, 식생활 개선 등을<br />
-                  통합적으로 적용하여<br />
+                  한약 치료, 침 치료, 자율신경조절 약침, 식생활 개선 등을{" "}<br className="hidden md:block" />
+                  통합적으로 적용하여{" "}<br className="hidden md:block" />
                   건강 회복을 돕습니다.
                 </p>
               </div>
@@ -169,10 +169,10 @@ export default function AboutIntroPage() {
               원내에서 소량씩 탕전
             </h2>
             <p className="text-text-light max-w-2xl mx-auto">
-              경희대학교 법인 경희한약의<br />
-              엄선된 식약처 인증 약재를 사용합니다.<br />
-              철저한 원내 시스템을 통해 약재를 신선하게 관리하며,<br />
-              상비약부터 개인 맞춤 한약까지<br />
+              경희대학교 법인 경희한약의{" "}<br className="hidden md:block" />
+              엄선된 식약처 인증 약재를 사용합니다.{" "}<br className="hidden md:block" />
+              철저한 원내 시스템을 통해 약재를 신선하게 관리하며,{" "}<br className="hidden md:block" />
+              상비약부터 개인 맞춤 한약까지{" "}<br className="hidden md:block" />
               모두 원내 탕전실에서 소량씩 직접 탕전합니다.
             </p>
           </div>
@@ -236,7 +236,7 @@ export default function AboutIntroPage() {
             </h2>
             <p className="text-text-light max-w-2xl mx-auto">
               환자 한 분 한 분에게 충분한 시간을 드리기 위해 예약제로 운영됩니다.
-              <br className="hidden md:block" />
+              {" "}<br className="hidden md:block" />
               프라이빗한 공간에서 편안하게 상담받으실 수 있습니다.
             </p>
           </div>
@@ -294,7 +294,7 @@ export default function AboutIntroPage() {
       <section className="section bg-brown-dark text-white">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-medium mb-6">
-            건강한 삶의 시작,<br />도곡경희한의원과 함께하세요
+            건강한 삶의 시작,{" "}<br className="hidden md:block" />도곡경희한의원과 함께하세요
           </h2>
           <p className="text-brown-light mb-8 max-w-xl mx-auto">
             궁금한 점이 있으시면 언제든지 문의해 주세요.

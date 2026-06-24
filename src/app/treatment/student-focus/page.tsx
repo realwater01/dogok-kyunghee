@@ -52,7 +52,7 @@ export default function StudentFocusPage() {
               수험생 집중력 향상 프로그램
             </h1>
             <p className="text-text-light text-lg leading-relaxed">
-              장시간 학습에 지친 수험생들을 위한<br />
+              장시간 학습에 지친 수험생들을 위한{" "}<br className="hidden md:block" />
               집중력과 체력을 동시에 회복하는 특화 프로그램
             </p>
           </div>
@@ -71,33 +71,33 @@ export default function StudentFocusPage() {
               <div className="space-y-6 text-text-light leading-relaxed">
                 <p>
                   장시간 책상 앞에 앉아있지만
-                  <br />
+                  {" "}<br className="hidden md:block" />
                   집중이 되지 않고, 머리가 멍하며
-                  <br />
+                  {" "}<br className="hidden md:block" />
                   시험 기간에는 집중해야할 에너지를
-                  <br />
+                  {" "}<br className="hidden md:block" />
                   불안 초조 긴장에 쓰고 있지는 않나요
                 </p>
-                <br />
+                {" "}<br className="hidden md:block" />
                 <p>
                   아침에 일어나기 힘들고
-                  <br />
+                  {" "}<br className="hidden md:block" />
                   만성 비염과 두통
-                  <br />
+                  {" "}<br className="hidden md:block" />
                   복통과 변비, 설사와 소화불량
-                  <br />
+                  {" "}<br className="hidden md:block" />
                   잦은 감기와 생리통
-                  <br />
+                  {" "}<br className="hidden md:block" />
                   초조와 불안, 또는 지나치게 쳐지고 몸이 답답한 느낌
-                  <br />
+                  {" "}<br className="hidden md:block" />
                   만성 피로가 모두 brain fog 로 이어집니다.
                 </p>
-                <br />
+                {" "}<br className="hidden md:block" />
                 <p>
                   수험생들의 집중력 저하는
-                  <br />
+                  {" "}<br className="hidden md:block" />
                   단순히 의지가 약해서가 아니라
-                  <br />
+                  {" "}<br className="hidden md:block" />
                   한약으로 개선될 수 있는 몸의 병적인 증상입니다.
                 </p>
               </div>
@@ -126,14 +126,14 @@ export default function StudentFocusPage() {
               <div className="space-y-6 text-text-light leading-relaxed">
                 <p>
                   수험생마다 집중력 저하의
-                  <br />
+                  {" "}<br className="hidden md:block" />
                   주요원인이 되는 기전을 바로잡아
-                  <br />
+                  {" "}<br className="hidden md:block" />
                   brain fog를 제거하고
-                  <br />
+                  {" "}<br className="hidden md:block" />
                   맑은 정신으로 집중할수 있도록 도와줍니다.
                 </p>
-                <br />
+                {" "}<br className="hidden md:block" />
                 <div className="space-y-5">
                   <div className="bg-cream/50 rounded-xl p-5 border border-brown-light/30 flex gap-5 items-stretch">
                     <div className="w-48 flex-shrink-0 bg-[#FBEEEC] rounded-xl overflow-hidden flex items-center justify-center">
@@ -150,17 +150,17 @@ export default function StudentFocusPage() {
                       <p className="text-2xl font-bold text-accent mb-3">1. Gut Thinks</p>
                       <p className="text-base">
                         불규칙한 식사, 적은 신체활동으로
-                        <br />
+                        {" "}<br className="hidden md:block" />
                         장내세균이 단순화되고 과증식되면서
-                        <br />
+                        {" "}<br className="hidden md:block" />
                         독소가 체내로 흡수되고
-                        <br />
+                        {" "}<br className="hidden md:block" />
                         이를 막기 위해 생긴 면역반응은
-                        <br />
+                        {" "}<br className="hidden md:block" />
                         뇌의 활동을 방해하여 brain fog 를 일으킵니다
-                        <br />
+                        {" "}<br className="hidden md:block" />
                         장내 세균이 건강하게 회복되면서
-                        <br />
+                        {" "}<br className="hidden md:block" />
                         머리가 맑아지고 컨디션이 좋아집니다
                       </p>
                     </div>
@@ -173,17 +173,17 @@ export default function StudentFocusPage() {
                       <p className="text-2xl font-bold text-accent mb-3">2. 머리, 목, 어깨, 체표 순환 개선</p>
                       <p className="text-base">
                         수험생들 중 일부는
-                        <br />
+                        {" "}<br className="hidden md:block" />
                         유독 얼굴이 붉고 목어깨 긴장도가 높으며
-                        <br />
+                        {" "}<br className="hidden md:block" />
                         순환이 떨어집니다
-                        <br />
+                        {" "}<br className="hidden md:block" />
                         만성비염이나 여드름
-                        <br />
+                        {" "}<br className="hidden md:block" />
                         고질적인 두통을 호소하기도 합니다
-                        <br />
+                        {" "}<br className="hidden md:block" />
                         순환을 시켜주고 열을 내려주면
-                        <br />
+                        {" "}<br className="hidden md:block" />
                         머리가 맑아지고 몸이 가벼워집니다
                       </p>
                     </div>
@@ -196,19 +196,19 @@ export default function StudentFocusPage() {
                       <p className="text-2xl font-bold text-accent mb-3">3. 흉부 과긴장 완화</p>
                       <p className="text-base">
                         흉부가 과긴장되고 뻣뻣해지면
-                        <br />
+                        {" "}<br className="hidden md:block" />
                         건강하게 쓰일 신체 에너지가
-                        <br />
+                        {" "}<br className="hidden md:block" />
                         분노, 불안초조, 우울감 등의
-                        <br />
+                        {" "}<br className="hidden md:block" />
                         정신 에너지로 소모됩니다
-                        <br />
+                        {" "}<br className="hidden md:block" />
                         한약을 통해 흉부의 답답함이 해소되면
-                        <br />
+                        {" "}<br className="hidden md:block" />
                         불안초조가 잦아들고
-                        <br />
+                        {" "}<br className="hidden md:block" />
                         지나친 분노와 짜증이 줄며
-                        <br />
+                        {" "}<br className="hidden md:block" />
                         에너지가 한곳으로 집중됩니다
                       </p>
                     </div>
@@ -221,15 +221,15 @@ export default function StudentFocusPage() {
                       <p className="text-2xl font-bold text-accent mb-3">4. 기력 보충</p>
                       <p className="text-base">
                         수험생활을 하면서
-                        <br />
+                        {" "}<br className="hidden md:block" />
                         에너지 자체가 소진된 경우도 많습니다
-                        <br />
+                        {" "}<br className="hidden md:block" />
                         체질에 맞는 보약처방과 녹용, 공진단으로
-                        <br />
+                        {" "}<br className="hidden md:block" />
                         체력을 보충해주면
-                        <br />
+                        {" "}<br className="hidden md:block" />
                         기력이 올라가면서
-                        <br />
+                        {" "}<br className="hidden md:block" />
                         지치고 무기력해진 몸에 생기가 돕니다
                       </p>
                     </div>
@@ -484,7 +484,7 @@ export default function StudentFocusPage() {
       <section className="section bg-brown-dark text-white">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-medium mb-6">
-            좋은 컨디션으로<br />목표를 향해 나아가세요
+            좋은 컨디션으로{" "}<br className="hidden md:block" />목표를 향해 나아가세요
           </h2>
           <p className="text-brown-light mb-8 max-w-xl mx-auto">
             수험생 집중력 프로그램에 대해 더 궁금하신 점이 있으시면

@@ -10,11 +10,11 @@ export default function DoctorSection() {
             </h2>
             <div className="text-text-light leading-relaxed doctor-description">
               <p>
-                도곡경희한의원 원장은 20년 이상의 임상경험과 지속적인 연구를 통해<br />
+                도곡경희한의원 원장은 20년 이상의 임상경험과 지속적인 연구를 통해{" "}<br className="hidden md:block" />
                 소아난치질환부터 말기암까지 내과난치질환의 한약치료의 전문성을 쌓아왔습니다.
               </p>
               <p>
-                환자 한분 한분과의 진심어린 소통을 바탕으로,<br />
+                환자 한분 한분과의 진심어린 소통을 바탕으로,{" "}<br className="hidden md:block" />
                 단순한 치료를 넘어 건강한 삶을 되찾을수 있도록 함께 노력합니다.
               </p>
             </div>

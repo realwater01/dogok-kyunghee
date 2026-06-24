@@ -51,7 +51,7 @@ export default function ChildrenAdhdTicPage() {
               어린이 ADHD, TIC, 불안 치료
             </h1>
             <p className="text-text-light text-lg leading-relaxed">
-              집중하지 못하고 산만한 우리 아이를 위한<br />
+              집중하지 못하고 산만한 우리 아이를 위한{" "}<br className="hidden md:block" />
               원인에 접근하는 프로그램
             </p>
           </div>
@@ -112,7 +112,7 @@ export default function ChildrenAdhdTicPage() {
             <div className="order-1 lg:order-2">
               <p className="text-accent font-medium mb-4">맞춤 솔루션</p>
               <h2 className="text-3xl md:text-4xl font-medium mb-8">
-                한의학으로<br />원인에 접근합니다
+                한의학으로{" "}<br className="hidden md:block" />원인에 접근합니다
               </h2>
               <div className="space-y-6 text-text-light leading-relaxed">
                 <p>
@@ -386,7 +386,7 @@ export default function ChildrenAdhdTicPage() {
       <section className="section bg-brown-dark text-white">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-medium mb-6">
-            건강하게 성장하는<br />우리 아이의 미래를 위해
+            건강하게 성장하는{" "}<br className="hidden md:block" />우리 아이의 미래를 위해
           </h2>
           <p className="text-brown-light mb-8 max-w-xl mx-auto">
             어린이 ADHD·틱 치료에 대해 더 궁금하신 점이 있으시면

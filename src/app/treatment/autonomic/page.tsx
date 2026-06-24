@@ -36,7 +36,7 @@ export default function AutonomicPage() {
               자율신경계
             </h1>
             <p className="text-text-light text-lg leading-relaxed">
-              만성두통·어지러움·피로, 공황장애·불안·실신, 감염·염증까지<br />
+              만성두통·어지러움·피로, 공황장애·불안·실신, 감염·염증까지{" "}<br className="hidden md:block" />
               자율신경계의 균형 회복에 중점을 둡니다.
             </p>
           </div>
@@ -48,13 +48,13 @@ export default function AutonomicPage() {
         <div className="container mx-auto px-6">
           <div className="max-w-2xl mx-auto text-center mb-20">
             <p className="text-text-light leading-relaxed">
-              현대인들은 과도한 스트레스와 불규칙한 생활로 인해<br />
+              현대인들은 과도한 스트레스와 불규칙한 생활로 인해{" "}<br className="hidden md:block" />
               자율신경계의 균형이 깨지기 쉽습니다.<br /><br />
-              이로 인해<br />
-              면역이상, 각종 감염 및 염증,<br />
+              이로 인해{" "}<br className="hidden md:block" />
+              면역이상, 각종 감염 및 염증,{" "}<br className="hidden md:block" />
               집중력 저하, 만성피로 등을 겪게됩니다.<br /><br />
-              저희 한의원은 자연치료를 통해<br />
-              자율신경을 안정시키고<br />
+              저희 한의원은 자연치료를 통해{" "}<br className="hidden md:block" />
+              자율신경을 안정시키고{" "}<br className="hidden md:block" />
               몸의 균형을 찾아 건강한 일상을 되찾을수 있도록 도와드립니다.
             </p>
           </div>
@@ -79,8 +79,8 @@ export default function AutonomicPage() {
               </div>
               <h3 className="text-xl font-semibold mb-3 text-primary">정확한 진단</h3>
               <p className="text-text-light text-sm leading-relaxed">
-                체계적인 문진과 설문지, 검사 등을 통해<br />
-                환자분의 상태를 정확히 파악하고<br />
+                체계적인 문진과 설문지, 검사 등을 통해{" "}<br className="hidden md:block" />
+                환자분의 상태를 정확히 파악하고{" "}<br className="hidden md:block" />
                 치료의 기준점과 목표를 정합니다.
               </p>
             </div>
@@ -104,7 +104,7 @@ export default function AutonomicPage() {
               </div>
               <h3 className="text-xl font-semibold mb-3 text-primary">맞춤 치료</h3>
               <p className="text-text-light text-sm leading-relaxed">
-                개인별 체질과 증상에 따른<br />
+                개인별 체질과 증상에 따른{" "}<br className="hidden md:block" />
                 맞춤 치료를 제공합니다.
               </p>
             </div>
@@ -128,7 +128,7 @@ export default function AutonomicPage() {
               </div>
               <h3 className="text-xl font-semibold mb-3 text-primary">지속 관리</h3>
               <p className="text-text-light text-sm leading-relaxed">
-                치료 후에도 건강한 생활을 유지할 수 있도록<br />
+                치료 후에도 건강한 생활을 유지할 수 있도록{" "}<br className="hidden md:block" />
                 지속적인 건강관리를 도와드립니다.
               </p>
             </div>

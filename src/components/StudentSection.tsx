@@ -52,11 +52,11 @@ export default function StudentSection() {
           </h2>
           <p className="text-text-light max-w-2xl mx-auto leading-relaxed">
             집중이 안 되고 쉽게 지치는 건
-            <br />
+            {" "}<br className="hidden md:block" />
             의지가 아니라 몸의 문제입니다.
-            <br />
+            {" "}<br className="hidden md:block" />
             자율신경 균형을 잡아
-            <br />
+            {" "}<br className="hidden md:block" />
             공부할 수 있는 몸의 회복을 돕습니다.
           </p>
         </div>

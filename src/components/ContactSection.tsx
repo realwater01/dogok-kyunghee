@@ -57,7 +57,7 @@ export default function ContactSection() {
             </h2>
             <p className="text-text-light mb-10 leading-relaxed">
               궁금한 점이 있으시면 언제든지 문의해 주세요.
-              <br />
+              {" "}<br className="hidden md:block" />
               친절하게 상담해 드리겠습니다.
             </p>
 

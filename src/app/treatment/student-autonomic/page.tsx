@@ -50,7 +50,7 @@ export default function StudentAutonomicPage() {
               수험생 치료 프로그램
             </h1>
             <p className="text-text-light text-lg leading-relaxed">
-              지친 수험생들을 위한<br />
+              지친 수험생들을 위한{" "}<br className="hidden md:block" />
               집중력과 자율신경균형 회복 치료
             </p>
           </div>
@@ -69,20 +69,20 @@ export default function StudentAutonomicPage() {
               <div className="space-y-6 text-text-light leading-relaxed">
                 <p>
                   공부할 양은 많고 시험 스트레스로 집중해야할 시간에
-                  <br />
+                  {" "}<br className="hidden md:block" />
                   아프거나, 불안초조함으로 집중력이 온전하지 못한 경험을
                   많이 합니다.
                 </p>
                 <p>
                   수험생들의 집중력저하는 단순히 마음가짐의 문제가 아니라
-                  <br />
+                  {" "}<br className="hidden md:block" />
                   몸의 이상상태입니다.
                 </p>
                 <p>
                   개인별 체질을 고려한 치료한약으로
-                  <br />
+                  {" "}<br className="hidden md:block" />
                   비건강할때 나타나는 체질별 몸의 반응을 치료함으로써
-                  <br />
+                  {" "}<br className="hidden md:block" />
                   건강은 회복되고 집중력이 향상됩니다.
                 </p>
               </div>
@@ -387,7 +387,7 @@ export default function StudentAutonomicPage() {
       <section className="section bg-brown-dark text-white">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-medium mb-6">
-            건강한 몸과 마음으로<br />목표를 향해 나아가세요
+            건강한 몸과 마음으로{" "}<br className="hidden md:block" />목표를 향해 나아가세요
           </h2>
           <p className="text-brown-light mb-8 max-w-xl mx-auto">
             수험생 자율신경실조 치료에 대해 더 궁금하신 점이 있으시면

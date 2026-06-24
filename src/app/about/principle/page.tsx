@@ -37,7 +37,7 @@ export default function PrinciplePage() {
               치료원리
             </h1>
             <p className="text-text-light text-lg leading-relaxed">
-              자율신경계를 중심으로 몸과 마음의 균형을 회복시키는<br />
+              자율신경계를 중심으로 몸과 마음의 균형을 회복시키는{" "}<br className="hidden md:block" />
               도곡경희한의원의 치료 원리를 소개합니다.
             </p>
           </div>

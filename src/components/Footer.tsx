@@ -7,8 +7,8 @@ export default function Footer() {
           <div>
             <h3 style={{ color: '#ffffff' }} className="text-xl font-semibold mb-4">도곡경희한의원</h3>
             <p style={{ color: 'rgba(255,255,255,0.85)' }} className="text-sm leading-relaxed">
-              한약, 제대로 달이다<br />
-              천연약재의 배합을 통한 최적의 자연치료로<br />
+              한약, 제대로 달이다{" "}<br className="hidden md:block" />
+              천연약재의 배합을 통한 최적의 자연치료로{" "}<br className="hidden md:block" />
               건강한 삶을 되찾아드립니다.
             </p>
           </div>
