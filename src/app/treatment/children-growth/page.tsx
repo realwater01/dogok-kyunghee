@@ -28,6 +28,21 @@ const causes = [
   },
 ];
 
+const dispensing = [
+  {
+    title: "한방내과 전문의 진료",
+    desc: "한방내과 전문의가 아이의 상태를 직접 꼼꼼히 살펴 처방합니다.",
+  },
+  {
+    title: "경희한약 약재",
+    desc: "경희대학교 법인 경희한약의 식약처 인증 약재를 사용합니다.",
+  },
+  {
+    title: "원내 직접 탕전",
+    desc: "원내 탕전실에서 소량씩 직접 달여 아이에게 맞게 신중히 조제합니다.",
+  },
+];
+
 const targets = [
   "또래보다 키가 작거나 성장 속도가 느린 아이",
   "입이 짧고 소화가 약한 아이",
@@ -146,6 +161,19 @@ export default function ChildrenGrowthPage() {
                 원내 탕전실에서 소량씩 직접 달여 처방합니다.
               </p>
             </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-14">
+            {dispensing.map((d) => (
+              <div key={d.title} className="bg-secondary rounded-xl p-7 text-center">
+                <h3 className="text-lg font-semibold text-accent mb-3">
+                  {d.title}
+                </h3>
+                <p className="text-text-light text-sm leading-relaxed">
+                  {d.desc}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
