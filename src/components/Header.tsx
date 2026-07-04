@@ -32,9 +32,9 @@ const menuItems = [
   },
   {
     title: "비염",
-    href: "/coming-soon",
+    href: "/treatment/rhinitis",
     subMenu: [
-      { title: "비염ABC", href: "/coming-soon" },
+      { title: "비염ABC", href: "/treatment/rhinitis" },
     ],
   },
   {

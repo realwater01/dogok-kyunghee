@@ -38,7 +38,7 @@ const treatments = [
         d="M12 4c-1.5 0-3 1-3 3v5c0 2 1.5 4 3 6 1.5-2 3-4 3-6V7c0-2-1.5-3-3-3zM9 12c-2 0-3.5 1-3.5 2.5S7 17 9 17M15 12c2 0 3.5 1 3.5 2.5S17 17 15 17"
       />
     ),
-    href: "/coming-soon",
+    href: "/treatment/rhinitis",
   },
   {
     title: "도곡경희보약",

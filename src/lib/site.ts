@@ -75,4 +75,5 @@ export const sitePages = [
   { path: "/treatment/student-autonomic", title: "수험생 치료 프로그램", changeFrequency: "monthly", priority: 0.8 },
   { path: "/treatment/children-adhd-tic", title: "어린이 ADHD·틱·불안 치료", changeFrequency: "monthly", priority: 0.8 },
   { path: "/treatment/autonomic", title: "자율신경계 치료", changeFrequency: "monthly", priority: 0.8 },
+  { path: "/treatment/rhinitis", title: "비염 — 비염ABC 패턴 치료", changeFrequency: "monthly", priority: 0.8 },
 ] as const;
