@@ -73,16 +73,29 @@ export default function ChildrenGrowthPage() {
       {/* Hero Section */}
       <section className="bg-brown-bg section">
         <div className="container mx-auto px-6">
-          <div className="max-w-3xl">
-            <p className="text-accent font-medium mb-4">어린이 성장</p>
-            <h1 className="text-4xl md:text-5xl font-medium leading-tight mb-6">
-              어린이 성장
-            </h1>
-            <p className="text-text-light text-lg leading-relaxed">
-              키가 클 수 있는 시기는 정해져 있습니다.
-              <br className="hidden md:block" /> 아이가 잘 자랄 수 있는 몸의
-              컨디션을 한약으로 돕습니다.
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            <div className="max-w-xl">
+              <p className="text-accent font-medium mb-4">어린이 성장</p>
+              <h1 className="text-4xl md:text-5xl font-medium leading-tight mb-6">
+                어린이 성장
+              </h1>
+              <p className="text-text-light text-lg leading-relaxed">
+                키가 클 수 있는 시기는 정해져 있습니다.
+                <br className="hidden md:block" /> 아이가 잘 자랄 수 있는 몸의
+                컨디션을 한약으로 돕습니다.
+              </p>
+            </div>
+            <div className="rounded-2xl overflow-hidden shadow-sm">
+              <Image
+                src="/growth-clinic.jpg"
+                alt="밝고 편안한 도곡경희한의원 진료 공간"
+                width={1200}
+                height={798}
+                className="w-full h-auto"
+                priority
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+            </div>
           </div>
         </div>
       </section>
