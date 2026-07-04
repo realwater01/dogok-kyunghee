@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbSchema, medicalWebPageSchema } from "@/lib/structured-data";
@@ -160,7 +161,18 @@ export default function ChildrenGrowthPage() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-14">
+          <div className="max-w-3xl mx-auto mt-14 rounded-2xl overflow-hidden shadow-sm">
+            <Image
+              src="/growth-herbs.jpg"
+              alt="도곡경희한의원에서 사용하는 엄선한 한약 약재"
+              width={966}
+              height={725}
+              className="w-full h-auto"
+              sizes="(max-width: 768px) 100vw, 768px"
+            />
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-10">
             {dispensing.map((d) => (
               <div key={d.title} className="bg-secondary rounded-xl p-7 text-center">
                 <h3 className="text-lg font-semibold text-accent mb-3">
