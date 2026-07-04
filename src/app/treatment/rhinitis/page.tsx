@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbSchema, medicalWebPageSchema } from "@/lib/structured-data";
@@ -127,6 +128,17 @@ export default function RhinitisPage() {
               증상을 살펴 맞는 처방을 정하며, 패턴에 맞지 않는 경우 개인 맞춤
               처방으로 안내합니다.
             </p>
+          </div>
+
+          <div className="max-w-2xl mx-auto mb-16 rounded-2xl overflow-hidden shadow-sm">
+            <Image
+              src="/biyeom-abc.jpg"
+              alt="도곡경희한의원 비염ABC 한약과 엄선한 약재"
+              width={900}
+              height={676}
+              className="w-full h-auto"
+              sizes="(max-width: 768px) 100vw, 672px"
+            />
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
