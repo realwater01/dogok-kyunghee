@@ -134,8 +134,8 @@ export default function RhinitisPage() {
             <Image
               src="/biyeom-abc.jpg"
               alt="도곡경희한의원 비염ABC 한약과 엄선한 약재"
-              width={900}
-              height={676}
+              width={675}
+              height={545}
               className="w-full h-auto"
               sizes="(max-width: 768px) 100vw, 672px"
             />
