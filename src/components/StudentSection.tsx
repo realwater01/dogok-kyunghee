@@ -77,7 +77,7 @@ export default function StudentSection() {
                   {symptom.icon}
                 </svg>
               </div>
-              <div>
+              <div className="min-w-0">
                 <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-3 text-primary">
                   {symptom.title}
                 </h3>

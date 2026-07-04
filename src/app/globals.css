@@ -149,6 +149,8 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    /* 모바일 메뉴 서랍(off-canvas, translate-x-full)이 만드는 가로 스크롤 차단 */
+    overflow-x: hidden;
   }
 
   body {

@@ -92,17 +92,17 @@ export default function HeroSection() {
           </div>
 
           {/* Quick Info */}
-          <div className="flex gap-12 py-12 lg:pl-16">
+          <div className="flex flex-wrap gap-x-6 gap-y-4 md:gap-12 py-12 lg:pl-16">
             <div>
-              <p className="text-4xl font-semibold text-accent">20+</p>
+              <p className="text-3xl md:text-4xl font-semibold text-accent">20+</p>
               <p className="text-sm text-text-light mt-1">년 경력</p>
             </div>
             <div>
-              <p className="text-4xl font-semibold text-accent">10,000+</p>
+              <p className="text-3xl md:text-4xl font-semibold text-accent">10,000+</p>
               <p className="text-sm text-text-light mt-1">한약 처방 건수</p>
             </div>
             <div>
-              <p className="text-4xl font-semibold text-accent">10+</p>
+              <p className="text-3xl md:text-4xl font-semibold text-accent">10+</p>
               <p className="text-sm text-text-light mt-1">가성비 좋은 상비약</p>
             </div>
           </div>
