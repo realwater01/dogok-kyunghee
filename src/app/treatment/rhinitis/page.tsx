@@ -143,22 +143,23 @@ export default function RhinitisPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {patterns.map((p) => (
-              <div key={p.tag} className="bg-white rounded-xl p-8">
-                <p className="text-2xl font-bold text-accent mb-1">{p.tag}</p>
-                <h3 className="text-lg font-semibold text-primary mb-5">
-                  {p.title}
-                </h3>
-                <ul className="space-y-2.5">
+              <div key={p.tag} className="bg-white rounded-xl p-6 md:p-7">
+                <div className="flex items-baseline gap-2 mb-4 pb-4 border-b border-cream">
+                  <span className="text-2xl font-bold text-accent">{p.tag}</span>
+                  <span className="text-sm font-semibold text-primary">
+                    {p.title}
+                  </span>
+                </div>
+                <div className="flex flex-wrap gap-2">
                   {p.symptoms.map((s) => (
-                    <li
+                    <span
                       key={s}
-                      className="flex items-start gap-2 text-text-light text-sm leading-relaxed"
+                      className="px-3 py-1.5 bg-cream text-text-light text-sm rounded-full"
                     >
-                      <span className="w-1.5 h-1.5 rounded-full bg-accent mt-1.5 flex-shrink-0" />
-                      <span className="min-w-0">{s}</span>
-                    </li>
+                      {s}
+                    </span>
                   ))}
-                </ul>
+                </div>
               </div>
             ))}
           </div>
