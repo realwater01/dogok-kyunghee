@@ -161,7 +161,7 @@ export default function StudentFocusPage() {
                         {" "}<br className="hidden md:block" />
                         장내 세균이 건강하게 회복되면서
                         {" "}<br className="hidden md:block" />
-                        머리가 맑아지고 컨디션이 좋아집니다
+                        머리가 맑아지고 컨디션이 좋아질 수 있습니다
                       </p>
                     </div>
                   </div>
@@ -247,10 +247,10 @@ export default function StudentFocusPage() {
           <div className="text-center mb-16">
             <p className="text-accent font-medium mb-4">치료 효과</p>
             <h2 className="text-3xl md:text-4xl font-medium mb-6">
-              이런 변화를 경험하실 수 있습니다
+              이런 변화를 기대할 수 있습니다
             </h2>
             <p className="text-text-light max-w-2xl mx-auto">
-              수험생 특화 프로그램으로 학습 능률과 건강을 동시에 개선합니다.
+              수험생 특화 프로그램으로 학습 능률과 건강 개선을 함께 돕습니다.
             </p>
           </div>
 
@@ -261,10 +261,10 @@ export default function StudentFocusPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-medium mb-3">집중력 향상</h3>
+              <h3 className="text-xl font-medium mb-3">집중력</h3>
               <p className="text-text-light text-sm leading-relaxed">
-                장시간 학습에도 집중력이 흐트러지지 않고,
-                학습 내용이 더 잘 기억됩니다.
+                장시간 학습에도 집중을 이어가기 수월해지고,
+                학습 내용을 기억하는 데 도움이 될 수 있습니다.
               </p>
             </div>
 
@@ -300,7 +300,7 @@ export default function StudentFocusPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-medium mb-3">기억력 증진</h3>
+              <h3 className="text-xl font-medium mb-3">기억력</h3>
               <p className="text-text-light text-sm leading-relaxed">
                 뇌의 혈액순환이 개선되어 학습한 내용이
                 더 오래 기억되고 쉽게 떠올릴 수 있습니다.
@@ -313,7 +313,7 @@ export default function StudentFocusPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-medium mb-3">체력 증진</h3>
+              <h3 className="text-xl font-medium mb-3">체력</h3>
               <p className="text-text-light text-sm leading-relaxed">
                 쉽게 지치지 않고 하루 종일 안정적인
                 컨디션을 유지할 수 있습니다.

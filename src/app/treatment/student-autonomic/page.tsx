@@ -83,7 +83,7 @@ export default function StudentAutonomicPage() {
                   {" "}<br className="hidden md:block" />
                   비건강할때 나타나는 체질별 몸의 반응을 치료함으로써
                   {" "}<br className="hidden md:block" />
-                  건강은 회복되고 집중력이 향상됩니다.
+                  건강 회복과 집중력에 도움을 줍니다.
                 </p>
               </div>
             </div>
@@ -178,10 +178,10 @@ export default function StudentAutonomicPage() {
           <div className="text-center mb-16">
             <p className="text-accent font-medium mb-4">치료 효과</p>
             <h2 className="text-3xl md:text-4xl font-medium mb-6">
-              이런 변화를 경험하실 수 있습니다
+              이런 변화를 기대할 수 있습니다
             </h2>
             <p className="text-text-light max-w-2xl mx-auto">
-              자율신경 균형 회복으로 신체와 정신 건강을 동시에 개선합니다.
+              자율신경 균형 회복으로 신체와 정신 건강 개선을 함께 돕습니다.
             </p>
           </div>
 
@@ -194,8 +194,8 @@ export default function StudentAutonomicPage() {
               </div>
               <h3 className="text-xl font-medium mb-3">소화불량 개선</h3>
               <p className="text-text-light text-sm leading-relaxed">
-                스트레스성 소화불량, 복통, 메스꺼움이 사라지고
-                편안하게 식사할 수 있습니다.
+                스트레스성 소화불량, 복통, 메스꺼움이 줄어들어
+                편안하게 식사하는 데 도움이 될 수 있습니다.
               </p>
             </div>
 
@@ -246,8 +246,8 @@ export default function StudentAutonomicPage() {
               </div>
               <h3 className="text-xl font-medium mb-3">활력 회복</h3>
               <p className="text-text-light text-sm leading-relaxed">
-                아침에 일어나기 힘들고 하루 종일 피곤했던 증상이 개선되어
-                활기찬 생활이 가능합니다.
+                아침에 일어나기 힘들고 하루 종일 피곤했던 증상이 나아져
+                활기찬 생활에 도움이 될 수 있습니다.
               </p>
             </div>
 
@@ -397,7 +397,7 @@ export default function StudentAutonomicPage() {
               </h3>
               <p className="text-text-light leading-relaxed pl-6">
                 한약과 침 치료를 병행하는 것이 도움이 되지만,
-                침 치료만으로도 증상 개선이 가능합니다. 환자분의 상태와 선호도에 따라
+                침 치료만으로도 증상 개선에 도움이 될 수 있습니다. 환자분의 상태와 선호도에 따라
                 치료 방법을 조절할 수 있으니 상담 시 편하게 말씀해 주세요.
               </p>
             </div>
