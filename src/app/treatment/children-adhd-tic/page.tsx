@@ -152,7 +152,7 @@ export default function ChildrenAdhdTicPage() {
           <div className="text-center mb-16">
             <p className="text-accent font-medium mb-4">치료 효과</p>
             <h2 className="text-3xl md:text-4xl font-medium mb-6">
-              이런 변화를 경험하실 수 있습니다
+              이런 변화를 기대할 수 있습니다
             </h2>
             <p className="text-text-light max-w-2xl mx-auto">
               우리 아이가 건강하고 행복하게 성장할 수 있도록 돕습니다.
@@ -166,10 +166,10 @@ export default function ChildrenAdhdTicPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-medium mb-3">집중력 향상</h3>
+              <h3 className="text-xl font-medium mb-3">집중력</h3>
               <p className="text-text-light text-sm leading-relaxed">
-                수업 시간에 집중할 수 있게 되고,
-                학습 능력이 자연스럽게 향상됩니다.
+                수업에 집중하기 수월해지도록 돕고,
+                학습에 도움이 될 수 있습니다.
               </p>
             </div>
 
@@ -182,7 +182,7 @@ export default function ChildrenAdhdTicPage() {
               <h3 className="text-xl font-medium mb-3">틱 증상 완화</h3>
               <p className="text-text-light text-sm leading-relaxed">
                 눈 깜빡임, 어깨 으쓱임 등의 틱 증상이
-                점차 줄어들고 사라집니다.
+                줄어드는 데 도움이 될 수 있습니다.
               </p>
             </div>
 
@@ -194,8 +194,8 @@ export default function ChildrenAdhdTicPage() {
               </div>
               <h3 className="text-xl font-medium mb-3">정서 안정</h3>
               <p className="text-text-light text-sm leading-relaxed">
-                쉽게 짜증내거나 화내는 일이 줄어들고,
-                감정 조절 능력이 좋아집니다.
+                쉽게 짜증내거나 화내는 일이 줄고,
+                감정 조절에 도움이 될 수 있습니다.
               </p>
             </div>
 
