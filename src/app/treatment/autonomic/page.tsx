@@ -1,6 +1,8 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbSchema, medicalWebPageSchema } from "@/lib/structured-data";
+import { clinic, kakaoChatUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "자율신경계 치료 — 만성두통·어지러움·피로, 공황·불안, 감염·염증",
@@ -10,6 +12,21 @@ export const metadata: Metadata = {
 };
 
 const pagePath = "/treatment/autonomic";
+
+const dispensing = [
+  {
+    title: "한방내과 전문의 진료",
+    desc: "한방내과 전문의가 환자의 상태를 직접 살펴 처방합니다.",
+  },
+  {
+    title: "경희한약 약재",
+    desc: "경희대학교 법인 경희한약의 식약처 인증 약재를 사용합니다.",
+  },
+  {
+    title: "원내 직접 탕전",
+    desc: "원내 탕전실에서 소량씩 직접 달여 조제합니다.",
+  },
+];
 
 const patterns = [
   {
@@ -131,6 +148,59 @@ export default function AutonomicPage() {
                 돕는 데 중점을 둡니다.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Dispensing Section */}
+      <section className="section bg-brown-bg">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <p className="text-accent font-medium mb-4">진료 안내</p>
+            <h2 className="text-3xl md:text-4xl font-medium">
+              이렇게 진료합니다
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            {dispensing.map((d) => (
+              <div key={d.title} className="bg-white rounded-xl p-7 text-center">
+                <h3 className="text-lg font-semibold text-accent mb-3">
+                  {d.title}
+                </h3>
+                <p className="text-text-light text-sm leading-relaxed">
+                  {d.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="section bg-brown-dark text-white">
+        <div className="container mx-auto px-6 text-center">
+          <h2 className="text-3xl md:text-4xl font-medium mb-6">
+            오래된 두통·어지러움, 편하게 상담하세요
+          </h2>
+          <p className="text-brown-light mb-8 max-w-xl mx-auto">
+            증상과 체질에 맞는 방향을 친절하게 안내해 드립니다.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href={`tel:${clinic.telephone}`}
+              className="inline-block text-center whitespace-nowrap min-w-[12rem] bg-white text-brown-dark px-8 py-4 rounded font-medium hover:bg-cream transition-colors"
+            >
+              전화 상담하기
+            </a>
+            <Link
+              href={kakaoChatUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block text-center whitespace-nowrap min-w-[12rem] bg-transparent border-2 border-white text-white px-8 py-4 rounded font-medium hover:bg-white hover:text-brown-dark transition-colors"
+            >
+              카카오톡 상담
+            </Link>
           </div>
         </div>
       </section>
