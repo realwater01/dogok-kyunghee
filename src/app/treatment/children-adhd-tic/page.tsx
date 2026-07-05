@@ -51,8 +51,7 @@ export default function ChildrenAdhdTicPage() {
               어린이 ADHD, TIC, 불안, 강박 치료
             </h1>
             <p className="text-text-light text-lg leading-relaxed">
-              집중하지 못하고 산만한 우리 아이를 위한{" "}<br className="hidden md:block" />
-              원인에 접근하는 프로그램
+              집중하지 못하고 산만한 우리 아이를 위한 프로그램
             </p>
           </div>
         </div>
