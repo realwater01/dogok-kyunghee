@@ -50,7 +50,7 @@ const menuItems = [
     title: "다이어트",
     href: "/coming-soon",
     subMenu: [
-      { title: "도곡환 다이어트", href: "/coming-soon" },
+      { title: "도곡환", href: "/coming-soon" },
     ],
   },
   {
