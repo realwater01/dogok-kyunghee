@@ -138,6 +138,40 @@ export default function StudentAutonomicPage() {
         </div>
       </section>
 
+      {/* 총명탕 합 쌍화탕 Section */}
+      <section className="section bg-white">
+        <div className="container mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <p className="text-accent font-medium mb-4">집중력·체력 보완</p>
+              <h2 className="text-3xl md:text-4xl font-medium mb-8">
+                수험생 총명탕 <span className="text-accent">合</span> 쌍화탕
+              </h2>
+              <div className="space-y-6 text-text-light leading-relaxed">
+                <p>
+                  수험생의 집중력을 돕고 체력을 보완하는 한약으로,
+                  도곡경희한의원에서 오랜 시간 처방해 온
+                  수험생의 든든한 한약입니다.
+                </p>
+                <p>
+                  긴 학습으로 지친 머리와 몸에 활력을 더해,
+                  좋은 컨디션으로 공부에 집중할 수 있도록 돕습니다.
+                </p>
+              </div>
+            </div>
+            <div className="aspect-[4/3] bg-gradient-to-br from-cream to-brown-light rounded-2xl flex items-center justify-center">
+              <div className="text-center text-brown-dark">
+                <svg className="w-16 h-16 mx-auto mb-4 opacity-40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M12 14l9-5-9-5-9 5 9 5z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                </svg>
+                <p className="text-sm opacity-60">한약 이미지</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Benefits Section */}
       <section className="section bg-white">
         <div className="container mx-auto px-6">
