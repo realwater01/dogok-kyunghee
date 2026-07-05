@@ -5,11 +5,29 @@ import { breadcrumbSchema, medicalWebPageSchema } from "@/lib/structured-data";
 export const metadata: Metadata = {
   title: "자율신경계 치료 — 만성두통·어지러움·피로, 공황·불안, 감염·염증",
   description:
-    "과도한 스트레스와 불규칙한 생활은 자율신경계의 균형을 무너뜨려 만성두통·어지러움·피로, 공황장애·불안·실신, 잦은 감염·염증을 일으킵니다. 도곡경희한의원은 자연치료로 자율신경을 안정시켜 회복을 돕습니다. 강남 매봉역, 전화 02-6949-1888.",
+    "자율신경계의 조절력이 떨어지면 만성두통·어지러움·피로가 나타납니다. 도곡경희한의원은 순환·수분대사·편두통 등 패턴과 체질에 따라 한약으로 자율신경 조절을 돕습니다. 강남 매봉역, 전화 02-6949-1888.",
   alternates: { canonical: "/treatment/autonomic" },
 };
 
 const pagePath = "/treatment/autonomic";
+
+const patterns = [
+  {
+    tag: "패턴 1",
+    title: "체표·두면부 순환 저하",
+    desc: "머리와 얼굴 쪽 순환이 떨어지는 패턴입니다. 감기에 자주 걸리고, 머리가 멍하거나 만성적인 극심한 두통이 나타나며, 비염이나 얼굴·피부의 염증을 함께 겪기도 합니다.",
+  },
+  {
+    tag: "패턴 2",
+    title: "수분대사 저하",
+    desc: "몸이 잘 붓고 수분대사가 원활하지 않은 패턴입니다. 이명을 동반하기도 하고, 소화에도 어려움이 함께 나타나기도 합니다.",
+  },
+  {
+    tag: "패턴 3",
+    title: "편두통형",
+    desc: "유전적인 경향이 있는 편두통 패턴입니다. 전조 증상을 동반하기도 하며, 극심한 편두통(migraine)으로 나타나기도 합니다.",
+  },
+];
 
 export default function AutonomicPage() {
   return (
@@ -20,7 +38,7 @@ export default function AutonomicPage() {
             path: pagePath,
             name: "자율신경계 치료 — 도곡경희한의원",
             description:
-              "자율신경계 균형 회복을 통해 만성두통·어지러움·피로, 공황장애·불안·실신, 감염·염증의 개선을 돕는 한방 치료.",
+              "자율신경계 조절을 도와 만성두통·어지러움·피로를 패턴과 체질에 따라 접근하는 한방 치료.",
           }),
           breadcrumbSchema([
             { name: "홈", path: "/" },
@@ -28,108 +46,89 @@ export default function AutonomicPage() {
           ]),
         ]}
       />
+
       {/* Hero Section */}
       <section className="bg-brown-bg section">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl">
+            <p className="text-accent font-medium mb-4">자율신경계</p>
             <h1 className="text-4xl md:text-5xl font-medium leading-tight mb-6">
-              자율신경계
+              만성두통·어지러움·피로
             </h1>
             <p className="text-text-light text-lg leading-relaxed">
-              만성두통·어지러움·피로, 공황장애·불안·실신, 감염·염증까지{" "}<br className="hidden md:block" />
-              자율신경계의 균형 회복에 중점을 둡니다.
+              오래된 두통과 어지러움, 만성피로의 배경에는
+              <br className="hidden md:block" /> 자율신경계의 조절 문제가 있을 수
+              있습니다.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Intro Section */}
+      {/* Mechanism Section */}
       <section className="section bg-white">
         <div className="container mx-auto px-6">
-          <div className="max-w-2xl mx-auto text-center mb-20">
-            <p className="text-text-light leading-relaxed">
-              현대인들은 과도한 스트레스와 불규칙한 생활로 인해{" "}<br className="hidden md:block" />
-              자율신경계의 균형이 깨지기 쉽습니다.<br /><br />
-              이로 인해{" "}<br className="hidden md:block" />
-              면역이상, 각종 감염 및 염증,{" "}<br className="hidden md:block" />
-              집중력 저하, 만성피로 등을 겪게됩니다.<br /><br />
-              저희 한의원은 자연치료를 통해{" "}<br className="hidden md:block" />
-              자율신경을 안정시키고{" "}<br className="hidden md:block" />
-              몸의 균형을 찾아 건강한 일상을 되찾을수 있도록 도와드립니다.
-            </p>
+          <div className="max-w-2xl mx-auto text-center">
+            <p className="text-accent font-medium mb-4">자율신경과 증상</p>
+            <h2 className="text-3xl md:text-4xl font-medium mb-8">
+              자율신경계가 두통·어지러움·피로를 만듭니다
+            </h2>
+            <div className="space-y-5 text-text-light leading-relaxed">
+              <p>
+                자율신경계는 몸의 순환과 균형을 조절합니다. 이 조절력이 떨어지면
+                머리로 가는 순환과 수분대사가 흐트러지면서 두통, 어지러움, 만성피로
+                같은 증상이 나타납니다.
+              </p>
+              <p>
+                증상의 양상은 사람마다 다릅니다. 도곡경희한의원은 이를 크게 세 가지
+                패턴으로 나눠 살핍니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Patterns Section */}
+      <section className="section bg-brown-bg">
+        <div className="container mx-auto px-6">
+          <div className="max-w-2xl mx-auto text-center mb-16">
+            <p className="text-accent font-medium mb-4">증상 패턴</p>
+            <h2 className="text-3xl md:text-4xl font-medium">
+              이런 패턴으로 나타납니다
+            </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Feature 1 */}
-            <div className="p-10 bg-secondary rounded-xl text-center card-hover">
-              <div className="w-16 h-16 bg-cream rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg
-                  className="w-8 h-8 text-accent"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={1.5}
-                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                  />
-                </svg>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {patterns.map((p) => (
+              <div key={p.tag} className="bg-white rounded-xl p-7">
+                <p className="text-sm font-bold text-accent mb-1">{p.tag}</p>
+                <h3 className="text-lg font-semibold text-primary mb-4 pb-4 border-b border-cream">
+                  {p.title}
+                </h3>
+                <p className="text-text-light text-sm leading-relaxed">
+                  {p.desc}
+                </p>
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-primary">정확한 진단</h3>
-              <p className="text-text-light text-sm leading-relaxed">
-                체계적인 문진과 설문지, 검사 등을 통해{" "}<br className="hidden md:block" />
-                환자분의 상태를 정확히 파악하고{" "}<br className="hidden md:block" />
-                치료의 기준점과 목표를 정합니다.
-              </p>
-            </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-            {/* Feature 2 */}
-            <div className="p-10 bg-secondary rounded-xl text-center card-hover">
-              <div className="w-16 h-16 bg-cream rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg
-                  className="w-8 h-8 text-accent"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={1.5}
-                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold mb-3 text-primary">맞춤 치료</h3>
-              <p className="text-text-light text-sm leading-relaxed">
-                개인별 체질과 증상에 따른{" "}<br className="hidden md:block" />
-                맞춤 치료를 제공합니다.
+      {/* Herbal Role Section */}
+      <section className="section bg-white">
+        <div className="container mx-auto px-6">
+          <div className="max-w-2xl mx-auto text-center">
+            <p className="text-accent font-medium mb-4">한약의 역할</p>
+            <h2 className="text-3xl md:text-4xl font-medium mb-8">
+              증상 조절을 넘어, 몸의 균형까지
+            </h2>
+            <div className="space-y-5 text-text-light leading-relaxed">
+              <p>
+                도곡경희한의원은 자율신경계의 조절력을 돕고, 위 패턴과 개인의
+                체질에 따라 한약을 처방합니다.
               </p>
-            </div>
-
-            {/* Feature 3 */}
-            <div className="p-10 bg-secondary rounded-xl text-center card-hover">
-              <div className="w-16 h-16 bg-cream rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg
-                  className="w-8 h-8 text-accent"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={1.5}
-                    d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold mb-3 text-primary">지속 관리</h3>
-              <p className="text-text-light text-sm leading-relaxed">
-                치료 후에도 건강한 생활을 유지할 수 있도록{" "}<br className="hidden md:block" />
-                지속적인 건강관리를 도와드립니다.
+              <p>
+                한약은 일시적인 증상 조절에 그치지 않고, 몸이 스스로 건강해지도록
+                돕는 데 중점을 둡니다.
               </p>
             </div>
           </div>
