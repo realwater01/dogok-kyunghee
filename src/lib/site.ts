@@ -8,7 +8,7 @@ export const clinic = {
   nameEn: "Dogok Kyunghee Korean Medicine Clinic",
   tagline: "한약, 제대로 달이다",
   description:
-    "도곡경희한의원은 서울 강남 매봉역 인근의 1인 예약제 한의원입니다. 자율신경 조절 치료를 중심으로 수험생 집중력, 어린이 ADHD·틱·불안, 불면증, 만성피로, 면역 질환을 한약·침·약침으로 치료합니다.",
+    "도곡경희한의원은 서울 강남 매봉역 인근의 1인 예약제 한의원입니다. 자율신경 조절 치료를 중심으로 수험생 집중력, 어린이 ADHD·틱·불안·강박, 불면증, 만성피로, 면역 질환을 한약·침·약침으로 치료합니다.",
   url: siteUrl,
   telephone: "02-6949-1888",
   fax: "070-5208-0631",
@@ -52,7 +52,7 @@ export const doctor = {
 export const services = [
   "자율신경 조절 치료",
   "수험생 집중력 향상",
-  "어린이 ADHD·틱·불안 치료",
+  "어린이 ADHD·틱·불안·강박 치료",
   "불면증 치료",
   "만성피로 개선",
   "면역력 개선",
@@ -73,7 +73,7 @@ export const sitePages = [
   { path: "/about/location", title: "오시는 길", changeFrequency: "yearly", priority: 0.7 },
   { path: "/treatment/student-focus", title: "수험생 집중력 향상 프로그램", changeFrequency: "monthly", priority: 0.8 },
   { path: "/treatment/student-autonomic", title: "수험생 치료 프로그램", changeFrequency: "monthly", priority: 0.8 },
-  { path: "/treatment/children-adhd-tic", title: "어린이 ADHD·틱·불안 치료", changeFrequency: "monthly", priority: 0.8 },
+  { path: "/treatment/children-adhd-tic", title: "어린이 ADHD·틱·불안·강박 치료", changeFrequency: "monthly", priority: 0.8 },
   { path: "/treatment/autonomic", title: "자율신경계 치료", changeFrequency: "monthly", priority: 0.8 },
   { path: "/treatment/rhinitis", title: "비염 — 비염ABC 패턴 치료", changeFrequency: "monthly", priority: 0.8 },
   { path: "/treatment/children-growth", title: "어린이 성장", changeFrequency: "monthly", priority: 0.8 },

@@ -4,9 +4,9 @@ import JsonLd from "@/components/JsonLd";
 import { breadcrumbSchema, faqSchema, medicalWebPageSchema } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "어린이 ADHD·틱·불안 치료",
+  title: "어린이 ADHD·틱·불안·강박 치료",
   description:
-    "집중하지 못하고 산만한 아이, 틱과 불안을 보이는 아이를 위한 원인 접근 프로그램. 도곡경희한의원은 자율신경 균형 회복을 통해 어린이 ADHD·틱·불안의 개선을 한약·침으로 돕습니다. 강남 매봉역, 전화 02-6949-1888.",
+    "집중하지 못하고 산만한 아이, 틱과 불안을 보이는 아이를 위한 원인 접근 프로그램. 도곡경희한의원은 자율신경 균형 회복을 통해 어린이 ADHD·틱·불안·강박의 개선을 한약·침으로 돕습니다. 강남 매봉역, 전화 02-6949-1888.",
   alternates: { canonical: "/treatment/children-adhd-tic" },
 };
 
@@ -15,7 +15,7 @@ const faqs = [
   {
     question: "어린이 ADHD·틱을 한방으로 치료할 수 있나요?",
     answer:
-      "도곡경희한의원은 ADHD·틱·불안의 원인 중 하나인 자율신경 불균형을 진단해 어린이 맞춤 한약과 침으로 치료합니다. 증상 억제보다 원인 개선에 중점을 둡니다.",
+      "도곡경희한의원은 ADHD·틱·불안·강박의 원인 중 하나인 자율신경 불균형을 진단해 어린이 맞춤 한약과 침으로 치료합니다. 증상 억제보다 원인 개선에 중점을 둡니다.",
   },
   {
     question: "몇 살부터 치료가 가능한가요?",
@@ -31,14 +31,14 @@ export default function ChildrenAdhdTicPage() {
         data={[
           medicalWebPageSchema({
             path: pagePath,
-            name: "어린이 ADHD·틱·불안 치료 — 도곡경희한의원",
+            name: "어린이 ADHD·틱·불안·강박 치료 — 도곡경희한의원",
             description:
-              "자율신경 균형 회복을 통해 어린이 ADHD·틱·불안의 원인에 접근하는 한방 프로그램.",
+              "자율신경 균형 회복을 통해 어린이 ADHD·틱·불안·강박의 원인에 접근하는 한방 프로그램.",
           }),
           faqSchema(faqs),
           breadcrumbSchema([
             { name: "홈", path: "/" },
-            { name: "어린이 ADHD·틱·불안 치료", path: pagePath },
+            { name: "어린이 ADHD·틱·불안·강박 치료", path: pagePath },
           ]),
         ]}
       />
@@ -48,7 +48,7 @@ export default function ChildrenAdhdTicPage() {
           <div className="max-w-3xl">
             <p className="text-accent font-medium mb-4">CHILDREN ADHD & TIC</p>
             <h1 className="text-4xl md:text-5xl font-medium leading-tight mb-6">
-              어린이 ADHD, TIC, 불안 치료
+              어린이 ADHD, TIC, 불안, 강박 치료
             </h1>
             <p className="text-text-light text-lg leading-relaxed">
               집중하지 못하고 산만한 우리 아이를 위한{" "}<br className="hidden md:block" />
@@ -116,7 +116,7 @@ export default function ChildrenAdhdTicPage() {
               </h2>
               <div className="space-y-6 text-text-light leading-relaxed">
                 <p>
-                  틱, ADHD, 불안은 아이의 미숙한 뇌가 성인의 뇌로 발달하는
+                  틱, ADHD, 불안, 강박은 아이의 미숙한 뇌가 성인의 뇌로 발달하는
                   과정에서 겪는 일시적인 어려움인 경우가 많습니다. 다만 치료의
                   목표를 분명히 하지 않은 채 당장의 증상 조절에만 오래 의존하면,
                   아이가 편해지는 듯해도 성장기의 어려움이 성인기의
