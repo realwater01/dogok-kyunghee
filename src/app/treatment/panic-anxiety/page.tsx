@@ -83,7 +83,7 @@ export default function PanicAnxietyPage() {
           <div className="max-w-2xl mx-auto text-center mb-12">
             <p className="text-accent font-medium mb-4">왜 생기나요</p>
             <h2 className="text-3xl md:text-4xl font-medium mb-6">
-              자율신경 과흥분이 뇌신경을 흔듭니다
+              자율신경 과흥분이{" "}<br className="md:hidden" />뇌신경을 흔듭니다
             </h2>
             <p className="text-text-light leading-relaxed">
               자율신경계가 과도하게 흥분하면 뇌신경계도 함께 예민해지면서 공황과
@@ -91,16 +91,16 @@ export default function PanicAnxietyPage() {
             </p>
           </div>
 
-          <div className="flex flex-wrap items-center justify-center gap-3 text-sm md:text-base font-medium">
-            <span className="px-4 py-2.5 bg-secondary rounded-full text-primary">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-3 text-sm md:text-base font-medium">
+            <span className="px-5 py-2.5 bg-secondary rounded-full text-primary">
               자율신경계 과흥분
             </span>
-            <span className="text-accent font-bold">→</span>
-            <span className="px-4 py-2.5 bg-secondary rounded-full text-primary">
+            <span className="text-accent font-bold rotate-90 md:rotate-0">→</span>
+            <span className="px-5 py-2.5 bg-secondary rounded-full text-primary">
               뇌신경계 과흥분
             </span>
-            <span className="text-accent font-bold">→</span>
-            <span className="px-4 py-2.5 bg-accent text-white rounded-full">
+            <span className="text-accent font-bold rotate-90 md:rotate-0">→</span>
+            <span className="px-5 py-2.5 bg-accent text-white rounded-full">
               공황·불안·실신
             </span>
           </div>
@@ -140,7 +140,7 @@ export default function PanicAnxietyPage() {
           <div className="max-w-2xl mx-auto text-center mb-14">
             <p className="text-accent font-medium mb-4">한약의 역할</p>
             <h2 className="text-3xl md:text-4xl font-medium mb-6">
-              예민해진 몸과 신경을 가라앉힙니다
+              예민해진 몸과 신경을{" "}<br className="md:hidden" />가라앉힙니다
             </h2>
             <p className="text-text-light leading-relaxed">
               증상만 누르기보다, 과흥분한 자율신경을 안정시켜
