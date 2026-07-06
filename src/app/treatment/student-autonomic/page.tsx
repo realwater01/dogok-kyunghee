@@ -66,24 +66,15 @@ export default function StudentAutonomicPage() {
               <h2 className="text-3xl md:text-4xl font-medium mb-8">
                 개인별 집중력 향상 치료 한약
               </h2>
-              <div className="space-y-6 text-text-light leading-relaxed">
+              <div className="space-y-5 text-text-light leading-relaxed">
                 <p>
-                  공부할 양은 많고 시험 스트레스로 집중해야할 시간에
-                  {" "}<br className="hidden md:block" />
-                  아프거나, 불안초조함으로 집중력이 온전하지 못한 경험을
-                  많이 합니다.
+                  공부할 양은 많은데 시험 스트레스로 집중해야 할 시간에 아프거나
+                  불안·초조해 집중력이 온전하지 못한 경우가 많습니다. 이는
+                  마음가짐이 아니라 몸의 상태 문제입니다.
                 </p>
                 <p>
-                  수험생들의 집중력저하는 단순히 마음가짐의 문제가 아니라
-                  {" "}<br className="hidden md:block" />
-                  몸의 이상상태입니다.
-                </p>
-                <p>
-                  개인별 체질을 고려한 치료한약으로
-                  {" "}<br className="hidden md:block" />
-                  비건강할때 나타나는 체질별 몸의 반응을 치료함으로써
-                  {" "}<br className="hidden md:block" />
-                  건강 회복과 집중력에 도움을 줍니다.
+                  개인 체질에 맞춘 한약으로 몸의 반응을 살펴, 건강 회복과 집중력에
+                  도움을 줍니다.
                 </p>
               </div>
             </div>
