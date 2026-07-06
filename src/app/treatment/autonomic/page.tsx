@@ -13,21 +13,6 @@ export const metadata: Metadata = {
 
 const pagePath = "/treatment/autonomic";
 
-const dispensing = [
-  {
-    title: "한방내과 전문의 진료",
-    desc: "한방내과 전문의가 환자의 상태를 직접 살펴 처방합니다.",
-  },
-  {
-    title: "경희한약 약재",
-    desc: "경희대학교 법인 경희한약의 식약처 인증 약재를 사용합니다.",
-  },
-  {
-    title: "원내 직접 탕전",
-    desc: "원내 탕전실에서 소량씩 직접 달여 조제합니다.",
-  },
-];
-
 const patterns = [
   {
     tag: "패턴 1",
@@ -140,39 +125,23 @@ export default function AutonomicPage() {
             </h2>
             <div className="space-y-5 text-text-light leading-relaxed">
               <p>
-                도곡경희한의원은 자율신경계의 조절력을 돕고, 위 패턴과 개인의
-                체질에 따라 한약을 처방합니다.
+                두통과 어지러움, 만성피로는 뇌와 몸으로 가는 순환과 에너지 공급이
+                흐트러졌을 때 몸이 보내는 신호이기도 합니다.
               </p>
               <p>
-                한약은 일시적인 증상 조절에 그치지 않고, 몸이 스스로 건강해지도록
-                돕는 데 중점을 둡니다.
+                증상만 가라앉히면 당장은 편하지만, 그 배경이 되는 자율신경의
+                문제는 그대로 남아 증상이 반복되기 쉽습니다.
+              </p>
+              <p>
+                한약은 자율신경계의 조절력을 돕고, 순환과 에너지 공급의 균형을
+                되찾도록 도와 몸이 스스로 회복할 바탕을 만들어 갑니다.
+              </p>
+              <p>
+                도곡경희한의원은 위 패턴과 개인의 체질에 맞춰 한약을 처방하며,
+                일시적인 증상 조절을 넘어 두통과 어지러움이 덜 반복되는 몸 상태를
+                함께 만들어 가는 데 중점을 둡니다.
               </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Dispensing Section */}
-      <section className="section bg-brown-bg">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <p className="text-accent font-medium mb-4">진료 안내</p>
-            <h2 className="text-3xl md:text-4xl font-medium">
-              이렇게 진료합니다
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            {dispensing.map((d) => (
-              <div key={d.title} className="bg-white rounded-xl p-7 text-center">
-                <h3 className="text-lg font-semibold text-accent mb-3">
-                  {d.title}
-                </h3>
-                <p className="text-text-light text-sm leading-relaxed">
-                  {d.desc}
-                </p>
-              </div>
-            ))}
           </div>
         </div>
       </section>
