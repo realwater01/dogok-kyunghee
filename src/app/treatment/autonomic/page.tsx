@@ -92,17 +92,12 @@ export default function AutonomicPage() {
             <h2 className="text-3xl md:text-4xl font-medium mb-8">
               자율신경계가 두통·어지러움·피로를 만듭니다
             </h2>
-            <div className="space-y-5 text-text-light leading-relaxed">
-              <p>
-                자율신경계는 몸의 순환과 균형을 조절합니다. 이 조절력이 떨어지면
-                머리로 가는 순환과 수분대사가 흐트러지면서 두통, 어지러움, 만성피로
-                같은 증상이 나타납니다.
-              </p>
-              <p>
-                증상의 양상은 사람마다 다릅니다. 도곡경희한의원은 이를 크게 세 가지
-                패턴으로 나눠 살핍니다.
-              </p>
-            </div>
+            <p className="text-text-light leading-relaxed">
+              자율신경계가 흐트러지면 머리로 가는 순환과 수분대사가 무너지며
+              두통·어지러움·만성피로가 나타납니다.
+              <br className="hidden md:block" /> 그 양상은 크게 세 가지 패턴으로
+              나뉩니다.
+            </p>
           </div>
         </div>
       </section>

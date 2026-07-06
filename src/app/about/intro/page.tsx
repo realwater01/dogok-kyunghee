@@ -60,31 +60,17 @@ export default function AboutIntroPage() {
               </h2>
               <div className="space-y-6 text-text-light leading-relaxed">
                 <p className="first-letter:text-5xl first-letter:font-title first-letter:text-accent first-letter:float-left first-letter:mr-3 first-letter:mt-1">
-                  몸과 마음의 균형이 깨지면{" "}<br className="hidden md:block" />
-                  몸의 이상반응이 시작됩니다.
+                  몸과 마음의 균형이 깨지면 몸에 이상반응이 시작됩니다.
                 </p>
                 <p>
-                  자율신경계의 조절력이 떨어지면서{" "}<br className="hidden md:block" />
-                  면역력은 균형을 잃고{" "}<br className="hidden md:block" />
-                  외부 바이러스와 세균 감염에는 취약해지고{" "}<br className="hidden md:block" />
-                  오히려 내 면역이 내 몸을 공격하여 염증을 만들어냅니다.
+                  자율신경계의 조절력이 떨어지면 면역이 균형을 잃어 감염에
+                  취약해지거나 오히려 염증을 만들고, 호르몬에도 이상이 생겨
+                  소화문제·비염·집중력 저하·만성피로·두통·어지러움 같은 신호가
+                  나타납니다.
                 </p>
                 <p>
-                  호르몬 분비에도 이상이 생기며{" "}<br className="hidden md:block" />
-                  소화문제, 비염, 집중력저하, 만성피로, 두통, 어지러움 등{" "}<br className="hidden md:block" />
-                  몸에는 이상신호가 발생합니다.
-                </p>
-                <p>
-                  한약은 자율신경계의 조절력을 되찾고{" "}<br className="hidden md:block" />
-                  흥분된 면역반응은 가라앉히며{" "}<br className="hidden md:block" />
-                  저하된 면역력을 개선합니다.{" "}<br className="hidden md:block" />
-                  염증을 줄이고 호르몬 분비를 정상화시킵니다.
-                </p>
-                <p>
-                  자연에서 나는 천연약재들을{" "}<br className="hidden md:block" />
-                  몸과 마음의 균형을 찾듯이{" "}<br className="hidden md:block" />
-                  조화롭게 배합하여 처방하면{" "}<br className="hidden md:block" />
-                  내 몸은 건강하고 활력있는 선순환을 시작합니다.
+                  한약은 자율신경의 조절력을 되찾도록 돕고, 자연 약재를 체질에 맞게
+                  배합해 몸이 건강한 선순환을 시작하도록 돕습니다.
                 </p>
               </div>
             </div>
