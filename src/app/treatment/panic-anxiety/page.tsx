@@ -14,14 +14,14 @@ export const metadata: Metadata = {
 const pagePath = "/treatment/panic-anxiety";
 
 const symptoms = [
-  "갑작스러운 공황 발작",
-  "죽을 것 같은 공포감",
-  "지하철 등 갇힌 공간의 불안",
-  "이유 없는 불안·초조",
-  "가슴 두근거림·호흡 곤란",
-  "어지러움·실신",
-  "또 발작이 올까 하는 예기불안",
-  "무기력·피로·우울 동반",
+  "무기력감·우울감",
+  "얼굴 홍조",
+  "지나친 수족냉감 또는 열감",
+  "잦은 감기",
+  "소화장애",
+  "배뇨·배변장애",
+  "심한 생리통",
+  "불면",
 ];
 
 const roles = [
@@ -116,8 +116,8 @@ export default function PanicAnxietyPage() {
               이렇게 나타납니다
             </h2>
             <p className="text-text-light leading-relaxed">
-              검사에서는 이상이 없다는데 증상이 반복된다면, 자율신경의 문제일 수
-              있습니다.
+              공황장애·불안·실신과 더불어 아래 증상이 함께 나타난다면
+              <br className="hidden md:block" /> 자율신경계 문제일 수 있습니다.
             </p>
           </div>
 
