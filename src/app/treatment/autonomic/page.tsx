@@ -13,6 +13,24 @@ export const metadata: Metadata = {
 
 const pagePath = "/treatment/autonomic";
 
+const roles = [
+  {
+    title: "자율신경 조절력 회복",
+    desc: "흐트러진 자율신경 균형을 되찾도록 돕습니다.",
+    icon: "M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4",
+  },
+  {
+    title: "순환·에너지 균형",
+    desc: "머리와 몸으로 가는 순환과 에너지 공급을 고르게 합니다.",
+    icon: "M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z",
+  },
+  {
+    title: "패턴·체질 맞춤",
+    desc: "세 가지 패턴과 개인 체질에 맞춰 처방합니다.",
+    icon: "M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z",
+  },
+];
+
 const patterns = [
   {
     tag: "패턴 1",
@@ -118,31 +136,49 @@ export default function AutonomicPage() {
       {/* Herbal Role Section */}
       <section className="section bg-white">
         <div className="container mx-auto px-6">
-          <div className="max-w-2xl mx-auto text-center">
+          <div className="max-w-2xl mx-auto text-center mb-14">
             <p className="text-accent font-medium mb-4">한약의 역할</p>
-            <h2 className="text-3xl md:text-4xl font-medium mb-8">
+            <h2 className="text-3xl md:text-4xl font-medium mb-6">
               증상 조절을 넘어, 몸의 균형까지
             </h2>
-            <div className="space-y-5 text-text-light leading-relaxed">
-              <p>
-                두통과 어지러움, 만성피로는 뇌와 몸으로 가는 순환과 에너지 공급이
-                흐트러졌을 때 몸이 보내는 신호이기도 합니다.
-              </p>
-              <p>
-                증상만 가라앉히면 당장은 편하지만, 그 배경이 되는 자율신경의
-                문제는 그대로 남아 증상이 반복되기 쉽습니다.
-              </p>
-              <p>
-                한약은 자율신경계의 조절력을 돕고, 순환과 에너지 공급의 균형을
-                되찾도록 도와 몸이 스스로 회복할 바탕을 만들어 갑니다.
-              </p>
-              <p>
-                도곡경희한의원은 위 패턴과 개인의 체질에 맞춰 한약을 처방하며,
-                일시적인 증상 조절을 넘어 두통과 어지러움이 덜 반복되는 몸 상태를
-                함께 만들어 가는 데 중점을 둡니다.
-              </p>
-            </div>
+            <p className="text-text-light leading-relaxed">
+              증상만 가라앉히면 원인이 남아 반복되기 쉽습니다.
+              <br className="hidden md:block" /> 한약은 이렇게 작용합니다.
+            </p>
           </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            {roles.map((r) => (
+              <div key={r.title} className="bg-secondary rounded-xl p-7 text-center">
+                <div className="w-14 h-14 bg-white rounded-xl flex items-center justify-center mx-auto mb-5">
+                  <svg
+                    className="w-7 h-7 text-accent"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={1.5}
+                      d={r.icon}
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-semibold text-primary mb-2">
+                  {r.title}
+                </h3>
+                <p className="text-text-light text-sm leading-relaxed">
+                  {r.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <p className="text-center text-text-light leading-relaxed max-w-2xl mx-auto mt-12">
+            일시적인 증상 조절을 넘어, 두통·어지러움이 덜 반복되는 몸 상태를
+            함께 만들어 가는 데 중점을 둡니다.
+          </p>
         </div>
       </section>
 
