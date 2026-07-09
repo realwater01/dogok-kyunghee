@@ -69,8 +69,8 @@ export default function PanicAnxietyPage() {
               공황장애·불안·실신
             </h1>
             <p className="text-text-light text-lg leading-relaxed">
-              갑작스러운 불안과 공황, 실신의 배경에는
-              <br className="hidden md:block" /> 자율신경계의 과흥분이 있을 수
+              갑작스런 불안과 공황, 실신의 배경에는
+              <br className="hidden md:block" /> 자율신경계 문제가 있을 수
               있습니다.
             </p>
           </div>
