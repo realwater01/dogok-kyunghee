@@ -78,4 +78,5 @@ export const sitePages = [
   { path: "/treatment/rhinitis", title: "비염 — 비염ABC 패턴 치료", changeFrequency: "monthly", priority: 0.8 },
   { path: "/treatment/children-growth", title: "어린이 성장", changeFrequency: "monthly", priority: 0.8 },
   { path: "/treatment/panic-anxiety", title: "공황장애·불안·실신", changeFrequency: "monthly", priority: 0.8 },
+  { path: "/treatment/infection-inflammation", title: "감염·염증", changeFrequency: "monthly", priority: 0.8 },
 ] as const;
