@@ -5,9 +5,9 @@ import { breadcrumbSchema, medicalWebPageSchema } from "@/lib/structured-data";
 import { clinic, kakaoChatUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "도곡환 다이어트 — 감량부터 유지까지 한약 3단계",
+  title: "도곡환 다이어트 — 감량부터 유지까지 한약",
   description:
-    "도곡경희한의원에서만 처방하는 다이어트 한약. 도곡환(감량)·수면비움환(보조)·도곡유지환(유지) 세 가지로 다이어트의 시작부터 유지까지 돕습니다. 강남 매봉역, 전화 02-6949-1888.",
+    "도곡경희한의원에서만 처방하는 다이어트 한약. 도곡환(감량)·수면비움환(보조)·도곡유지환(유지)으로 다이어트의 시작부터 유지까지 돕습니다. 강남 매봉역, 전화 02-6949-1888.",
   alternates: { canonical: "/treatment/dogokhwan-diet" },
 };
 
@@ -23,26 +23,16 @@ const products = [
     benefits: ["식욕 조절을 도움", "대사 활성을 도움", "지방 연소를 도움"],
     dose: "하루 2~3회 · 식사 30분 전",
     note: "매일 건강한 식단과 하루 세 끼 루틴을 지키며 건강한 방식으로 관리합니다. 도곡경희한의원에서만 처방받을 수 있습니다.",
-    headerBg: "bg-amber-50",
-    badgeBg: "bg-amber-500",
-    labelText: "text-amber-700",
-    chip: "bg-amber-100 text-amber-800",
-    doseBg: "bg-amber-50/70",
   },
   {
     step: "02",
     label: "보조",
     title: "수면비움환",
-    tagline: "편안한 밤이 다이어트를 돕습니다",
+    tagline: "공복을 잘 참고 잘 자면 다이어트가 쉽습니다",
     stages: [],
     benefits: ["교감신경 안정", "변비 완화를 도움", "편안한 수면"],
     dose: "하루 2~3회(낮 공복 시) · 취침 전 1숟갈",
     note: "다이어트로 예민해진 몸을 안정시키고 편안히 쉴 수 있게 해 지방 소모를 돕습니다.",
-    headerBg: "bg-sky-50",
-    badgeBg: "bg-sky-500",
-    labelText: "text-sky-700",
-    chip: "bg-sky-100 text-sky-800",
-    doseBg: "bg-sky-50/70",
   },
   {
     step: "03",
@@ -53,11 +43,6 @@ const products = [
     benefits: ["감량 상태 유지를 도움", "건강한 식습관 유지"],
     dose: "성공 후 · 총 기간의 3배 동안 하루 1번",
     note: "감량한 상태를 오래 유지하고 건강한 식습관이 자리 잡도록 돕는 마무리 한약입니다.",
-    headerBg: "bg-emerald-50",
-    badgeBg: "bg-emerald-500",
-    labelText: "text-emerald-700",
-    chip: "bg-emerald-100 text-emerald-800",
-    doseBg: "bg-emerald-50/70",
   },
 ];
 
@@ -98,7 +83,7 @@ export default function DogokhwanDietPage() {
       {/* Products Section */}
       <section className="section bg-white">
         <div className="container mx-auto px-6">
-          <div className="text-center max-w-2xl mx-auto mb-14">
+          <div className="text-center max-w-2xl mx-auto mb-16 md:mb-24">
             <p className="text-accent font-medium mb-4">
               3가지, 그 이상의 솔루션
             </p>
@@ -107,79 +92,67 @@ export default function DogokhwanDietPage() {
             </h2>
           </div>
 
-          <div className="max-w-3xl mx-auto space-y-8">
+          <div className="max-w-5xl mx-auto space-y-20 md:space-y-28">
             {products.map((p) => (
               <div
                 key={p.title}
-                className="rounded-2xl overflow-hidden border border-brown-light/20 bg-white shadow-sm"
+                className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center"
               >
-                {/* Colored header */}
-                <div className={`${p.headerBg} p-6 md:p-8`}>
-                  <div className="flex items-center gap-3 mb-3">
-                    <span
-                      className={`w-9 h-9 rounded-full ${p.badgeBg} text-white flex items-center justify-center font-bold text-sm`}
-                    >
+                {/* Image placeholder (left) */}
+                <div className="aspect-[4/3] rounded-2xl bg-secondary flex items-center justify-center">
+                  <span className="text-brown-light text-sm">이미지</span>
+                </div>
+
+                {/* Text (right) */}
+                <div>
+                  <div className="flex items-baseline gap-3 mb-4">
+                    <span className="text-4xl md:text-5xl font-semibold text-brown-light/60">
                       {p.step}
                     </span>
-                    <span className={`${p.labelText} font-semibold text-sm`}>
+                    <span className="text-accent text-sm font-medium tracking-wide">
                       {p.label}
                     </span>
                   </div>
-                  <h3 className="text-2xl md:text-3xl font-bold text-primary">
+
+                  <h3 className="text-2xl md:text-3xl font-semibold text-primary mb-3">
                     {p.title}
                   </h3>
-                  <p className="text-text-light mt-2">{p.tagline}</p>
+                  <p className="text-text-light text-lg mb-6">{p.tagline}</p>
+
                   {p.stages.length > 0 && (
-                    <div className="flex flex-wrap gap-2 mt-4">
+                    <div className="flex flex-wrap gap-2 mb-6">
                       {p.stages.map((st) => (
                         <span
                           key={st}
-                          className="px-3 py-1 rounded-full bg-white text-primary text-sm font-medium border border-brown-light/30"
+                          className="px-3 py-1 rounded-full border border-brown-light/40 text-primary text-sm"
                         >
                           {st}
                         </span>
                       ))}
                     </div>
                   )}
-                </div>
 
-                {/* Body */}
-                <div className="p-6 md:p-8">
-                  <div className="flex flex-wrap gap-2 mb-5">
+                  <ul className="space-y-2.5 mb-6">
                     {p.benefits.map((b) => (
-                      <span
+                      <li
                         key={b}
-                        className={`px-3 py-1.5 rounded-full text-sm font-medium ${p.chip}`}
+                        className="flex items-center gap-3 text-text-light"
                       >
+                        <span className="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0" />
                         {b}
-                      </span>
+                      </li>
                     ))}
-                  </div>
+                  </ul>
 
-                  <div
-                    className={`flex items-center gap-3 ${p.doseBg} rounded-xl px-4 py-3 mb-5`}
-                  >
-                    <svg
-                      className={`w-5 h-5 flex-shrink-0 ${p.labelText}`}
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={1.5}
-                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                    <span className="text-sm text-primary font-medium">
-                      복용법 · {p.dose}
-                    </span>
+                  <div className="border-t border-cream pt-4">
+                    <p className="text-sm text-text-light">
+                      <span className="font-medium text-primary">복용법</span>
+                      {"  "}· {p.dose}
+                    </p>
+                    <p className="text-sm text-text-light leading-relaxed mt-3">
+                      {p.note}
+                    </p>
                   </div>
-
-                  <p className="text-text-light text-sm leading-relaxed">
-                    {p.note}
-                  </p>
                 </div>
               </div>
             ))}
