@@ -184,7 +184,7 @@ export default function RhinitisPage() {
                 원내 직접 탕전
               </h3>
               <p className="text-text-light text-sm leading-relaxed">
-                경희한약의 약재를 원내 탕전실에서 소량씩 직접 달입니다.
+                경희한약 약재를 원내 탕전실에서 소량씩 직접 달여 드립니다.
               </p>
             </div>
             <div className="text-center">
@@ -192,7 +192,8 @@ export default function RhinitisPage() {
                 비대면 상담·택배
               </h3>
               <p className="text-text-light text-sm leading-relaxed">
-                전화 상담으로 증상을 살핀 뒤 한약을 택배로 받아보실 수 있습니다.
+                멀리 계셔도 전화로 증상을 살핀 뒤 한약을 택배로 받아보실 수
+                있습니다.
               </p>
             </div>
             <div className="text-center">
@@ -200,7 +201,7 @@ export default function RhinitisPage() {
                 카카오톡 상담
               </h3>
               <p className="text-text-light text-sm leading-relaxed">
-                궁금한 점은 카카오톡 채널로 편하게 문의해 주세요.
+                궁금한 점은 카카오톡 채널로 편하게 물어보세요.
               </p>
             </div>
           </div>
