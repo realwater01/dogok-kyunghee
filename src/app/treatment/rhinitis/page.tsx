@@ -181,6 +181,15 @@ export default function RhinitisPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <div className="text-center">
               <h3 className="text-lg font-semibold text-primary mb-3">
+                자세한 병력 청취
+              </h3>
+              <p className="text-text-light text-sm leading-relaxed">
+                아이마다 비슷해 보이는 비염도 증상은 저마다 다릅니다. 오랜 비염
+                진료로 아이의 증상을 자세히 듣고 맞는 치료법을 제시합니다.
+              </p>
+            </div>
+            <div className="text-center">
+              <h3 className="text-lg font-semibold text-primary mb-3">
                 원내 직접 탕전
               </h3>
               <p className="text-text-light text-sm leading-relaxed">
@@ -189,19 +198,11 @@ export default function RhinitisPage() {
             </div>
             <div className="text-center">
               <h3 className="text-lg font-semibold text-primary mb-3">
-                비대면 상담·택배
+                원장님과 1:1 카카오톡 상담
               </h3>
               <p className="text-text-light text-sm leading-relaxed">
-                멀리 계셔도 전화로 증상을 살핀 뒤 한약을 택배로 받아보실 수
+                아이가 자주 아파 걱정된다면 언제든 편하게 원장님과 상담할 수
                 있습니다.
-              </p>
-            </div>
-            <div className="text-center">
-              <h3 className="text-lg font-semibold text-primary mb-3">
-                카카오톡 상담
-              </h3>
-              <p className="text-text-light text-sm leading-relaxed">
-                궁금한 점은 카카오톡 채널로 편하게 물어보세요.
               </p>
             </div>
           </div>
