@@ -5,9 +5,9 @@ import { breadcrumbSchema, medicalWebPageSchema } from "@/lib/structured-data";
 import { clinic, kakaoChatUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "공황장애·불안·실신 — 자율신경 과흥분 한방 치료",
+  title: "공황장애·불안·실신 — 자율신경실조 한방 치료",
   description:
-    "갑작스러운 공황과 불안, 실신의 배경에는 자율신경계의 과흥분이 있을 수 있습니다. 도곡경희한의원은 한약으로 몸의 균형을 되찾고 자율신경 조절력을 높여 예민해진 뇌신경을 가라앉히도록 돕습니다. 강남 매봉역, 전화 02-6949-1888.",
+    "갑작스러운 공황과 불안, 실신의 배경에는 자율신경계의 조절 이상이 있을 수 있습니다. 도곡경희한의원은 한약으로 몸의 균형을 되찾고 자율신경 조절력을 높여 예민해진 뇌신경을 가라앉히도록 돕습니다. 강남 매봉역, 전화 02-6949-1888.",
   alternates: { canonical: "/treatment/panic-anxiety" },
 };
 
@@ -32,7 +32,7 @@ const roles = [
   },
   {
     title: "자율신경 조절력 강화",
-    desc: "과흥분한 자율신경을 안정시켜 조절력을 높입니다.",
+    desc: "흐트러진 자율신경을 안정시켜 조절력을 높입니다.",
     icon: "M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4",
   },
   {
@@ -51,7 +51,7 @@ export default function PanicAnxietyPage() {
             path: pagePath,
             name: "공황장애·불안·실신 — 도곡경희한의원",
             description:
-              "자율신경 과흥분으로 인한 공황·불안·실신을 한약으로 자율신경 조절과 뇌신경 과민 완화를 돕는 한방 치료.",
+              "자율신경실조로 인한 공황·불안·실신을 한약으로 자율신경 조절과 뇌신경 과민 완화를 돕는 한방 치료.",
           }),
           breadcrumbSchema([
             { name: "홈", path: "/" },
@@ -86,18 +86,18 @@ export default function PanicAnxietyPage() {
               자율신경실조가{" "}<br className="md:hidden" />뇌신경을 흔듭니다
             </h2>
             <p className="text-text-light leading-relaxed">
-              자율신경계가 과도하게 흥분하면 뇌신경계도 함께 예민해지면서 공황과
+              자율신경계의 조절이 흐트러지면 뇌신경계도 함께 예민해지면서 공황과
               불안, 실신 같은 증상이 나타납니다.
             </p>
           </div>
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-3 text-sm md:text-base font-medium">
             <span className="px-5 py-2.5 bg-secondary rounded-full text-primary">
-              자율신경계 과흥분
+              자율신경 조절 이상
             </span>
             <span className="text-accent font-bold rotate-90 md:rotate-0">→</span>
             <span className="px-5 py-2.5 bg-secondary rounded-full text-primary">
-              뇌신경계 과흥분
+              뇌신경 과민
             </span>
             <span className="text-accent font-bold rotate-90 md:rotate-0">→</span>
             <span className="px-5 py-2.5 bg-accent text-white rounded-full">
@@ -143,7 +143,7 @@ export default function PanicAnxietyPage() {
               예민해진 몸과 신경을{" "}<br className="md:hidden" />가라앉힙니다
             </h2>
             <p className="text-text-light leading-relaxed">
-              증상만 누르기보다, 과흥분한 자율신경을 안정시켜
+              증상만 누르기보다, 흐트러진 자율신경을 안정시켜
               <br className="hidden md:block" /> 근본 바탕을 다지는 데 중점을
               둡니다.
             </p>
