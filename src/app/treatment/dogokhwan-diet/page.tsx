@@ -99,7 +99,9 @@ export default function DogokhwanDietPage() {
       <section className="section bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center max-w-2xl mx-auto mb-14">
-            <p className="text-accent font-medium mb-4">3단계 다이어트 한약</p>
+            <p className="text-accent font-medium mb-4">
+              3가지, 그 이상의 솔루션
+            </p>
             <h2 className="text-3xl md:text-4xl font-medium">
               감량 · 보조 · 유지
             </h2>
