@@ -81,4 +81,5 @@ export const sitePages = [
   { path: "/treatment/infection-inflammation", title: "감염·염증", changeFrequency: "monthly", priority: 0.8 },
   { path: "/treatment/dogokhwan-diet", title: "도곡환 다이어트", changeFrequency: "monthly", priority: 0.8 },
   { path: "/treatment/constitution-diet", title: "도곡체질 다이어트", changeFrequency: "monthly", priority: 0.8 },
+  { path: "/treatment/gongjindan", title: "사향공진단", changeFrequency: "monthly", priority: 0.8 },
 ] as const;

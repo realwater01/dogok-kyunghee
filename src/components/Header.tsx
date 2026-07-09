@@ -56,9 +56,9 @@ const menuItems = [
   },
   {
     title: "보약",
-    href: "/coming-soon",
+    href: "/treatment/gongjindan",
     subMenu: [
-      { title: "사향공진단", href: "/coming-soon" },
+      { title: "사향공진단", href: "/treatment/gongjindan" },
       { title: "달이다, 쌍화", href: "/coming-soon" },
       { title: "체질별 보약", href: "/coming-soon" },
     ],
