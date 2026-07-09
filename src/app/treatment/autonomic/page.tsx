@@ -112,16 +112,27 @@ export default function AutonomicPage() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="max-w-5xl mx-auto space-y-16 md:space-y-24">
             {patterns.map((p) => (
-              <div key={p.tag} className="bg-white rounded-xl p-7">
-                <p className="text-sm font-bold text-accent mb-1">{p.tag}</p>
-                <h3 className="text-lg font-semibold text-primary mb-4 pb-4 border-b border-cream">
-                  {p.title}
-                </h3>
-                <p className="text-text-light text-sm leading-relaxed">
-                  {p.desc}
-                </p>
+              <div
+                key={p.tag}
+                className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center"
+              >
+                {/* Image placeholder (left) */}
+                <div className="aspect-[4/3] rounded-2xl bg-white flex items-center justify-center">
+                  <span className="text-brown-light text-sm">이미지</span>
+                </div>
+
+                {/* Text (right) */}
+                <div>
+                  <span className="text-2xl md:text-3xl font-bold text-accent">
+                    {p.tag}
+                  </span>
+                  <h3 className="text-xl md:text-2xl font-semibold text-primary mt-2 mb-4">
+                    {p.title}
+                  </h3>
+                  <p className="text-text-light leading-relaxed">{p.desc}</p>
+                </div>
               </div>
             ))}
           </div>

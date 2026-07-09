@@ -80,15 +80,23 @@ export default function PanicAnxietyPage() {
       {/* Mechanism Section */}
       <section className="section bg-white">
         <div className="container mx-auto px-6">
-          <div className="max-w-2xl mx-auto text-center mb-12">
-            <p className="text-accent font-medium mb-4">왜 생기나요</p>
-            <h2 className="text-3xl md:text-4xl font-medium mb-6">
-              자율신경실조가{" "}<br className="md:hidden" />뇌신경을 흔듭니다
-            </h2>
-            <p className="text-text-light leading-relaxed">
-              자율신경계의 조절이 흐트러지면 뇌신경계도 함께 예민해지면서 공황과
-              불안, 실신 같은 증상이 나타납니다.
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center max-w-5xl mx-auto mb-16">
+            {/* Image placeholder (left) */}
+            <div className="aspect-[4/3] rounded-2xl bg-secondary flex items-center justify-center">
+              <span className="text-brown-light text-sm">이미지</span>
+            </div>
+
+            {/* Text (right) */}
+            <div>
+              <p className="text-accent font-medium mb-4">왜 생기나요</p>
+              <h2 className="text-3xl md:text-4xl font-medium mb-6">
+                자율신경실조가 뇌신경을 흔듭니다
+              </h2>
+              <p className="text-text-light leading-relaxed">
+                자율신경계의 조절이 흐트러지면 뇌신경계도 함께 예민해지면서 공황과
+                불안, 실신 같은 증상이 나타납니다.
+              </p>
+            </div>
           </div>
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-3 text-sm md:text-base font-medium">

@@ -77,17 +77,25 @@ export default function InfectionInflammationPage() {
       {/* Mechanism Section */}
       <section className="section bg-white">
         <div className="container mx-auto px-6">
-          <div className="max-w-2xl mx-auto text-center mb-12">
-            <p className="text-accent font-medium mb-4">왜 반복되나요</p>
-            <h2 className="text-3xl md:text-4xl font-medium mb-6">
-              자율신경실조가{" "}<br className="md:hidden" />면역을 무너뜨립니다
-            </h2>
-            <p className="text-text-light leading-relaxed">
-              자율신경계는 뇌 깊은 곳의 시상하부가 조절합니다. 시상하부는 호르몬
-              분비와 기본적인 생명 유지 활동까지 관장하는데, 이 조절이 흐트러지면
-              면역력이 떨어져 감염과 염증이 반복되고, 오래되면 면역질환으로
-              이어지기도 합니다.
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center max-w-5xl mx-auto mb-16">
+            {/* Image placeholder (left) */}
+            <div className="aspect-[4/3] rounded-2xl bg-secondary flex items-center justify-center">
+              <span className="text-brown-light text-sm">이미지</span>
+            </div>
+
+            {/* Text (right) */}
+            <div>
+              <p className="text-accent font-medium mb-4">왜 반복되나요</p>
+              <h2 className="text-3xl md:text-4xl font-medium mb-6">
+                자율신경실조가 면역을 무너뜨립니다
+              </h2>
+              <p className="text-text-light leading-relaxed">
+                자율신경계는 뇌 깊은 곳의 시상하부가 조절합니다. 시상하부는 호르몬
+                분비와 기본적인 생명 유지 활동까지 관장하는데, 이 조절이 흐트러지면
+                면역력이 떨어져 감염과 염증이 반복되고, 오래되면 면역질환으로
+                이어지기도 합니다.
+              </p>
+            </div>
           </div>
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-3 text-sm md:text-base font-medium">
