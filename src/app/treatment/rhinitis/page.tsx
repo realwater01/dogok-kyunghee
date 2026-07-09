@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbSchema, medicalWebPageSchema } from "@/lib/structured-data";
@@ -92,23 +93,28 @@ export default function RhinitisPage() {
       {/* Approach Section */}
       <section className="section bg-white">
         <div className="container mx-auto px-6">
-          <div className="max-w-2xl mx-auto text-center">
+          <div className="max-w-2xl mx-auto text-center mb-12">
             <p className="text-accent font-medium mb-4">비염 치료</p>
-            <h2 className="text-3xl md:text-4xl font-medium mb-8">
+            <h2 className="text-3xl md:text-4xl font-medium mb-6">
               비염 ABC
             </h2>
-            <div className="space-y-5 text-text-light leading-relaxed">
-              <p>
-                도곡경희한의원이 오랜 비염 진료 끝에 정리한 비염ABC는 비염을 세
-                가지 패턴으로 나눠 접근합니다. 짧은 기간 먼저 치료를 시도해 볼 수
-                있고, 아이에게 맞는 패턴을 찾으면 이후에도 그 패턴에 맞춰 꾸준히
-                관리하기 쉽습니다.
-              </p>
-              <p>
-                증상 완화에 더해 재발을 줄이고 면역력 회복을 돕는 데 중점을 둔
-                한약 치료입니다.
-              </p>
-            </div>
+            <p className="text-text-light leading-relaxed">
+              도곡경희한의원의 비염 치료 노하우가 담긴 비염ABC는
+              {" "}<br className="hidden md:block" />비염을 세 가지 패턴으로 나눠
+              접근합니다.
+            </p>
+          </div>
+
+          <div className="max-w-3xl mx-auto rounded-2xl overflow-hidden shadow-sm">
+            <Image
+              src="/biyeom-abc.jpg"
+              alt="도곡경희한의원 비염ABC 한약과 엄선한 약재"
+              width={675}
+              height={545}
+              className="w-full h-auto"
+              sizes="(max-width: 768px) 100vw, 768px"
+              priority
+            />
           </div>
         </div>
       </section>
