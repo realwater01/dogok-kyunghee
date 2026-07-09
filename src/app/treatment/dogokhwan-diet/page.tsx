@@ -5,37 +5,60 @@ import { breadcrumbSchema, medicalWebPageSchema } from "@/lib/structured-data";
 import { clinic, kakaoChatUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "도곡환 다이어트 — 도곡경희한의원 다이어트 한약",
+  title: "도곡환 다이어트 — 감량부터 유지까지 한약 3단계",
   description:
-    "도곡환은 도곡경희한의원의 다이어트 한약입니다. 식욕과 대사, 순환의 균형을 도와 무리 없는 체중 관리를 돕습니다. 원내 탕전실에서 직접 조제. 강남 매봉역, 전화 02-6949-1888.",
+    "도곡경희한의원에서만 처방하는 다이어트 한약. 도곡환(감량)·수면비움환(보조)·도곡유지환(유지) 세 가지로 다이어트의 시작부터 유지까지 돕습니다. 강남 매봉역, 전화 02-6949-1888.",
   alternates: { canonical: "/treatment/dogokhwan-diet" },
 };
 
 const pagePath = "/treatment/dogokhwan-diet";
 
-const features = [
+const products = [
   {
-    title: "식욕 조절을 돕습니다",
-    desc: "과도한 식욕과 잦은 군것질을 다스리는 데 도움을 줍니다.",
-    icon: "M13 10V3L4 14h7v7l9-11h-7z",
+    step: "01",
+    label: "감량",
+    title: "도곡환",
+    tagline: "식욕·대사·지방까지, 다이어트 농축환",
+    stages: ["1단계", "2단계", "3단계", "plus"],
+    benefits: ["식욕 조절을 도움", "대사 활성을 도움", "지방 연소를 도움"],
+    dose: "하루 2~3회 · 식사 30분 전",
+    note: "매일 건강한 식단과 하루 세 끼 루틴을 지키며 건강한 방식으로 관리합니다. 도곡경희한의원에서만 처방받을 수 있습니다.",
+    headerBg: "bg-amber-50",
+    badgeBg: "bg-amber-500",
+    labelText: "text-amber-700",
+    chip: "bg-amber-100 text-amber-800",
+    doseBg: "bg-amber-50/70",
   },
   {
-    title: "대사·순환을 살핍니다",
-    desc: "잘 붓고 대사가 느린 몸의 순환을 돕습니다.",
-    icon: "M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z",
+    step: "02",
+    label: "보조",
+    title: "수면비움환",
+    tagline: "편안한 밤이 다이어트를 돕습니다",
+    stages: [],
+    benefits: ["교감신경 안정", "변비 완화를 도움", "편안한 수면"],
+    dose: "하루 2~3회(낮 공복 시) · 취침 전 1숟갈",
+    note: "다이어트로 예민해진 몸을 안정시키고 편안히 쉴 수 있게 해 지방 소모를 돕습니다.",
+    headerBg: "bg-sky-50",
+    badgeBg: "bg-sky-500",
+    labelText: "text-sky-700",
+    chip: "bg-sky-100 text-sky-800",
+    doseBg: "bg-sky-50/70",
   },
   {
-    title: "원내 직접 조제",
-    desc: "경희한약 약재로 원내 탕전실에서 직접 조제합니다.",
-    icon: "M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z",
+    step: "03",
+    label: "유지",
+    title: "도곡유지환",
+    tagline: "성공한 다이어트를 오래 지킵니다",
+    stages: [],
+    benefits: ["감량 상태 유지를 도움", "건강한 식습관 유지"],
+    dose: "성공 후 · 총 기간의 3배 동안 하루 1번",
+    note: "감량한 상태를 오래 유지하고 건강한 식습관이 자리 잡도록 돕는 마무리 한약입니다.",
+    headerBg: "bg-emerald-50",
+    badgeBg: "bg-emerald-500",
+    labelText: "text-emerald-700",
+    chip: "bg-emerald-100 text-emerald-800",
+    doseBg: "bg-emerald-50/70",
   },
-];
-
-const targets = [
-  "식욕 조절이 어려운 분",
-  "대사가 느리고 잘 붓는 분",
-  "무리한 다이어트로 요요를 겪은 분",
-  "바빠서 꾸준한 관리가 어려운 분",
 ];
 
 export default function DogokhwanDietPage() {
@@ -47,7 +70,7 @@ export default function DogokhwanDietPage() {
             path: pagePath,
             name: "도곡환 다이어트 — 도곡경희한의원",
             description:
-              "식욕과 대사, 순환의 균형을 도와 무리 없는 체중 관리를 돕는 도곡경희한의원의 다이어트 한약.",
+              "도곡환·수면비움환·도곡유지환으로 다이어트의 감량부터 유지까지 돕는 도곡경희한의원의 다이어트 한약.",
           }),
           breadcrumbSchema([
             { name: "홈", path: "/" },
@@ -65,77 +88,98 @@ export default function DogokhwanDietPage() {
               도곡환 다이어트
             </h1>
             <p className="text-text-light text-lg leading-relaxed">
-              무리한 굶기 대신, 몸의 균형을 돕는
-              <br className="hidden md:block" /> 도곡경희한의원의 다이어트
-              한약입니다.
+              세 가지 한약으로 다이어트의
+              <br className="hidden md:block" /> 감량부터 유지까지 함께합니다.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Intro Section */}
+      {/* Products Section */}
       <section className="section bg-white">
         <div className="container mx-auto px-6">
-          <div className="max-w-2xl mx-auto text-center">
-            <p className="text-accent font-medium mb-4">도곡환이란</p>
-            <h2 className="text-3xl md:text-4xl font-medium mb-8">
-              몸의 균형부터 살핍니다
-            </h2>
-            <p className="text-text-light leading-relaxed">
-              도곡환은 식욕과 대사, 순환의 균형을 도와 무리 없이 체중을 관리할 수
-              있도록 돕는 한약입니다. 굶는 다이어트가 아니라, 잘 관리되는 몸 상태를
-              함께 만들어 가는 데 중점을 둡니다.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-14">
-            {features.map((f) => (
-              <div key={f.title} className="bg-secondary rounded-xl p-7 text-center">
-                <div className="w-14 h-14 bg-white rounded-xl flex items-center justify-center mx-auto mb-5">
-                  <svg
-                    className="w-7 h-7 text-accent"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={1.5}
-                      d={f.icon}
-                    />
-                  </svg>
-                </div>
-                <h3 className="text-lg font-semibold text-primary mb-2">
-                  {f.title}
-                </h3>
-                <p className="text-text-light text-sm leading-relaxed">
-                  {f.desc}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Target Section */}
-      <section className="section bg-brown-bg">
-        <div className="container mx-auto px-6">
-          <div className="max-w-2xl mx-auto text-center mb-12">
-            <p className="text-accent font-medium mb-4">이런 분께</p>
+          <div className="text-center max-w-2xl mx-auto mb-14">
+            <p className="text-accent font-medium mb-4">3단계 다이어트 한약</p>
             <h2 className="text-3xl md:text-4xl font-medium">
-              도곡환을 권합니다
+              감량 · 보조 · 유지
             </h2>
           </div>
 
-          <div className="max-w-2xl mx-auto flex flex-wrap justify-center gap-3">
-            {targets.map((t) => (
-              <span
-                key={t}
-                className="px-4 py-2.5 bg-white text-text-light text-sm rounded-full"
+          <div className="max-w-3xl mx-auto space-y-8">
+            {products.map((p) => (
+              <div
+                key={p.title}
+                className="rounded-2xl overflow-hidden border border-brown-light/20 bg-white shadow-sm"
               >
-                {t}
-              </span>
+                {/* Colored header */}
+                <div className={`${p.headerBg} p-6 md:p-8`}>
+                  <div className="flex items-center gap-3 mb-3">
+                    <span
+                      className={`w-9 h-9 rounded-full ${p.badgeBg} text-white flex items-center justify-center font-bold text-sm`}
+                    >
+                      {p.step}
+                    </span>
+                    <span className={`${p.labelText} font-semibold text-sm`}>
+                      {p.label}
+                    </span>
+                  </div>
+                  <h3 className="text-2xl md:text-3xl font-bold text-primary">
+                    {p.title}
+                  </h3>
+                  <p className="text-text-light mt-2">{p.tagline}</p>
+                  {p.stages.length > 0 && (
+                    <div className="flex flex-wrap gap-2 mt-4">
+                      {p.stages.map((st) => (
+                        <span
+                          key={st}
+                          className="px-3 py-1 rounded-full bg-white text-primary text-sm font-medium border border-brown-light/30"
+                        >
+                          {st}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                </div>
+
+                {/* Body */}
+                <div className="p-6 md:p-8">
+                  <div className="flex flex-wrap gap-2 mb-5">
+                    {p.benefits.map((b) => (
+                      <span
+                        key={b}
+                        className={`px-3 py-1.5 rounded-full text-sm font-medium ${p.chip}`}
+                      >
+                        {b}
+                      </span>
+                    ))}
+                  </div>
+
+                  <div
+                    className={`flex items-center gap-3 ${p.doseBg} rounded-xl px-4 py-3 mb-5`}
+                  >
+                    <svg
+                      className={`w-5 h-5 flex-shrink-0 ${p.labelText}`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={1.5}
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                    <span className="text-sm text-primary font-medium">
+                      복용법 · {p.dose}
+                    </span>
+                  </div>
+
+                  <p className="text-text-light text-sm leading-relaxed">
+                    {p.note}
+                  </p>
+                </div>
+              </div>
             ))}
           </div>
         </div>
