@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import type { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbSchema, medicalWebPageSchema } from "@/lib/structured-data";
@@ -18,6 +17,7 @@ const patterns = [
   {
     tag: "비염A",
     title: "알레르기성 비염 패턴",
+    desc: "봄·가을에 심해지는 알레르기성 비염 패턴입니다. 맑은 콧물과 재채기가 잦다면 이 패턴에 가깝습니다.",
     symptoms: [
       "맑은 콧물",
       "재채기",
@@ -30,6 +30,7 @@ const patterns = [
   {
     tag: "비염B",
     title: "코막힘·염증형 패턴",
+    desc: "코점막이 잘 붓고 코막힘이 두드러지는 패턴입니다. 기관지염·편도염이 자주 반복된다면 이 패턴에 가깝습니다.",
     symptoms: [
       "뚜렷한 구강호흡",
       "코점막이 붓는 패턴",
@@ -42,6 +43,7 @@ const patterns = [
   {
     tag: "비염C",
     title: "건조성 비염 패턴",
+    desc: "코 점막이 건조해지는 패턴입니다. 코피·코딱지가 잦고 밭은 기침이 이어진다면 이 패턴에 가깝습니다.",
     symptoms: [
       "잦은 코피",
       "목 뒤에 걸린 소량의 후비루",
@@ -130,35 +132,38 @@ export default function RhinitisPage() {
             </p>
           </div>
 
-          <div className="max-w-2xl mx-auto mb-16 rounded-2xl overflow-hidden shadow-sm">
-            <Image
-              src="/biyeom-abc.jpg"
-              alt="도곡경희한의원 비염ABC 한약과 엄선한 약재"
-              width={675}
-              height={545}
-              className="w-full h-auto"
-              sizes="(max-width: 768px) 100vw, 672px"
-            />
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="max-w-5xl mx-auto space-y-16 md:space-y-24">
             {patterns.map((p) => (
-              <div key={p.tag} className="bg-white rounded-xl p-6 md:p-7">
-                <div className="flex items-baseline gap-2 mb-4 pb-4 border-b border-cream">
-                  <span className="text-2xl font-bold text-accent">{p.tag}</span>
-                  <span className="text-sm font-semibold text-primary">
-                    {p.title}
-                  </span>
+              <div
+                key={p.tag}
+                className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center"
+              >
+                {/* Image placeholder (left) */}
+                <div className="aspect-[4/3] rounded-2xl bg-white flex items-center justify-center">
+                  <span className="text-brown-light text-sm">이미지</span>
                 </div>
-                <div className="flex flex-wrap gap-2">
-                  {p.symptoms.map((s) => (
-                    <span
-                      key={s}
-                      className="px-3 py-1.5 bg-cream text-text-light text-sm rounded-full"
-                    >
-                      {s}
-                    </span>
-                  ))}
+
+                {/* Text (right) */}
+                <div>
+                  <span className="text-3xl md:text-4xl font-bold text-accent">
+                    {p.tag}
+                  </span>
+                  <h3 className="text-xl md:text-2xl font-semibold text-primary mt-2 mb-4">
+                    {p.title}
+                  </h3>
+                  <p className="text-text-light leading-relaxed mb-6">
+                    {p.desc}
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {p.symptoms.map((s) => (
+                      <span
+                        key={s}
+                        className="px-3 py-1.5 bg-white text-text-light text-sm rounded-full"
+                      >
+                        {s}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
             ))}
