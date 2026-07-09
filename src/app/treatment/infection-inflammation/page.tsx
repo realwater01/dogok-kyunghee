@@ -68,8 +68,7 @@ export default function InfectionInflammationPage() {
             </h1>
             <p className="text-text-light text-lg leading-relaxed">
               잦은 감염과 잘 낫지 않는 염증의 배경에는
-              <br className="hidden md:block" /> 자율신경계 문제가 있을 수
-              있습니다.
+              <br className="hidden md:block" /> 자율신경계 문제가 있습니다.
             </p>
           </div>
         </div>
