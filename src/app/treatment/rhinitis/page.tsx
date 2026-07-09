@@ -16,7 +16,7 @@ const pagePath = "/treatment/rhinitis";
 const patterns = [
   {
     tag: "비염A",
-    title: "알레르기성 비염 패턴",
+    title: "분비물·간지러움·후비루 패턴",
     desc: "봄·가을에 심해지는 알레르기성 비염 패턴입니다. 맑은 콧물과 재채기가 잦다면 이 패턴에 가깝습니다.",
     symptoms: [
       "맑은 콧물",
@@ -29,7 +29,7 @@ const patterns = [
   },
   {
     tag: "비염B",
-    title: "코막힘·염증형 패턴",
+    title: "점막 부종·코막힘·구강호흡 패턴",
     desc: "코점막이 잘 붓고 코막힘이 두드러지는 패턴입니다. 기관지염·편도염이 자주 반복된다면 이 패턴에 가깝습니다.",
     symptoms: [
       "뚜렷한 구강호흡",
