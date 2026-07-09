@@ -79,4 +79,6 @@ export const sitePages = [
   { path: "/treatment/children-growth", title: "어린이 성장", changeFrequency: "monthly", priority: 0.8 },
   { path: "/treatment/panic-anxiety", title: "공황장애·불안·실신", changeFrequency: "monthly", priority: 0.8 },
   { path: "/treatment/infection-inflammation", title: "감염·염증", changeFrequency: "monthly", priority: 0.8 },
+  { path: "/treatment/dogokhwan-diet", title: "도곡환 다이어트", changeFrequency: "monthly", priority: 0.8 },
+  { path: "/treatment/constitution-diet", title: "도곡체질 다이어트", changeFrequency: "monthly", priority: 0.8 },
 ] as const;

@@ -48,9 +48,10 @@ const menuItems = [
   },
   {
     title: "다이어트",
-    href: "/coming-soon",
+    href: "/treatment/dogokhwan-diet",
     subMenu: [
-      { title: "도곡환", href: "/coming-soon" },
+      { title: "도곡환 다이어트", href: "/treatment/dogokhwan-diet" },
+      { title: "도곡체질 다이어트", href: "/treatment/constitution-diet" },
     ],
   },
   {
