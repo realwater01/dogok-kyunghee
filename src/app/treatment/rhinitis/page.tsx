@@ -95,20 +95,18 @@ export default function RhinitisPage() {
           <div className="max-w-2xl mx-auto text-center">
             <p className="text-accent font-medium mb-4">비염 치료</p>
             <h2 className="text-3xl md:text-4xl font-medium mb-8">
-              비염, 패턴을 나눠 접근합니다
+              비염 ABC
             </h2>
             <div className="space-y-5 text-text-light leading-relaxed">
               <p>
-                알레르기성 비염은 보통 봄·가을에 심해집니다. 코맹맹이 소리가
-                나거나 훌쩍이기 시작하는 초기에 치료를 시작하면 회복에 도움이
-                됩니다.
+                도곡경희한의원이 오랜 비염 진료 끝에 정리한 비염ABC는 비염을 세
+                가지 패턴으로 나눠 접근합니다. 짧은 기간 먼저 치료를 시도해 볼 수
+                있고, 아이에게 맞는 패턴을 찾으면 이후에도 그 패턴에 맞춰 꾸준히
+                관리하기 쉽습니다.
               </p>
               <p>
-                비염이 오래되면 코 점막의 저항력이 떨어져 가을·겨울에 감기,
-                기관지염, 축농증으로 이어지기도 합니다.
-              </p>
-              <p>
-                한약은 증상 완화에 더해 비염이 반복되는 원인 개선에 중점을
+                증상 완화에 더해 재발을 줄이고 면역력 회복을 돕는 한약 치료로,
+                성장기 아이들이 비염과 잘 지내며 건강하게 자라도록 돕는 데 중점을
                 둡니다.
               </p>
             </div>
