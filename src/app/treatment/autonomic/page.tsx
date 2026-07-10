@@ -68,7 +68,7 @@ export default function AutonomicPage() {
       />
 
       {/* Hero Section */}
-      <section className="bg-primary text-white section">
+      <section className="bg-[#463527] text-white section">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl">
             <p className="text-accent font-medium mb-4">자율신경계</p>
