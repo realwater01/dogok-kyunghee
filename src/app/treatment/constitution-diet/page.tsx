@@ -46,6 +46,8 @@ const diagnose = [
     title: "인바디 분석",
     desc: "체성분·근육·체지방을 수치로 확인합니다.",
     icon: "M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z",
+    // 실제 사진을 넣을 때: public에 파일을 두고 아래 photo 자리를 <Image>로 교체.
+    photo: true,
   },
   {
     title: "진맥",
@@ -239,27 +241,36 @@ export default function ConstitutionDietPage() {
               <p className="text-center text-sm font-semibold text-accent mb-4">
                 STEP 1 · 진단
               </p>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 items-start">
                 {diagnose.map((d) => (
                   <div
                     key={d.title}
                     className="bg-brown-bg rounded-2xl p-6 text-center"
                   >
-                    <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mx-auto mb-4">
-                      <svg
-                        className="w-6 h-6 text-accent"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={1.5}
-                          d={d.icon}
-                        />
-                      </svg>
-                    </div>
+                    {d.photo ? (
+                      // 사진 자리표시자 — public에 파일을 두고 next/image로 교체하세요.
+                      <div className="aspect-[4/3] bg-white rounded-xl flex items-center justify-center mb-4">
+                        <span className="text-brown-light text-xs">
+                          인바디 사진
+                        </span>
+                      </div>
+                    ) : (
+                      <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mx-auto mb-4">
+                        <svg
+                          className="w-6 h-6 text-accent"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={1.5}
+                            d={d.icon}
+                          />
+                        </svg>
+                      </div>
+                    )}
                     <h3 className="text-base font-semibold text-primary mb-1">
                       {d.title}
                     </h3>
