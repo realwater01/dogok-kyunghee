@@ -59,14 +59,14 @@ export default function InfectionInflammationPage() {
       />
 
       {/* Hero Section */}
-      <section className="bg-[#EAE7E3] section">
+      <section className="bg-[#3F4347] text-white section">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl">
             <p className="text-accent font-medium mb-4">자율신경계</p>
             <h1 className="text-4xl md:text-5xl font-medium leading-tight mb-6">
               감염·염증
             </h1>
-            <p className="text-text-light text-lg leading-relaxed">
+            <p className="text-brown-light text-lg leading-relaxed">
               잦은 감염과 잘 낫지 않는 염증의 배경에는
               <br className="hidden md:block" /> 자율신경계 문제가 있습니다.
             </p>
