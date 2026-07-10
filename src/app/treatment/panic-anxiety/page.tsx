@@ -61,14 +61,14 @@ export default function PanicAnxietyPage() {
       />
 
       {/* Hero Section */}
-      <section className="bg-brown-bg section">
+      <section className="bg-[#463527] text-white section">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl">
             <p className="text-accent font-medium mb-4">자율신경계</p>
             <h1 className="text-4xl md:text-5xl font-medium leading-tight mb-6">
               공황장애·불안·실신
             </h1>
-            <p className="text-text-light text-lg leading-relaxed">
+            <p className="text-brown-light text-lg leading-relaxed">
               갑작스런 불안과 공황, 실신의 배경에는
               <br className="hidden md:block" /> 자율신경계 문제가 있을 수
               있습니다.

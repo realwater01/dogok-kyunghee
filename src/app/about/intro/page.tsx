@@ -31,7 +31,7 @@ export default function AboutIntroPage() {
         ]}
       />
       {/* Hero Section */}
-      <section className="bg-brown-bg section">
+      <section className="bg-[#463527] text-white section">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl">
             <p className="text-accent font-medium mb-4">ABOUT US</p>
@@ -41,7 +41,7 @@ export default function AboutIntroPage() {
               소개합니다
             </h1>
             <p className="text-accent font-bold mb-2">한약, 제대로 달이다</p>
-            <p className="text-text-light text-lg leading-relaxed">
+            <p className="text-brown-light text-lg leading-relaxed">
               천연약재의 배합을 통한 최적의 자연치료로{" "}<br className="hidden md:block" />
               건강한 삶을 되찾아드립니다.
             </p>

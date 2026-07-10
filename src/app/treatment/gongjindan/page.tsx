@@ -140,7 +140,7 @@ export default function GongjindanPage() {
       />
 
       {/* Hero Section */}
-      <section className="bg-primary text-white section">
+      <section className="bg-[#463527] text-white section">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
             <div>

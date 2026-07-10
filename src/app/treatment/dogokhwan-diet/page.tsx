@@ -65,14 +65,14 @@ export default function DogokhwanDietPage() {
       />
 
       {/* Hero Section */}
-      <section className="bg-brown-bg section">
+      <section className="bg-primary text-white section">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl">
             <p className="text-accent font-medium mb-4">다이어트</p>
             <h1 className="text-4xl md:text-5xl font-medium leading-tight mb-6">
               도곡환 다이어트
             </h1>
-            <p className="text-text-light text-lg leading-relaxed">
+            <p className="text-brown-light text-lg leading-relaxed">
               세 가지 한약으로 다이어트의
               <br className="hidden md:block" /> 감량부터 유지까지 함께합니다.
             </p>

@@ -59,7 +59,7 @@ export default function InfectionInflammationPage() {
       />
 
       {/* Hero Section */}
-      <section className="bg-brown-bg section">
+      <section className="bg-[#EAE7E3] section">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl">
             <p className="text-accent font-medium mb-4">자율신경계</p>

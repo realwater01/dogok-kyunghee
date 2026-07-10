@@ -44,14 +44,14 @@ export default function StudentFocusPage() {
         ]}
       />
       {/* Hero Section */}
-      <section className="bg-brown-bg section">
+      <section className="bg-primary text-white section">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl">
             <p className="text-accent font-medium mb-4">STUDENT FOCUS</p>
             <h1 className="text-4xl md:text-5xl font-medium leading-tight mb-6">
               수험생 집중력 향상 프로그램
             </h1>
-            <p className="text-text-light text-lg leading-relaxed">
+            <p className="text-brown-light text-lg leading-relaxed">
               장시간 학습에 지친 수험생들을 위한{" "}<br className="hidden md:block" />
               집중력과 체력을 동시에 회복하는 특화 프로그램
             </p>

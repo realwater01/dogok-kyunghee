@@ -68,14 +68,14 @@ export default function AutonomicPage() {
       />
 
       {/* Hero Section */}
-      <section className="bg-brown-bg section">
+      <section className="bg-primary text-white section">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl">
             <p className="text-accent font-medium mb-4">자율신경계</p>
             <h1 className="text-4xl md:text-5xl font-medium leading-tight mb-6">
               만성두통·어지러움·피로
             </h1>
-            <p className="text-text-light text-lg leading-relaxed">
+            <p className="text-brown-light text-lg leading-relaxed">
               오래된 두통과 어지러움, 만성피로의 배경에는
               <br className="hidden md:block" /> 자율신경계의 조절 문제가 있을 수
               있습니다.
