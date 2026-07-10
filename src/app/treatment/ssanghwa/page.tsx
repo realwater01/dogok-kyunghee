@@ -54,22 +54,40 @@ const brewing = [
   },
 ];
 
-// 3가지 쌍화탕 라인업. 각 상세 내용은 추후 채워 넣습니다.
+// 3가지 쌍화탕 라인업.
 const products = [
   {
     name: "쌍화탕",
     brand: "달이다, 쌍화",
-    concept: "동의보감 원방을 바탕으로 한 기본 쌍화탕",
+    price: "30팩 · 89,000원",
+    concept: "체질을 크게 타지 않아 두루 쓰는 기본 쌍화탕",
+    points: [
+      { t: "피로 회복", d: "지친 몸의 피로를 다독이는 데 중점을 둡니다." },
+      { t: "긴장 완화", d: "과한 육체적·정신적 긴장을 푸는 데 도움을 줍니다." },
+      { t: "상시 복용", d: "체질 부담이 적어 오래 두고 드시기 좋습니다." },
+    ],
   },
   {
     name: "강활쌍금탕",
     brand: "",
-    concept: "",
+    price: "30팩 · 115,000원",
+    concept: "감기 기운·오한이 잦을 때 찾는 처방",
+    points: [
+      { t: "환절기·겨울", d: "감기 기운이 도는 11~3월에 많이 찾습니다." },
+      { t: "잦은 오한", d: "으슬으슬 춥고 감기 기운이 잦은 분께 씁니다." },
+      { t: "상비", d: "감기 기운이 있을 때 곁에 두고 드시기 좋습니다." },
+    ],
   },
   {
-    name: "총명탕 합 쌍화탕",
-    brand: "",
-    concept: "",
+    name: "총명쌍화탕",
+    brand: "총명탕 합 쌍화탕",
+    price: "30팩 · 105,000원",
+    concept: "총명탕에 쌍화탕을 더한 수험생·성장기 처방",
+    points: [
+      { t: "체력 보충", d: "공부로 지친 체력 소모를 보충하는 데 도움을 줍니다." },
+      { t: "긴장 완화", d: "과한 신체적·정신적 긴장을 푸는 데 도움을 줍니다." },
+      { t: "컨디션", d: "체표 순환을 도와 좋은 컨디션 유지를 돕습니다." },
+    ],
   },
 ];
 
@@ -287,19 +305,33 @@ export default function SsanghwaPage() {
                     {p.name}
                   </h3>
                   {p.brand && (
-                    <p className="text-accent font-medium text-sm mb-3">
+                    <p className="text-accent font-medium text-sm mb-2">
                       {p.brand}
                     </p>
                   )}
-                  {p.concept ? (
-                    <p className="text-text-light text-sm leading-relaxed">
-                      {p.concept}
-                    </p>
-                  ) : (
-                    <p className="text-brown-light text-sm">
-                      상세 내용 준비 중입니다.
-                    </p>
-                  )}
+                  <span className="self-start px-3 py-1 rounded-full bg-cream text-text-light text-xs mb-4">
+                    {p.price}
+                  </span>
+                  <p className="text-text-light text-sm leading-relaxed mb-5">
+                    {p.concept}
+                  </p>
+
+                  <ul className="space-y-3 border-t border-cream pt-5 mt-auto">
+                    {p.points.map((pt) => (
+                      <li key={pt.t} className="flex gap-2.5">
+                        <span className="mt-2 w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0" />
+                        <span className="min-w-0">
+                          <span className="font-medium text-primary text-sm">
+                            {pt.t}
+                          </span>
+                          <span className="text-text-light text-sm">
+                            {" "}
+                            — {pt.d}
+                          </span>
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             ))}
