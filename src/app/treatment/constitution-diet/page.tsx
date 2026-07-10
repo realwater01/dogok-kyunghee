@@ -41,6 +41,7 @@ const diagnose = [
     title: "개인별 체질 분석",
     desc: "타고난 체질과 몸의 반응 패턴을 살핍니다.",
     icon: "M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z",
+    photo: true,
   },
   {
     title: "인바디 분석",
