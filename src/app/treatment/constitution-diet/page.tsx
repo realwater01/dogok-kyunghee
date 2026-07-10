@@ -53,6 +53,7 @@ const diagnose = [
     title: "진맥",
     desc: "맥을 짚어 순환과 몸의 상태를 확인합니다.",
     icon: "M3 12h4l3 8 4-16 3 8h4",
+    photo: true,
   },
 ];
 
@@ -251,7 +252,7 @@ export default function ConstitutionDietPage() {
                       // 사진 자리표시자 — public에 파일을 두고 next/image로 교체하세요.
                       <div className="aspect-[4/3] bg-white rounded-xl flex items-center justify-center mb-4">
                         <span className="text-brown-light text-xs">
-                          인바디 사진
+                          {d.title} 사진
                         </span>
                       </div>
                     ) : (
