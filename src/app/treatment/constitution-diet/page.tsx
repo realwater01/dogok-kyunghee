@@ -15,6 +15,24 @@ const pagePath = "/treatment/constitution-diet";
 
 const custom = ["체질 분석", "생활 패턴", "감량 목표", "체형"];
 
+const diagnose = [
+  {
+    title: "개인별 체질 분석",
+    desc: "타고난 체질과 몸의 반응 패턴을 살핍니다.",
+    icon: "M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z",
+  },
+  {
+    title: "인바디 분석",
+    desc: "체성분·근육·체지방을 수치로 확인합니다.",
+    icon: "M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z",
+  },
+  {
+    title: "진맥",
+    desc: "맥을 짚어 순환과 몸의 상태를 확인합니다.",
+    icon: "M3 12h4l3 8 4-16 3 8h4",
+  },
+];
+
 const approaches = [
   {
     title: "대사·순환 회복",
@@ -118,8 +136,109 @@ export default function ConstitutionDietPage() {
         </div>
       </section>
 
-      {/* Approach Section */}
+      {/* 진료 프로세스 Section */}
       <section className="section bg-white">
+        <div className="container mx-auto px-6">
+          <div className="max-w-2xl mx-auto text-center mb-14">
+            <p className="text-accent font-medium mb-4">진료 프로세스</p>
+            <h2 className="text-3xl md:text-4xl font-medium mb-6">
+              진단부터 처방까지, 개인에 맞춰
+            </h2>
+            <p className="text-text-light leading-relaxed">
+              체질과 인바디, 진맥으로 몸 상태를 살핀 뒤{" "}
+              <br className="hidden md:block" />
+              개인에 맞는 탕약으로 다이어트를 돕습니다.
+            </p>
+          </div>
+
+          <div className="max-w-5xl mx-auto flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6">
+            {/* 진단 3요소 */}
+            <div className="flex-1 min-w-0">
+              <p className="text-center text-sm font-semibold text-accent mb-4">
+                STEP 1 · 진단
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                {diagnose.map((d) => (
+                  <div
+                    key={d.title}
+                    className="bg-brown-bg rounded-2xl p-6 text-center"
+                  >
+                    <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mx-auto mb-4">
+                      <svg
+                        className="w-6 h-6 text-accent"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={1.5}
+                          d={d.icon}
+                        />
+                      </svg>
+                    </div>
+                    <h3 className="text-base font-semibold text-primary mb-1">
+                      {d.title}
+                    </h3>
+                    <p className="text-text-light text-sm leading-relaxed">
+                      {d.desc}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* 연결 화살표 */}
+            <div className="flex items-center justify-center shrink-0 lg:mt-9">
+              <svg
+                className="w-8 h-8 text-accent rotate-90 lg:rotate-0"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={1.5}
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                />
+              </svg>
+            </div>
+
+            {/* 처방 결과 */}
+            <div className="lg:w-72 shrink-0">
+              <p className="text-center text-sm font-semibold text-accent mb-4">
+                STEP 2 · 처방
+              </p>
+              <div className="bg-brown-dark text-white rounded-2xl p-6 text-center">
+                <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <svg
+                    className="w-6 h-6 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={1.5}
+                      d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8zM6 1v3M10 1v3M14 1v3"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-semibold mb-1">개인별 맞춤 탕약</h3>
+                <p className="text-brown-light text-sm leading-relaxed">
+                  진단 결과에 맞춰 체질과 상태에 맞는 한약을 조제합니다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Approach Section */}
+      <section className="section bg-brown-bg">
         <div className="container mx-auto px-6">
           <div className="max-w-2xl mx-auto text-center mb-14">
             <p className="text-accent font-medium mb-4">이렇게 돕습니다</p>
