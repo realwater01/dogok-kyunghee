@@ -15,6 +15,27 @@ const pagePath = "/treatment/constitution-diet";
 
 const custom = ["체질 분석", "생활 패턴", "감량 목표", "체형"];
 
+const causes = [
+  {
+    name: "습담",
+    hanja: "濕痰",
+    desc: "노폐물과 수분이 잘 빠지지 않고 쌓여 몸이 무겁고 잘 붓습니다.",
+    icon: "M12 4c-1.5 0-3 1-3 3v5c0 2 1.5 4 3 6 1.5-2 3-4 3-6V7c0-2-1.5-3-3-3zM9 12c-2 0-3.5 1-3.5 2.5S7 17 9 17M15 12c2 0 3.5 1 3.5 2.5S17 17 15 17",
+  },
+  {
+    name: "어혈",
+    hanja: "瘀血",
+    desc: "순환이 더뎌 대사가 느려지고 살이 잘 빠지지 않습니다.",
+    icon: "M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15",
+  },
+  {
+    name: "기체",
+    hanja: "氣滯",
+    desc: "기 순환이 막혀 식욕 조절과 스트레스에 영향을 줍니다.",
+    icon: "M13 10V3L4 14h7v7l9-11h-7z",
+  },
+];
+
 const diagnose = [
   {
     title: "개인별 체질 분석",
@@ -104,6 +125,67 @@ export default function ConstitutionDietPage() {
                 도는 ‘잘 빠지는 몸’을 만들어 가는 과정입니다.
               </p>
             </div>
+          </div>
+
+          {/* 빠지지 않는 원인 다이어그램 */}
+          <div className="max-w-4xl mx-auto mt-14">
+            <p className="text-center text-sm font-semibold text-accent mb-6">
+              빠지지 않는 데는 원인이 있습니다
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              {causes.map((c) => (
+                <div
+                  key={c.name}
+                  className="bg-brown-bg rounded-2xl p-6 text-center"
+                >
+                  <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <svg
+                      className="w-6 h-6 text-accent"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={1.5}
+                        d={c.icon}
+                      />
+                    </svg>
+                  </div>
+                  <div className="flex items-baseline justify-center gap-1.5 mb-2">
+                    <h3 className="text-lg font-semibold text-primary">
+                      {c.name}
+                    </h3>
+                    <span className="text-xs text-text-light">{c.hanja}</span>
+                  </div>
+                  <p className="text-text-light text-sm leading-relaxed">
+                    {c.desc}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            {/* 원인 → 결과 연결 */}
+            <div className="flex justify-center my-4">
+              <svg
+                className="w-7 h-7 text-accent rotate-90"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={1.5}
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                />
+              </svg>
+            </div>
+
+            <p className="max-w-xl mx-auto text-center text-text-light leading-relaxed">
+              이런 원인부터 살펴 잘 빠지는 몸 상태로 되돌리는 것이 먼저입니다.
+            </p>
           </div>
         </div>
       </section>
