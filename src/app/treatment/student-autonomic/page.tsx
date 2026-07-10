@@ -43,7 +43,7 @@ export default function StudentAutonomicPage() {
         ]}
       />
       {/* Hero Section */}
-      <section className="bg-brown-bg section">
+      <section className="bg-cream section">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-medium leading-tight mb-6">
