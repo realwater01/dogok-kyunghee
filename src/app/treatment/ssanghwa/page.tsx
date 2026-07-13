@@ -251,16 +251,22 @@ export default function SsanghwaPage() {
           <div className="max-w-4xl mx-auto flex flex-col md:flex-row md:items-stretch gap-4">
             {brewing.map((step, i) => (
               <div key={step.n} className="flex-1 flex flex-col md:flex-row md:items-stretch gap-4">
-                <div className="flex-1 bg-secondary rounded-2xl p-7 text-center flex flex-col">
-                  <span className="text-2xl font-semibold text-accent mb-3">
-                    {step.n}
-                  </span>
-                  <h3 className="text-lg font-semibold text-primary mb-2">
-                    {step.t}
-                  </h3>
-                  <p className="text-text-light text-sm leading-relaxed">
-                    {step.d}
-                  </p>
+                <div className="flex-1 bg-secondary rounded-2xl overflow-hidden flex flex-col">
+                  {/* 이미지 자리 — public에 파일을 두고 next/image로 교체하세요. */}
+                  <div className="aspect-[4/3] bg-brown-bg flex items-center justify-center">
+                    <span className="text-brown-light text-sm">이미지</span>
+                  </div>
+                  <div className="p-6 text-center flex flex-col flex-1">
+                    <span className="text-2xl font-semibold text-accent mb-3">
+                      {step.n}
+                    </span>
+                    <h3 className="text-lg font-semibold text-primary mb-2">
+                      {step.t}
+                    </h3>
+                    <p className="text-text-light text-sm leading-relaxed">
+                      {step.d}
+                    </p>
+                  </div>
                 </div>
 
                 {/* 연결 화살표 (마지막 단계 뒤에는 생략) */}
