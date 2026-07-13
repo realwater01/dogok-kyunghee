@@ -19,7 +19,7 @@ export default function Footer() {
             <ul style={{ color: 'rgba(255,255,255,0.85)' }} className="space-y-2.5 text-sm">
               <li>전화: 02-6949-1888</li>
               <li>팩스: 070-5208-0631</li>
-              <li>이메일: jsryan@naver.com</li>
+              <li>이메일: dogokclinic@gmail.com</li>
             </ul>
           </div>
 

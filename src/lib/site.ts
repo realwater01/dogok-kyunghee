@@ -12,7 +12,7 @@ export const clinic = {
   url: siteUrl,
   telephone: "02-6949-1888",
   fax: "070-5208-0631",
-  email: "jsryan@naver.com",
+  email: "dogokclinic@gmail.com",
   address: {
     full: "서울특별시 강남구 논현로28길 24, 세양빌딩 1층",
     streetAddress: "논현로28길 24, 세양빌딩 1층",
