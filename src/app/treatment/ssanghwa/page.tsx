@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import Link from "next/link";
 import type { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
@@ -250,7 +251,7 @@ export default function SsanghwaPage() {
 
           <div className="max-w-4xl mx-auto flex flex-col md:flex-row md:items-stretch gap-4">
             {brewing.map((step, i) => (
-              <div key={step.n} className="flex-1 flex flex-col md:flex-row md:items-stretch gap-4">
+              <Fragment key={step.n}>
                 <div className="flex-1 bg-secondary rounded-2xl overflow-hidden flex flex-col">
                   {/* 이미지 자리 — public에 파일을 두고 next/image로 교체하세요. */}
                   <div className="aspect-[4/3] bg-brown-bg flex items-center justify-center">
@@ -287,7 +288,7 @@ export default function SsanghwaPage() {
                     </svg>
                   </div>
                 )}
-              </div>
+              </Fragment>
             ))}
           </div>
         </div>
