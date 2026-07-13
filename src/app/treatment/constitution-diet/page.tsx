@@ -95,14 +95,14 @@ export default function ConstitutionDietPage() {
       />
 
       {/* Hero Section */}
-      <section className="bg-brown-bg section">
+      <section className="bg-[#26344A] text-white section">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl">
             <p className="text-accent font-medium mb-4">다이어트</p>
             <h1 className="text-4xl md:text-5xl font-medium leading-tight mb-6">
               도곡체질 다이어트
             </h1>
-            <p className="text-text-light text-lg leading-relaxed">
+            <p className="text-brown-light text-lg leading-relaxed">
               체질마다 잘 빠지는 길이 다릅니다.
               <br className="hidden md:block" /> 나에게 맞는 방향을 찾아
               드립니다.
