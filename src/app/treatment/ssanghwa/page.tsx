@@ -70,7 +70,7 @@ const products = [
   },
   {
     name: "강활쌍금탕",
-    brand: "",
+    brand: "호흡기 보약 쌍화",
     price: "30팩 · 115,000원",
     concept: "호흡기가 약하고 감기가 잦은 분을 위한 보약",
     points: [
