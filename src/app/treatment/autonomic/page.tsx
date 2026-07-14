@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
+import ImagePlaceholder from "@/components/ImagePlaceholder";
 import { breadcrumbSchema, medicalWebPageSchema } from "@/lib/structured-data";
 import { clinic, kakaoChatUrl } from "@/lib/site";
 
@@ -70,16 +71,19 @@ export default function AutonomicPage() {
       {/* Hero Section */}
       <section className="bg-[#463527] text-white section">
         <div className="container mx-auto px-6">
-          <div className="max-w-3xl">
-            <p className="text-accent font-medium mb-4">자율신경계</p>
-            <h1 className="text-4xl md:text-5xl font-medium leading-tight mb-6">
-              만성두통·어지러움·피로
-            </h1>
-            <p className="text-brown-light text-lg leading-relaxed">
-              오래된 두통과 어지러움, 만성피로의 배경에는
-              <br className="hidden md:block" /> 자율신경계의 조절 문제가 있을 수
-              있습니다.
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            <div>
+              <p className="text-accent font-medium mb-4">자율신경계</p>
+              <h1 className="text-4xl md:text-5xl font-medium leading-tight mb-6">
+                만성두통·어지러움·피로
+              </h1>
+              <p className="text-brown-light text-lg leading-relaxed">
+                오래된 두통과 어지러움, 만성피로의 배경에는
+                <br className="hidden md:block" /> 자율신경계의 조절 문제가 있을
+                수 있습니다.
+              </p>
+            </div>
+            <ImagePlaceholder ratio="aspect-[4/3]" tone="dark" />
           </div>
         </div>
       </section>
@@ -99,6 +103,12 @@ export default function AutonomicPage() {
               나뉩니다.
             </p>
           </div>
+
+          <ImagePlaceholder
+            ratio="aspect-[16/9]"
+            tone="light"
+            className="max-w-4xl mx-auto mt-14"
+          />
         </div>
       </section>
 
@@ -113,18 +123,20 @@ export default function AutonomicPage() {
           </div>
 
           <div className="max-w-5xl mx-auto space-y-16 md:space-y-24">
-            {patterns.map((p) => (
+            {patterns.map((p, i) => (
               <div
                 key={p.tag}
                 className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center"
               >
-                {/* Image placeholder (left) */}
-                <div className="aspect-[4/3] rounded-2xl bg-white flex items-center justify-center">
-                  <span className="text-brown-light text-sm">이미지</span>
-                </div>
+                {/* 이미지 — 짝수/홀수로 좌우 번갈아 배치 */}
+                <ImagePlaceholder
+                  ratio="aspect-[4/3]"
+                  tone="plain"
+                  className={i % 2 === 1 ? "lg:order-2" : ""}
+                />
 
-                {/* Text (right) */}
-                <div>
+                {/* Text */}
+                <div className={i % 2 === 1 ? "lg:order-1" : ""}>
                   <span className="text-2xl md:text-3xl font-bold text-accent">
                     {p.tag}
                   </span>
