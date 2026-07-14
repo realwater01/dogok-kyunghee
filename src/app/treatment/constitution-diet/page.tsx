@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
+import ImagePlaceholder from "@/components/ImagePlaceholder";
 import { breadcrumbSchema, medicalWebPageSchema } from "@/lib/structured-data";
 import { clinic, kakaoChatUrl } from "@/lib/site";
 
@@ -97,16 +98,19 @@ export default function ConstitutionDietPage() {
       {/* Hero Section */}
       <section className="bg-[#26344A] text-white section">
         <div className="container mx-auto px-6">
-          <div className="max-w-3xl">
-            <p className="text-accent font-medium mb-4">다이어트</p>
-            <h1 className="text-4xl md:text-5xl font-medium leading-tight mb-6">
-              도곡체질 다이어트
-            </h1>
-            <p className="text-brown-light text-lg leading-relaxed">
-              체질마다 잘 빠지는 길이 다릅니다.
-              <br className="hidden md:block" /> 나에게 맞는 방향을 찾아
-              드립니다.
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            <div>
+              <p className="text-accent font-medium mb-4">다이어트</p>
+              <h1 className="text-4xl md:text-5xl font-medium leading-tight mb-6">
+                도곡체질 다이어트
+              </h1>
+              <p className="text-brown-light text-lg leading-relaxed">
+                체질마다 잘 빠지는 길이 다릅니다.
+                <br className="hidden md:block" /> 나에게 맞는 방향을 찾아
+                드립니다.
+              </p>
+            </div>
+            <ImagePlaceholder ratio="aspect-[4/3]" tone="dark" />
           </div>
         </div>
       </section>
@@ -219,6 +223,12 @@ export default function ConstitutionDietPage() {
               </span>
             ))}
           </div>
+
+          <ImagePlaceholder
+            ratio="aspect-[16/9]"
+            tone="plain"
+            className="max-w-4xl mx-auto mt-14"
+          />
         </div>
       </section>
 

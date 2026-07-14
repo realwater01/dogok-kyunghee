@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
+import ImagePlaceholder from "@/components/ImagePlaceholder";
 import { breadcrumbSchema, medicalWebPageSchema } from "@/lib/structured-data";
 import { clinic, kakaoChatUrl } from "@/lib/site";
 
@@ -67,15 +68,18 @@ export default function DogokhwanDietPage() {
       {/* Hero Section */}
       <section className="bg-primary text-white section">
         <div className="container mx-auto px-6">
-          <div className="max-w-3xl">
-            <p className="text-accent font-medium mb-4">다이어트</p>
-            <h1 className="text-4xl md:text-5xl font-medium leading-tight mb-6">
-              도곡환 다이어트
-            </h1>
-            <p className="text-brown-light text-lg leading-relaxed">
-              세 가지 한약으로 다이어트의
-              <br className="hidden md:block" /> 감량부터 유지까지 함께합니다.
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            <div className="min-w-0">
+              <p className="text-accent font-medium mb-4">다이어트</p>
+              <h1 className="text-4xl md:text-5xl font-medium leading-tight mb-6">
+                도곡환 다이어트
+              </h1>
+              <p className="text-brown-light text-lg leading-relaxed">
+                세 가지 한약으로 다이어트의
+                <br className="hidden md:block" /> 감량부터 유지까지 함께합니다.
+              </p>
+            </div>
+            <ImagePlaceholder ratio="aspect-[4/3]" tone="dark" />
           </div>
         </div>
       </section>
@@ -83,7 +87,7 @@ export default function DogokhwanDietPage() {
       {/* Products Section */}
       <section className="section bg-white">
         <div className="container mx-auto px-6">
-          <div className="text-center max-w-2xl mx-auto mb-16 md:mb-24">
+          <div className="text-center max-w-2xl mx-auto mb-14 md:mb-16">
             <p className="text-accent font-medium mb-4">
               3가지, 그 이상의 솔루션
             </p>
@@ -92,19 +96,27 @@ export default function DogokhwanDietPage() {
             </h2>
           </div>
 
+          <ImagePlaceholder
+            ratio="aspect-[16/9]"
+            tone="light"
+            className="max-w-4xl mx-auto mb-16 md:mb-24"
+          />
+
           <div className="max-w-5xl mx-auto space-y-20 md:space-y-28">
-            {products.map((p) => (
+            {products.map((p, i) => (
               <div
                 key={p.title}
                 className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center"
               >
-                {/* Image placeholder (left) */}
-                <div className="aspect-[4/3] rounded-2xl bg-secondary flex items-center justify-center">
-                  <span className="text-brown-light text-sm">이미지</span>
-                </div>
+                {/* 이미지 — 짝수/홀수로 좌우 번갈아 배치 */}
+                <ImagePlaceholder
+                  ratio="aspect-[4/3]"
+                  tone="light"
+                  className={i % 2 === 1 ? "lg:order-2" : ""}
+                />
 
-                {/* Text (right) */}
-                <div>
+                {/* Text */}
+                <div className={`min-w-0 ${i % 2 === 1 ? "lg:order-1" : ""}`}>
                   <div className="flex items-baseline gap-3 mb-4">
                     <span className="text-4xl md:text-5xl font-semibold text-brown-light/60">
                       {p.step}

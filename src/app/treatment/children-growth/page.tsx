@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
+import ImagePlaceholder from "@/components/ImagePlaceholder";
 import { breadcrumbSchema, medicalWebPageSchema } from "@/lib/structured-data";
 import { clinic, kakaoChatUrl } from "@/lib/site";
 
@@ -121,6 +122,12 @@ export default function ChildrenGrowthPage() {
               </p>
             </div>
           </div>
+
+          <ImagePlaceholder
+            ratio="aspect-[16/9]"
+            tone="light"
+            className="max-w-4xl mx-auto mt-14"
+          />
         </div>
       </section>
 

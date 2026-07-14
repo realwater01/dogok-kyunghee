@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
 import KakaoMap from "@/components/KakaoMap";
 import DoctorSchedule from "@/components/DoctorSchedule";
+import ImagePlaceholder from "@/components/ImagePlaceholder";
 import { clinic } from "@/lib/site";
 import { breadcrumbSchema } from "@/lib/structured-data";
 
@@ -25,14 +26,17 @@ export default function LocationPage() {
       {/* Hero Section */}
       <section className="bg-[#EAE7E3] section">
         <div className="container mx-auto px-6">
-          <div className="max-w-3xl">
-            <p className="text-accent font-medium mb-4">LOCATION</p>
-            <h1 className="text-4xl md:text-5xl font-medium leading-tight mb-6">
-              오시는 길
-            </h1>
-            <p className="text-text-light text-lg leading-relaxed">
-              도곡경희한의원으로 오시는 방법을 안내해 드립니다.
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            <div>
+              <p className="text-accent font-medium mb-4">LOCATION</p>
+              <h1 className="text-4xl md:text-5xl font-medium leading-tight mb-6">
+                오시는 길
+              </h1>
+              <p className="text-text-light text-lg leading-relaxed">
+                도곡경희한의원으로 오시는 방법을 안내해 드립니다.
+              </p>
+            </div>
+            <ImagePlaceholder ratio="aspect-[4/3]" tone="plain" />
           </div>
         </div>
       </section>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
+import ImagePlaceholder from "@/components/ImagePlaceholder";
 import { breadcrumbSchema, medicalWebPageSchema } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
@@ -31,15 +32,18 @@ export default function PrinciplePage() {
       {/* Hero Section */}
       <section className="bg-cream section">
         <div className="container mx-auto px-6">
-          <div className="max-w-3xl">
-            <p className="text-accent font-medium mb-4">TREATMENT</p>
-            <h1 className="text-4xl md:text-5xl font-medium leading-tight mb-6">
-              치료원리
-            </h1>
-            <p className="text-text-light text-lg leading-relaxed">
-              자율신경계를 중심으로 몸과 마음의 균형을 회복시키는{" "}<br className="hidden md:block" />
-              도곡경희한의원의 치료 원리를 소개합니다.
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            <div>
+              <p className="text-accent font-medium mb-4">TREATMENT</p>
+              <h1 className="text-4xl md:text-5xl font-medium leading-tight mb-6">
+                치료원리
+              </h1>
+              <p className="text-text-light text-lg leading-relaxed">
+                자율신경계를 중심으로 몸과 마음의 균형을 회복시키는{" "}<br className="hidden md:block" />
+                도곡경희한의원의 치료 원리를 소개합니다.
+              </p>
+            </div>
+            <ImagePlaceholder ratio="aspect-[4/3]" tone="plain" />
           </div>
         </div>
       </section>
@@ -50,21 +54,24 @@ export default function PrinciplePage() {
           <div className="max-w-3xl mx-auto">
             <div className="space-y-16">
               {/* Section 1 */}
-              <div>
-                <h2 className="text-2xl md:text-3xl font-medium mb-6 text-primary">
-                  자율신경계란?
-                </h2>
-                <div className="space-y-4 text-text-light leading-relaxed">
-                  <p>
-                    자율신경계는 우리 몸의 항상성을 유지하는 핵심 시스템입니다.
-                    심장 박동, 호흡, 소화, 체온 조절 등 의지와 관계없이
-                    자동으로 조절되는 모든 기능을 담당합니다.
-                  </p>
-                  <p>
-                    자율신경계는 교감신경과 부교감신경으로 구성되어 있으며,
-                    이 두 신경이 균형을 이룰 때 우리 몸은 건강한 상태를 유지합니다.
-                  </p>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 items-center">
+                <div className="min-w-0">
+                  <h2 className="text-2xl md:text-3xl font-medium mb-6 text-primary">
+                    자율신경계란?
+                  </h2>
+                  <div className="space-y-4 text-text-light leading-relaxed">
+                    <p>
+                      자율신경계는 우리 몸의 항상성을 유지하는 핵심 시스템입니다.
+                      심장 박동, 호흡, 소화, 체온 조절 등 의지와 관계없이
+                      자동으로 조절되는 모든 기능을 담당합니다.
+                    </p>
+                    <p>
+                      자율신경계는 교감신경과 부교감신경으로 구성되어 있으며,
+                      이 두 신경이 균형을 이룰 때 우리 몸은 건강한 상태를 유지합니다.
+                    </p>
+                  </div>
                 </div>
+                <ImagePlaceholder ratio="aspect-[4/3]" tone="light" />
               </div>
 
               {/* Section 2 */}
@@ -101,19 +108,26 @@ export default function PrinciplePage() {
               </div>
 
               {/* Section 3 */}
-              <div>
-                <h2 className="text-2xl md:text-3xl font-medium mb-6 text-primary">
-                  도곡경희한의원의 치료 접근법
-                </h2>
-                <div className="space-y-4 text-text-light leading-relaxed">
-                  <p>
-                    도곡경희한의원은 단순히 증상을 완화하는 것이 아니라,
-                    자율신경계의 균형 회복을 목표로 합니다.
-                  </p>
-                  <p>
-                    환자 개개인의 체질, 생활 패턴, 증상의 원인을 종합적으로 분석하여
-                    맞춤형 치료 계획을 수립합니다.
-                  </p>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 items-center">
+                <ImagePlaceholder
+                  ratio="aspect-[4/3]"
+                  tone="light"
+                  className="lg:order-2"
+                />
+                <div className="min-w-0 lg:order-1">
+                  <h2 className="text-2xl md:text-3xl font-medium mb-6 text-primary">
+                    도곡경희한의원의 치료 접근법
+                  </h2>
+                  <div className="space-y-4 text-text-light leading-relaxed">
+                    <p>
+                      도곡경희한의원은 단순히 증상을 완화하는 것이 아니라,
+                      자율신경계의 균형 회복을 목표로 합니다.
+                    </p>
+                    <p>
+                      환자 개개인의 체질, 생활 패턴, 증상의 원인을 종합적으로 분석하여
+                      맞춤형 치료 계획을 수립합니다.
+                    </p>
+                  </div>
                 </div>
               </div>
 

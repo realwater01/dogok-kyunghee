@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import Link from "next/link";
 import type { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
+import ImagePlaceholder from "@/components/ImagePlaceholder";
 import { breadcrumbSchema, medicalWebPageSchema } from "@/lib/structured-data";
 import { clinic, kakaoChatUrl } from "@/lib/site";
 
@@ -149,10 +150,7 @@ export default function SsanghwaPage() {
               </p>
             </div>
 
-            {/* Image placeholder */}
-            <div className="aspect-[4/3] rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center">
-              <span className="text-brown-light/70 text-sm">이미지</span>
-            </div>
+            <ImagePlaceholder ratio="aspect-[4/3]" tone="dark" />
           </div>
         </div>
       </section>
@@ -204,10 +202,7 @@ export default function SsanghwaPage() {
       <section className="section bg-brown-bg">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center max-w-5xl mx-auto">
-            {/* Image placeholder (left) */}
-            <div className="aspect-[4/3] rounded-2xl bg-white flex items-center justify-center">
-              <span className="text-brown-light text-sm">이미지</span>
-            </div>
+            <ImagePlaceholder ratio="aspect-[4/3]" tone="plain" />
 
             <div>
               <p className="text-accent font-medium mb-4">
@@ -253,10 +248,11 @@ export default function SsanghwaPage() {
             {brewing.map((step, i) => (
               <Fragment key={step.n}>
                 <div className="flex-1 bg-secondary rounded-2xl overflow-hidden flex flex-col">
-                  {/* 이미지 자리 — public에 파일을 두고 next/image로 교체하세요. */}
-                  <div className="aspect-[4/3] bg-brown-bg flex items-center justify-center">
-                    <span className="text-brown-light text-sm">이미지</span>
-                  </div>
+                  <ImagePlaceholder
+                    ratio="aspect-[4/3]"
+                    tone="cream"
+                    className="!rounded-none"
+                  />
                   <div className="p-6 text-center flex flex-col flex-1">
                     <span className="text-2xl font-semibold text-accent mb-3">
                       {step.n}
@@ -315,10 +311,11 @@ export default function SsanghwaPage() {
                 key={p.name}
                 className="bg-white rounded-2xl overflow-hidden flex flex-col"
               >
-                {/* Image placeholder */}
-                <div className="aspect-[4/3] bg-secondary flex items-center justify-center">
-                  <span className="text-brown-light text-sm">이미지</span>
-                </div>
+                <ImagePlaceholder
+                  ratio="aspect-[4/3]"
+                  tone="light"
+                  className="!rounded-none"
+                />
                 <div className="p-6 flex flex-col flex-1">
                   <h3 className="text-xl font-semibold text-primary mb-1">
                     {p.name}

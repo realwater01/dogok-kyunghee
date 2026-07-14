@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
+import ImagePlaceholder from "@/components/ImagePlaceholder";
 import { breadcrumbSchema, faqSchema, medicalWebPageSchema } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
@@ -45,14 +46,17 @@ export default function ChildrenAdhdTicPage() {
       {/* Hero Section */}
       <section className="bg-[#F3EBDD] section">
         <div className="container mx-auto px-6">
-          <div className="max-w-3xl">
-            <p className="text-accent font-medium mb-4">CHILDREN ADHD & TIC</p>
-            <h1 className="text-4xl md:text-5xl font-medium leading-tight mb-6">
-              어린이 ADHD, TIC, 불안, 강박 치료
-            </h1>
-            <p className="text-text-light text-lg leading-relaxed">
-              집중하지 못하고 산만한 우리 아이를 위한 프로그램
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            <div className="min-w-0">
+              <p className="text-accent font-medium mb-4">CHILDREN ADHD & TIC</p>
+              <h1 className="text-4xl md:text-5xl font-medium leading-tight mb-6">
+                어린이 ADHD, TIC, 불안, 강박 치료
+              </h1>
+              <p className="text-text-light text-lg leading-relaxed">
+                집중하지 못하고 산만한 우리 아이를 위한 프로그램
+              </p>
+            </div>
+            <ImagePlaceholder ratio="aspect-[4/3]" tone="plain" />
           </div>
         </div>
       </section>
@@ -61,7 +65,7 @@ export default function ChildrenAdhdTicPage() {
       <section className="section bg-white">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
+            <div className="min-w-0">
               <p className="text-accent font-medium mb-4">부모님의 걱정</p>
               <h2 className="text-3xl md:text-4xl font-medium mb-8">
                 우리 아이, 이런 증상이 있나요?
@@ -84,14 +88,7 @@ export default function ChildrenAdhdTicPage() {
                 </p>
               </div>
             </div>
-            <div className="aspect-[4/3] bg-gradient-to-br from-cream to-brown-light rounded-2xl flex items-center justify-center">
-              <div className="text-center text-brown-dark">
-                <svg className="w-16 h-16 mx-auto mb-4 opacity-40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <p className="text-sm opacity-60">어린이 이미지</p>
-              </div>
-            </div>
+            <ImagePlaceholder ratio="aspect-[4/3]" tone="light" />
           </div>
         </div>
       </section>
@@ -100,15 +97,12 @@ export default function ChildrenAdhdTicPage() {
       <section className="section bg-brown-bg">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="order-2 lg:order-1 aspect-[4/3] bg-gradient-to-br from-white to-brown-light rounded-2xl flex items-center justify-center">
-              <div className="text-center text-brown-dark">
-                <svg className="w-16 h-16 mx-auto mb-4 opacity-40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                </svg>
-                <p className="text-sm opacity-60">치료 이미지</p>
-              </div>
-            </div>
-            <div className="order-1 lg:order-2">
+            <ImagePlaceholder
+              ratio="aspect-[4/3]"
+              tone="plain"
+              className="order-2 lg:order-1"
+            />
+            <div className="order-1 lg:order-2 min-w-0">
               <p className="text-accent font-medium mb-4">맞춤 솔루션</p>
               <h2 className="text-3xl md:text-4xl font-medium mb-8">
                 아이들이 건강한 성인으로<br />자랄 수 있도록 돕습니다

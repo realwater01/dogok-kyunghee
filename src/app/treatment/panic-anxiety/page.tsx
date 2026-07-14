@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
+import ImagePlaceholder from "@/components/ImagePlaceholder";
 import { breadcrumbSchema, medicalWebPageSchema } from "@/lib/structured-data";
 import { clinic, kakaoChatUrl } from "@/lib/site";
 
@@ -63,16 +64,19 @@ export default function PanicAnxietyPage() {
       {/* Hero Section */}
       <section className="bg-[#35322F] text-white section">
         <div className="container mx-auto px-6">
-          <div className="max-w-3xl">
-            <p className="text-accent font-medium mb-4">자율신경계</p>
-            <h1 className="text-4xl md:text-5xl font-medium leading-tight mb-6">
-              공황장애·불안·실신
-            </h1>
-            <p className="text-brown-light text-lg leading-relaxed">
-              갑작스런 불안과 공황, 실신의 배경에는
-              <br className="hidden md:block" /> 자율신경계 문제가 있을 수
-              있습니다.
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            <div className="min-w-0">
+              <p className="text-accent font-medium mb-4">자율신경계</p>
+              <h1 className="text-4xl md:text-5xl font-medium leading-tight mb-6">
+                공황장애·불안·실신
+              </h1>
+              <p className="text-brown-light text-lg leading-relaxed">
+                갑작스런 불안과 공황, 실신의 배경에는
+                <br className="hidden md:block" /> 자율신경계 문제가 있을 수
+                있습니다.
+              </p>
+            </div>
+            <ImagePlaceholder ratio="aspect-[4/3]" tone="dark" />
           </div>
         </div>
       </section>
@@ -82,12 +86,10 @@ export default function PanicAnxietyPage() {
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center max-w-5xl mx-auto mb-16">
             {/* Image placeholder (left) */}
-            <div className="aspect-[4/3] rounded-2xl bg-secondary flex items-center justify-center">
-              <span className="text-brown-light text-sm">이미지</span>
-            </div>
+            <ImagePlaceholder ratio="aspect-[4/3]" tone="light" />
 
             {/* Text (right) */}
-            <div>
+            <div className="min-w-0">
               <p className="text-accent font-medium mb-4">왜 생기나요</p>
               <h2 className="text-3xl md:text-4xl font-medium mb-6">
                 자율신경실조가 뇌신경을 흔듭니다

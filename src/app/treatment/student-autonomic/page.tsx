@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
+import ImagePlaceholder from "@/components/ImagePlaceholder";
 import { breadcrumbSchema, faqSchema, medicalWebPageSchema } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
@@ -45,14 +46,17 @@ export default function StudentAutonomicPage() {
       {/* Hero Section */}
       <section className="bg-cream section">
         <div className="container mx-auto px-6">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-medium leading-tight mb-6">
-              수험생 치료 프로그램
-            </h1>
-            <p className="text-text-light text-lg leading-relaxed">
-              지친 수험생들을 위한{" "}<br className="hidden md:block" />
-              집중력과 자율신경균형 회복 치료
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            <div>
+              <h1 className="text-4xl md:text-5xl font-medium leading-tight mb-6">
+                수험생 치료 프로그램
+              </h1>
+              <p className="text-text-light text-lg leading-relaxed">
+                지친 수험생들을 위한{" "}<br className="hidden md:block" />
+                집중력과 자율신경균형 회복 치료
+              </p>
+            </div>
+            <ImagePlaceholder ratio="aspect-[4/3]" tone="plain" />
           </div>
         </div>
       </section>
@@ -78,14 +82,7 @@ export default function StudentAutonomicPage() {
                 </p>
               </div>
             </div>
-            <div className="aspect-[4/3] bg-gradient-to-br from-cream to-brown-light rounded-2xl flex items-center justify-center">
-              <div className="text-center text-brown-dark">
-                <svg className="w-16 h-16 mx-auto mb-4 opacity-40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
-                <p className="text-sm opacity-60">자율신경 이미지</p>
-              </div>
-            </div>
+            <ImagePlaceholder ratio="aspect-[4/3]" tone="light" label="자율신경 이미지" />
           </div>
         </div>
       </section>
@@ -94,14 +91,12 @@ export default function StudentAutonomicPage() {
       <section className="section bg-brown-bg">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="order-2 lg:order-1 aspect-[4/3] bg-gradient-to-br from-white to-brown-light rounded-2xl flex items-center justify-center">
-              <div className="text-center text-brown-dark">
-                <svg className="w-16 h-16 mx-auto mb-4 opacity-40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                </svg>
-                <p className="text-sm opacity-60">치료 이미지</p>
-              </div>
-            </div>
+            <ImagePlaceholder
+              ratio="aspect-[4/3]"
+              tone="plain"
+              label="치료 이미지"
+              className="order-2 lg:order-1"
+            />
             <div className="order-1 lg:order-2">
               <p className="text-accent font-medium mb-4">체력 집중력향상</p>
               <h2 className="text-3xl md:text-4xl font-medium mb-8">
@@ -150,15 +145,7 @@ export default function StudentAutonomicPage() {
                 </p>
               </div>
             </div>
-            <div className="aspect-[4/3] bg-gradient-to-br from-cream to-brown-light rounded-2xl flex items-center justify-center">
-              <div className="text-center text-brown-dark">
-                <svg className="w-16 h-16 mx-auto mb-4 opacity-40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M12 14l9-5-9-5-9 5 9 5z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
-                </svg>
-                <p className="text-sm opacity-60">한약 이미지</p>
-              </div>
-            </div>
+            <ImagePlaceholder ratio="aspect-[4/3]" tone="light" label="한약 이미지" />
           </div>
         </div>
       </section>

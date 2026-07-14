@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
+import ImagePlaceholder from "@/components/ImagePlaceholder";
 import { breadcrumbSchema, medicalWebPageSchema } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
@@ -33,18 +34,21 @@ export default function AboutIntroPage() {
       {/* Hero Section */}
       <section className="bg-[#463527] text-white section">
         <div className="container mx-auto px-6">
-          <div className="max-w-3xl">
-            <p className="text-accent font-medium mb-4">ABOUT US</p>
-            <h1 className="text-4xl md:text-5xl font-medium leading-tight mb-6">
-              도곡경희한의원을
-              <br />
-              소개합니다
-            </h1>
-            <p className="text-accent font-bold mb-2">한약, 제대로 달이다</p>
-            <p className="text-brown-light text-lg leading-relaxed">
-              천연약재의 배합을 통한 최적의 자연치료로{" "}<br className="hidden md:block" />
-              건강한 삶을 되찾아드립니다.
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            <div>
+              <p className="text-accent font-medium mb-4">ABOUT US</p>
+              <h1 className="text-4xl md:text-5xl font-medium leading-tight mb-6">
+                도곡경희한의원을
+                <br />
+                소개합니다
+              </h1>
+              <p className="text-accent font-bold mb-2">한약, 제대로 달이다</p>
+              <p className="text-brown-light text-lg leading-relaxed">
+                천연약재의 배합을 통한 최적의 자연치료로{" "}<br className="hidden md:block" />
+                건강한 삶을 되찾아드립니다.
+              </p>
+            </div>
+            <ImagePlaceholder ratio="aspect-[4/3]" tone="dark" />
           </div>
         </div>
       </section>

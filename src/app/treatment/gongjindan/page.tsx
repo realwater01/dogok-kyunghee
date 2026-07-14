@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
+import ImagePlaceholder from "@/components/ImagePlaceholder";
 import { breadcrumbSchema, medicalWebPageSchema } from "@/lib/structured-data";
 import { clinic, kakaoChatUrl } from "@/lib/site";
 
@@ -157,10 +158,7 @@ export default function GongjindanPage() {
               </p>
             </div>
 
-            {/* Image placeholder */}
-            <div className="aspect-[4/3] rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center">
-              <span className="text-brown-light/70 text-sm">이미지</span>
-            </div>
+            <ImagePlaceholder ratio="aspect-[4/3]" tone="dark" />
           </div>
         </div>
       </section>
@@ -169,10 +167,7 @@ export default function GongjindanPage() {
       <section className="section bg-white">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center max-w-5xl mx-auto">
-            {/* Image placeholder (left) */}
-            <div className="aspect-[4/3] rounded-2xl bg-secondary flex items-center justify-center">
-              <span className="text-brown-light text-sm">이미지</span>
-            </div>
+            <ImagePlaceholder ratio="aspect-[4/3]" tone="light" />
 
             <div>
               <p className="text-accent font-medium mb-4">공진단의 핵심, 사향</p>
@@ -215,10 +210,11 @@ export default function GongjindanPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {process.map((step) => (
               <div key={step.n} className="bg-white rounded-2xl overflow-hidden">
-                {/* Image placeholder */}
-                <div className="aspect-[4/3] bg-secondary flex items-center justify-center">
-                  <span className="text-brown-light text-sm">이미지</span>
-                </div>
+                <ImagePlaceholder
+                  ratio="aspect-[4/3]"
+                  tone="light"
+                  className="!rounded-none"
+                />
                 <div className="p-6">
                   <div className="flex items-baseline gap-3 mb-2">
                     <span className="text-2xl font-semibold text-accent">
@@ -259,10 +255,11 @@ export default function GongjindanPage() {
                 key={h.name}
                 className="bg-secondary rounded-2xl overflow-hidden flex flex-col sm:flex-row"
               >
-                {/* Image placeholder */}
-                <div className="sm:w-40 aspect-[4/3] sm:aspect-auto bg-cream flex items-center justify-center flex-shrink-0">
-                  <span className="text-brown-light text-sm">이미지</span>
-                </div>
+                <ImagePlaceholder
+                  ratio="aspect-[4/3] sm:aspect-auto"
+                  tone="cream"
+                  className="sm:w-40 flex-shrink-0 !rounded-none"
+                />
                 <div className="p-6 min-w-0">
                   <div className="flex items-baseline gap-2 flex-wrap mb-2">
                     <h3 className="text-lg font-semibold text-primary">
@@ -305,10 +302,7 @@ export default function GongjindanPage() {
                 key={p.name}
                 className="bg-white rounded-2xl p-6 md:p-10 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center"
               >
-                {/* Image placeholder (left) */}
-                <div className="aspect-[4/3] rounded-xl bg-secondary flex items-center justify-center">
-                  <span className="text-brown-light text-sm">이미지</span>
-                </div>
+                <ImagePlaceholder ratio="aspect-[4/3]" tone="light" />
 
                 <div className="min-w-0">
                   <div className="flex items-center gap-3 mb-3">

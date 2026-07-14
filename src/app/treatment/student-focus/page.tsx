@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
+import ImagePlaceholder from "@/components/ImagePlaceholder";
 import { breadcrumbSchema, faqSchema, medicalWebPageSchema } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
@@ -46,15 +47,18 @@ export default function StudentFocusPage() {
       {/* Hero Section */}
       <section className="bg-primary text-white section">
         <div className="container mx-auto px-6">
-          <div className="max-w-3xl">
-            <p className="text-accent font-medium mb-4">STUDENT FOCUS</p>
-            <h1 className="text-4xl md:text-5xl font-medium leading-tight mb-6">
-              수험생 집중력 향상 프로그램
-            </h1>
-            <p className="text-brown-light text-lg leading-relaxed">
-              장시간 학습에 지친 수험생들을 위한{" "}<br className="hidden md:block" />
-              집중력과 체력을 동시에 회복하는 특화 프로그램
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            <div>
+              <p className="text-accent font-medium mb-4">STUDENT FOCUS</p>
+              <h1 className="text-4xl md:text-5xl font-medium leading-tight mb-6">
+                수험생 집중력 향상 프로그램
+              </h1>
+              <p className="text-brown-light text-lg leading-relaxed">
+                장시간 학습에 지친 수험생들을 위한{" "}<br className="hidden md:block" />
+                집중력과 체력을 동시에 회복하는 특화 프로그램
+              </p>
+            </div>
+            <ImagePlaceholder ratio="aspect-[4/3]" tone="dark" />
           </div>
         </div>
       </section>
@@ -83,14 +87,7 @@ export default function StudentFocusPage() {
                 </p>
               </div>
             </div>
-            <div className="aspect-[4/3] bg-gradient-to-br from-cream to-brown-light rounded-2xl flex items-center justify-center">
-              <div className="text-center text-brown-dark">
-                <svg className="w-16 h-16 mx-auto mb-4 opacity-40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                </svg>
-                <p className="text-sm opacity-60">집중력 이미지</p>
-              </div>
-            </div>
+            <ImagePlaceholder ratio="aspect-[4/3]" tone="light" label="집중력 이미지" />
           </div>
         </div>
       </section>
@@ -127,7 +124,7 @@ export default function StudentFocusPage() {
                         unoptimized
                       />
                     </div>
-                    <div>
+                    <div className="min-w-0">
                       <p className="text-2xl font-bold text-accent mb-3">1. Gut Thinks</p>
                       <p className="text-base leading-relaxed">
                         불규칙한 식사와 적은 활동으로 장내세균이 무너지면, 흡수된
@@ -137,10 +134,12 @@ export default function StudentFocusPage() {
                     </div>
                   </div>
                   <div className="bg-cream/50 rounded-xl p-5 border border-brown-light/30 flex gap-5 items-stretch">
-                    <div className="w-48 flex-shrink-0 bg-gradient-to-br from-amber-50 to-amber-100 rounded-xl flex items-center justify-center">
-                      <p className="text-xs text-brown-dark opacity-40">이미지</p>
-                    </div>
-                    <div>
+                    <ImagePlaceholder
+                      ratio=""
+                      tone="plain"
+                      className="w-48 flex-shrink-0 self-stretch"
+                    />
+                    <div className="min-w-0">
                       <p className="text-2xl font-bold text-accent mb-3">2. 머리, 목, 어깨, 체표 순환 개선</p>
                       <p className="text-base leading-relaxed">
                         얼굴이 붉고 목·어깨가 뭉치며 순환이 떨어져 만성비염·여드름·
@@ -150,10 +149,12 @@ export default function StudentFocusPage() {
                     </div>
                   </div>
                   <div className="bg-cream/50 rounded-xl p-5 border border-brown-light/30 flex gap-5 items-stretch">
-                    <div className="w-48 flex-shrink-0 bg-gradient-to-br from-amber-50 to-amber-100 rounded-xl flex items-center justify-center">
-                      <p className="text-xs text-brown-dark opacity-40">이미지</p>
-                    </div>
-                    <div>
+                    <ImagePlaceholder
+                      ratio=""
+                      tone="plain"
+                      className="w-48 flex-shrink-0 self-stretch"
+                    />
+                    <div className="min-w-0">
                       <p className="text-2xl font-bold text-accent mb-3">3. 흉부 과긴장 완화</p>
                       <p className="text-base leading-relaxed">
                         흉부가 과긴장되면 몸의 에너지가 분노·불안·우울로 소모됩니다.
@@ -163,10 +164,12 @@ export default function StudentFocusPage() {
                     </div>
                   </div>
                   <div className="bg-cream/50 rounded-xl p-5 border border-brown-light/30 flex gap-5 items-stretch">
-                    <div className="w-48 flex-shrink-0 bg-gradient-to-br from-amber-50 to-amber-100 rounded-xl flex items-center justify-center">
-                      <p className="text-xs text-brown-dark opacity-40">이미지</p>
-                    </div>
-                    <div>
+                    <ImagePlaceholder
+                      ratio=""
+                      tone="plain"
+                      className="w-48 flex-shrink-0 self-stretch"
+                    />
+                    <div className="min-w-0">
                       <p className="text-2xl font-bold text-accent mb-3">4. 기력 보충</p>
                       <p className="text-base leading-relaxed">
                         수험생활로 에너지 자체가 소진된 경우, 체질에 맞는 보약과
