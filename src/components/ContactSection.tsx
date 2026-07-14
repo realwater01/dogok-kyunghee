@@ -26,7 +26,7 @@ export default function ContactSection() {
     if (result.status === "success") {
       setFeedback({
         type: "success",
-        text: "상담 문의가 접수되었습니다. 빠른 시일 내에 연락드리겠습니다.",
+        text: "상담 신청이 접수되어 한의원에 바로 전달됐습니다. 확인 후 빠르게 연락드리겠습니다.",
       });
       setFormData({ name: "", phone: "", email: "", message: "" });
     } else {
