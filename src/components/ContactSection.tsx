@@ -237,6 +237,12 @@ export default function ContactSection() {
                 {submitting ? "접수 중..." : "상담 신청하기"}
               </button>
 
+              <p className="text-xs text-text-light text-center leading-relaxed">
+                남겨주신 연락처로 진료시간 중에 연락드리겠습니다.
+                <br className="hidden sm:block" /> 빠른 상담은 전화로 문의해
+                주세요.
+              </p>
+
               {feedback && (
                 <p
                   role="status"
