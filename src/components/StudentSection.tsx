@@ -65,7 +65,7 @@ export default function StudentSection() {
                       src={symptom.image}
                       alt={symptom.title}
                       fill
-                      className={`object-cover ${symptom.imgClass ?? ""}`}
+                      className="object-cover"
                       sizes="(max-width: 768px) 40vw, 384px"
                     />
                     {/* 텍스트와 맞닿는 왼쪽 가장자리를 살짝 배경색으로 블렌드 */}
