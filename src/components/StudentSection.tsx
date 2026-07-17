@@ -40,50 +40,42 @@ export default function StudentSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+        <div className="max-w-3xl mx-auto space-y-4 md:space-y-5">
           {symptoms.map((symptom, index) => (
             <div
               key={index}
-              className="relative rounded-2xl overflow-hidden aspect-[16/10] md:aspect-[3/4]"
+              className="bg-white rounded-2xl overflow-hidden flex items-stretch min-h-[160px] md:min-h-[184px]"
             >
-              {symptom.image ? (
-                <>
-                  <Image
-                    src={symptom.image}
-                    alt={symptom.title}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                  />
-                  {/* 하단만 배경색으로 연해지는 그라데이션 (윗부분 얼굴은 선명하게) */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-secondary from-5% via-transparent via-40% to-transparent" />
-                  {/* 텍스트 (연해진 하단, 어두운 글자) */}
-                  <div className="absolute inset-x-0 bottom-0 p-6 text-left">
-                    <h3 className="text-lg md:text-xl font-semibold text-primary mb-1.5">
-                      {symptom.title}
-                    </h3>
-                    <p className="text-text-light text-sm leading-relaxed">
-                      {symptom.description}
-                    </p>
-                  </div>
-                </>
-              ) : (
-                <>
-                  {/* 배경 사진 자리 — 실제 사진을 넣을 때 image 필드를 채우세요. */}
+              {/* 텍스트 (좌 · 왼쪽 정렬 · 강조) */}
+              <div className="flex-1 min-w-0 p-6 md:p-8 flex flex-col justify-center">
+                <h3 className="text-xl md:text-2xl font-semibold text-primary mb-2">
+                  {symptom.title}
+                </h3>
+                <p className="text-text-light text-sm md:text-base leading-relaxed">
+                  {symptom.description}
+                </p>
+              </div>
+
+              {/* 사진 (우 · 절반) */}
+              <div className="relative w-2/5 md:w-1/2 flex-shrink-0">
+                {symptom.image ? (
+                  <>
+                    <Image
+                      src={symptom.image}
+                      alt={symptom.title}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 40vw, 384px"
+                    />
+                    {/* 텍스트와 맞닿는 왼쪽 가장자리를 살짝 배경색으로 블렌드 */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-white via-transparent via-25% to-transparent" />
+                  </>
+                ) : (
                   <div className="absolute inset-0 bg-brown-light flex items-center justify-center">
                     <span className="text-white/70 text-sm">이미지</span>
                   </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/30 to-transparent" />
-                  <div className="absolute inset-x-0 bottom-0 p-6 text-left">
-                    <h3 className="text-lg md:text-xl font-semibold text-white mb-1.5">
-                      {symptom.title}
-                    </h3>
-                    <p className="text-white/85 text-sm leading-relaxed">
-                      {symptom.description}
-                    </p>
-                  </div>
-                </>
-              )}
+                )}
+              </div>
             </div>
           ))}
         </div>
