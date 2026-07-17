@@ -6,38 +6,14 @@ const symptoms = [
   {
     title: "집중이 안 돼요",
     description: "오래 앉아 있어도 머리가 멍하고 능률이 오르지 않습니다.",
-    icon: (
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={1.5}
-        d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-      />
-    ),
   },
   {
     title: "쉽게 지쳐요",
     description: "오후만 되면 방전되고 체력이 버텨주지 못합니다.",
-    icon: (
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={1.5}
-        d="M13 10V3L4 14h7v7l9-11h-7z"
-      />
-    ),
   },
   {
     title: "긴장되고 잠을 설쳐요",
     description: "시험 불안, 가슴 두근거림, 얕은 수면이 반복됩니다.",
-    icon: (
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={1.5}
-        d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-      />
-    ),
   },
 ];
 
@@ -65,23 +41,23 @@ export default function StudentSection() {
           {symptoms.map((symptom, index) => (
             <div
               key={index}
-              className="p-5 md:p-8 bg-white rounded-xl border border-transparent hover:border-brown-light transition-all duration-300 flex items-center gap-4 text-left md:flex-col md:text-center md:gap-0"
+              className="relative rounded-2xl overflow-hidden aspect-[16/10] md:aspect-[3/4]"
             >
-              <div className="w-12 h-12 md:w-14 md:h-14 bg-secondary rounded-xl flex items-center justify-center flex-shrink-0 md:mx-auto md:mb-5">
-                <svg
-                  className="w-6 h-6 md:w-7 md:h-7 text-accent"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  {symptom.icon}
-                </svg>
+              {/* 배경 사진 자리 — 실제 사진을 넣을 때 이 div를
+                  <Image fill className="object-cover" src="..." alt="..." />로 교체 */}
+              <div className="absolute inset-0 bg-brown-light flex items-center justify-center">
+                <span className="text-white/70 text-sm">이미지</span>
               </div>
-              <div className="min-w-0">
-                <h3 className="text-base md:text-lg font-semibold mb-1 md:mb-3 text-primary">
+
+              {/* 가독성 오버레이 */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/30 to-transparent" />
+
+              {/* 텍스트 */}
+              <div className="absolute inset-x-0 bottom-0 p-6 text-left">
+                <h3 className="text-lg md:text-xl font-semibold text-white mb-1.5">
                   {symptom.title}
                 </h3>
-                <p className="text-text-light text-sm leading-relaxed">
+                <p className="text-white/85 text-sm leading-relaxed">
                   {symptom.description}
                 </p>
               </div>
