@@ -12,6 +12,7 @@ const symptoms = [
   {
     title: "쉽게 지쳐요",
     description: "오후만 되면 방전되고 체력이 버텨주지 못합니다.",
+    image: "/study-tired.png",
   },
   {
     title: "긴장되고 잠을 설쳐요",
