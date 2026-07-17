@@ -7,7 +7,7 @@ const treatments = [
     description:
       "수험생 치료 임상경험을 바탕으로 좋은 컨디션으로 공부에 집중할 수 있도록 개인에 맞춘 한약 치료를 제공합니다.",
     href: "/treatment/student-autonomic",
-    image: "", // 예: "/treatment-student.png"
+    image: "/treatment-brain.png",
   },
   {
     title: "자율신경실조\n- 반복감염, TIC, ADHD, 우울, 공황장애",
