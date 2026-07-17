@@ -54,8 +54,8 @@ export default function StudentSection() {
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 33vw"
                   />
-                  {/* 아래로 갈수록 배경색으로 연해지는 그라데이션 */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/55 to-transparent" />
+                  {/* 하단만 배경색으로 연해지는 그라데이션 (윗부분 얼굴은 선명하게) */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-secondary from-5% via-transparent via-40% to-transparent" />
                   {/* 텍스트 (연해진 하단, 어두운 글자) */}
                   <div className="absolute inset-x-0 bottom-0 p-6 text-left">
                     <h3 className="text-lg md:text-xl font-semibold text-primary mb-1.5">
