@@ -17,6 +17,7 @@ const symptoms = [
   {
     title: "긴장되고 잠을 설쳐요",
     description: "시험 불안, 가슴 두근거림, 얕은 수면이 반복됩니다.",
+    image: "/study-sleep.png",
   },
 ];
 
@@ -64,7 +65,7 @@ export default function StudentSection() {
                       src={symptom.image}
                       alt={symptom.title}
                       fill
-                      className="object-cover"
+                      className={`object-cover ${symptom.imgClass ?? ""}`}
                       sizes="(max-width: 768px) 40vw, 384px"
                     />
                     {/* 텍스트와 맞닿는 왼쪽 가장자리를 살짝 배경색으로 블렌드 */}
