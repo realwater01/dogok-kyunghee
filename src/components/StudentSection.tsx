@@ -48,7 +48,7 @@ export default function StudentSection() {
         <div className="text-center mb-16">
           <p className="text-accent font-medium mb-4">수험생</p>
           <h2 className="text-3xl md:text-4xl font-semibold text-primary mb-6">
-            공부할 몸을 만드는 한약
+            공부할 몸을 돕는 한약
           </h2>
           <p className="text-text-light max-w-2xl mx-auto leading-relaxed">
             집중이 안 되고 쉽게 지치는 건
