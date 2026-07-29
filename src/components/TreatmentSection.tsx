@@ -14,7 +14,8 @@ const treatments = [
     description:
       "자율신경계 문제는 각종 신경정신문제, 면역력약화를 일으킵니다.\n원인에 접근하여 건강 회복을 돕습니다.",
     href: "/treatment/children-adhd-tic",
-    image: "",
+    image: "/treatment-nervous.png",
+    contain: true,
   },
   {
     title: "비염",
@@ -43,21 +44,32 @@ export default function TreatmentSection() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="max-w-4xl mx-auto space-y-6">
           {treatments.map((treatment, index) => (
             <Link
               key={index}
               href={treatment.href}
-              className="group bg-secondary rounded-2xl overflow-hidden hover:bg-cream transition-all duration-300 border border-transparent hover:border-brown-light flex items-stretch min-h-[200px]"
+              className="group bg-secondary rounded-2xl overflow-hidden hover:bg-cream transition-all duration-300 border border-transparent hover:border-brown-light flex items-stretch min-h-[220px] md:min-h-[260px]"
             >
-              {/* 사진 (좌) — 실제 사진을 넣을 때 image 필드를 채우세요. */}
-              <div className="relative w-2/5 flex-shrink-0">
+              {/* 사진/도식 (좌) — 실제 사진을 넣을 때 image 필드를 채우세요.
+                  contain:true 인 도식은 잘리지 않게 흰 배경 위에 전체를 보여줍니다. */}
+              <div
+                className={`relative w-2/5 md:w-[38%] flex-shrink-0 ${
+                  treatment.contain ? "bg-white" : ""
+                }`}
+              >
                 {treatment.image ? (
                   <Image
                     src={treatment.image}
                     alt={treatment.title.replace(/\n.*/, "")}
                     fill
-                    className="object-cover"
+                    unoptimized
+                    loading="eager"
+                    className={
+                      treatment.contain
+                        ? "object-contain p-4"
+                        : "object-cover"
+                    }
                     sizes="(max-width: 768px) 40vw, 260px"
                   />
                 ) : (
